@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文档搬运工</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="学习笔记，包含前端开发、后端开发、服务器运维等">
+    
+    <link rel="preload" href="/assets/css/0.styles.fad71e8e.css" as="style"><link rel="preload" href="/assets/js/app.3a46bf88.js" as="script"><link rel="preload" href="/assets/js/2.f44a4f26.js" as="script"><link rel="preload" href="/assets/js/66.942b56ee.js" as="script"><link rel="prefetch" href="/assets/js/10.68d16472.js"><link rel="prefetch" href="/assets/js/100.26fb461d.js"><link rel="prefetch" href="/assets/js/101.99f6fe89.js"><link rel="prefetch" href="/assets/js/102.60bd959c.js"><link rel="prefetch" href="/assets/js/103.a5bef55e.js"><link rel="prefetch" href="/assets/js/104.9e65001d.js"><link rel="prefetch" href="/assets/js/105.98405eef.js"><link rel="prefetch" href="/assets/js/106.25cb57c6.js"><link rel="prefetch" href="/assets/js/107.3c928538.js"><link rel="prefetch" href="/assets/js/108.1e11cfcd.js"><link rel="prefetch" href="/assets/js/109.9685d555.js"><link rel="prefetch" href="/assets/js/11.e0ba19d3.js"><link rel="prefetch" href="/assets/js/110.beb6355c.js"><link rel="prefetch" href="/assets/js/111.d06a8ab8.js"><link rel="prefetch" href="/assets/js/112.73e715bc.js"><link rel="prefetch" href="/assets/js/113.027cbad8.js"><link rel="prefetch" href="/assets/js/114.cdb47c6f.js"><link rel="prefetch" href="/assets/js/115.dfcd1446.js"><link rel="prefetch" href="/assets/js/116.aeed61bf.js"><link rel="prefetch" href="/assets/js/117.e075fd6b.js"><link rel="prefetch" href="/assets/js/118.ce568921.js"><link rel="prefetch" href="/assets/js/119.b5b67f32.js"><link rel="prefetch" href="/assets/js/12.67495675.js"><link rel="prefetch" href="/assets/js/120.ab67ec9d.js"><link rel="prefetch" href="/assets/js/121.9860eb66.js"><link rel="prefetch" href="/assets/js/122.ca89c077.js"><link rel="prefetch" href="/assets/js/123.147c11fd.js"><link rel="prefetch" href="/assets/js/124.dafa8a75.js"><link rel="prefetch" href="/assets/js/125.a52297cb.js"><link rel="prefetch" href="/assets/js/126.c909f3ad.js"><link rel="prefetch" href="/assets/js/127.aa57b945.js"><link rel="prefetch" href="/assets/js/128.461ff8c0.js"><link rel="prefetch" href="/assets/js/129.cae51842.js"><link rel="prefetch" href="/assets/js/13.6727ab98.js"><link rel="prefetch" href="/assets/js/130.e8788a6c.js"><link rel="prefetch" href="/assets/js/131.b82cd77a.js"><link rel="prefetch" href="/assets/js/14.70b0cf01.js"><link rel="prefetch" href="/assets/js/15.ba9580a7.js"><link rel="prefetch" href="/assets/js/16.1a8c733f.js"><link rel="prefetch" href="/assets/js/17.6657a227.js"><link rel="prefetch" href="/assets/js/18.65942dbb.js"><link rel="prefetch" href="/assets/js/19.7d801cca.js"><link rel="prefetch" href="/assets/js/20.34077e32.js"><link rel="prefetch" href="/assets/js/21.a30264d9.js"><link rel="prefetch" href="/assets/js/22.813d2339.js"><link rel="prefetch" href="/assets/js/23.1a059155.js"><link rel="prefetch" href="/assets/js/24.d9971ac4.js"><link rel="prefetch" href="/assets/js/25.6c1d4926.js"><link rel="prefetch" href="/assets/js/26.21e8c7b4.js"><link rel="prefetch" href="/assets/js/27.1c159b31.js"><link rel="prefetch" href="/assets/js/28.178c1649.js"><link rel="prefetch" href="/assets/js/29.3872d2cb.js"><link rel="prefetch" href="/assets/js/3.d00959e5.js"><link rel="prefetch" href="/assets/js/30.fea18838.js"><link rel="prefetch" href="/assets/js/31.364afb36.js"><link rel="prefetch" href="/assets/js/32.3a14b962.js"><link rel="prefetch" href="/assets/js/33.ebb8c231.js"><link rel="prefetch" href="/assets/js/34.bbba3f86.js"><link rel="prefetch" href="/assets/js/35.ebc83e54.js"><link rel="prefetch" href="/assets/js/36.949b4b98.js"><link rel="prefetch" href="/assets/js/37.63a219a5.js"><link rel="prefetch" href="/assets/js/38.2abdd62c.js"><link rel="prefetch" href="/assets/js/39.f31baba8.js"><link rel="prefetch" href="/assets/js/4.7ac2b204.js"><link rel="prefetch" href="/assets/js/40.f1973b4d.js"><link rel="prefetch" href="/assets/js/41.b2b7deaa.js"><link rel="prefetch" href="/assets/js/42.d94268bc.js"><link rel="prefetch" href="/assets/js/43.a747dc86.js"><link rel="prefetch" href="/assets/js/44.d3cdaea4.js"><link rel="prefetch" href="/assets/js/45.6cedb636.js"><link rel="prefetch" href="/assets/js/46.d7f3520c.js"><link rel="prefetch" href="/assets/js/47.07c50e1c.js"><link rel="prefetch" href="/assets/js/48.9d8d71f9.js"><link rel="prefetch" href="/assets/js/49.a8a8fe51.js"><link rel="prefetch" href="/assets/js/5.f702624b.js"><link rel="prefetch" href="/assets/js/50.d67120fa.js"><link rel="prefetch" href="/assets/js/51.828b01e6.js"><link rel="prefetch" href="/assets/js/52.a09e7b67.js"><link rel="prefetch" href="/assets/js/53.78d609f7.js"><link rel="prefetch" href="/assets/js/54.74ce3aad.js"><link rel="prefetch" href="/assets/js/55.2185c55b.js"><link rel="prefetch" href="/assets/js/56.d63cb6fd.js"><link rel="prefetch" href="/assets/js/57.7122bef1.js"><link rel="prefetch" href="/assets/js/58.0129486a.js"><link rel="prefetch" href="/assets/js/59.9c3525c6.js"><link rel="prefetch" href="/assets/js/6.c76c0e1e.js"><link rel="prefetch" href="/assets/js/60.2e0f3f3e.js"><link rel="prefetch" href="/assets/js/61.85ed198d.js"><link rel="prefetch" href="/assets/js/62.984e9c14.js"><link rel="prefetch" href="/assets/js/63.cf37edfe.js"><link rel="prefetch" href="/assets/js/64.927b9eba.js"><link rel="prefetch" href="/assets/js/65.36872208.js"><link rel="prefetch" href="/assets/js/67.842217e0.js"><link rel="prefetch" href="/assets/js/68.8498477f.js"><link rel="prefetch" href="/assets/js/69.535880a4.js"><link rel="prefetch" href="/assets/js/7.96bc15e3.js"><link rel="prefetch" href="/assets/js/70.230cf70e.js"><link rel="prefetch" href="/assets/js/71.87227e95.js"><link rel="prefetch" href="/assets/js/72.f561a602.js"><link rel="prefetch" href="/assets/js/73.4da6f710.js"><link rel="prefetch" href="/assets/js/74.5bd744fd.js"><link rel="prefetch" href="/assets/js/75.0c2bfa50.js"><link rel="prefetch" href="/assets/js/76.66b79cbf.js"><link rel="prefetch" href="/assets/js/77.23824254.js"><link rel="prefetch" href="/assets/js/78.0cf01321.js"><link rel="prefetch" href="/assets/js/79.c6cd4e4b.js"><link rel="prefetch" href="/assets/js/8.9ae3aef7.js"><link rel="prefetch" href="/assets/js/80.5f96d029.js"><link rel="prefetch" href="/assets/js/81.12b2268c.js"><link rel="prefetch" href="/assets/js/82.48e0404e.js"><link rel="prefetch" href="/assets/js/83.04aa4502.js"><link rel="prefetch" href="/assets/js/84.7040c45c.js"><link rel="prefetch" href="/assets/js/85.9bc44a80.js"><link rel="prefetch" href="/assets/js/86.72c3105d.js"><link rel="prefetch" href="/assets/js/87.ee1d77a7.js"><link rel="prefetch" href="/assets/js/88.0b2a0796.js"><link rel="prefetch" href="/assets/js/89.0aa458ed.js"><link rel="prefetch" href="/assets/js/9.49b97fd1.js"><link rel="prefetch" href="/assets/js/90.15f95c52.js"><link rel="prefetch" href="/assets/js/91.6dcc07bb.js"><link rel="prefetch" href="/assets/js/92.caf4fe2f.js"><link rel="prefetch" href="/assets/js/93.0d99442a.js"><link rel="prefetch" href="/assets/js/94.48481fb4.js"><link rel="prefetch" href="/assets/js/95.0d9dc56d.js"><link rel="prefetch" href="/assets/js/96.9c03084a.js"><link rel="prefetch" href="/assets/js/97.079298c2.js"><link rel="prefetch" href="/assets/js/98.7a13bae0.js"><link rel="prefetch" href="/assets/js/99.2d538296.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fad71e8e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">文档搬运工</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/stylus.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/stylus.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/stylus.html#入门" class="sidebar-link">入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/stylus.html#介绍" class="sidebar-link">介绍</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#支持-css-嵌套语法" class="sidebar-link">支持 CSS 嵌套语法</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#支持类-python-缩进语法" class="sidebar-link">支持类 python 缩进语法</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#混合-mixins" class="sidebar-link">混合 Mixins</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#变量-variables" class="sidebar-link">变量 Variables</a></li></ul></li><li><a href="/frontend/stylus.html#混合-mixins-2" class="sidebar-link">混合 Mixins</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/stylus.html#没有参数" class="sidebar-link">没有参数</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#有参数" class="sidebar-link">有参数</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#参数默认值" class="sidebar-link">参数默认值</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#块混合" class="sidebar-link">块混合</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#rest-参数" class="sidebar-link">Rest 参数</a></li></ul></li><li><a href="/frontend/stylus.html#函数-functions" class="sidebar-link">函数 Functions</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/stylus.html#函数-functions-2" class="sidebar-link">函数 Functions</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#参数默认值-2" class="sidebar-link">参数默认值</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#命名参数" class="sidebar-link">命名参数</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#多个返回值" class="sidebar-link">多个返回值</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#arguments" class="sidebar-link">arguments</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#hash-示例" class="sidebar-link">hash 示例</a></li></ul></li><li><a href="/frontend/stylus.html#值-values" class="sidebar-link">值 Values</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/stylus.html#条件赋值" class="sidebar-link">条件赋值</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#属性查找" class="sidebar-link">属性查找</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#插值" class="sidebar-link">插值</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#color-operators" class="sidebar-link">Color operators</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#casting" class="sidebar-link">Casting</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#lookup" class="sidebar-link">Lookup</a></li></ul></li><li><a href="/frontend/stylus.html#高级功能" class="sidebar-link">高级功能</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/stylus.html#有条件的" class="sidebar-link">有条件的</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#对于循环" class="sidebar-link">对于循环</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#定义检查" class="sidebar-link">定义检查</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#false-值" class="sidebar-link">False 值</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#类型检查" class="sidebar-link">类型检查</a></li></ul></li><li><a href="/frontend/stylus.html#内置函数" class="sidebar-link">内置函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/stylus.html#颜色函数" class="sidebar-link">颜色函数</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#图片尺寸" class="sidebar-link">图片尺寸</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#缓存-caching" class="sidebar-link">缓存 Caching</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#embed-url" class="sidebar-link">Embed URL</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#添加属性" class="sidebar-link">添加属性</a></li><li class="sidebar-sub-header"><a href="/frontend/stylus.html#sprintf" class="sidebar-link">sprintf</a></li></ul></li><li><a href="/frontend/stylus.html#另见" class="sidebar-link">另见</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="stylus-备忘清单"><a href="#stylus-备忘清单" class="header-anchor">#</a> Stylus 备忘清单</h1> <p><a href="https://npmjs.org/package/stylus" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/v/stylus.svg?style=flat" alt="NPM version"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://www.npmjs.com/package/stylus" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/dm/stylus.svg?style=flat" alt="Downloads"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://github.com/stylus/stylus/network/dependents" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/dependents-repo/stylus/stylus" alt="Repo Dependents"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://github.com/stylus/stylus" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/badge/icon/Github?icon=github&amp;label" alt="Github repo"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>本备忘单旨在快速理解 <a href="https://github.com/stylus/stylus" target="_blank" rel="noopener noreferrer">stylus<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 所涉及的主要概念，显示了它的常用方法使用清单
+</p> <h2 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h2> <h3 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h3> <p>为 Node.js 构建的富有表现力、健壮、功能丰富的 <a href="/frontend/css.html">CSS</a> 语言</p> <ul><li><a href="/frontend/css.html">CSS 备忘清单</a> <em>(jaywcjlove.github.io)</em></li> <li><a href="https://stylus-lang.com/try.html" target="_blank" rel="noopener noreferrer">在线编译预览<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(stylus-lang.com)</em></li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># npm</span>
+$ <span class="token function">npm</span> <span class="token function">install</span> stylus <span class="token parameter variable">-g</span>
+<span class="token comment"># pnpm</span>
+$ <span class="token function">pnpm</span> <span class="token function">add</span> <span class="token parameter variable">-g</span> stylus
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>在 Node.js 环境中使用 <code>stylus</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ stylus one.styl two.styl
+<span class="token comment"># stylus 从标准输入读取并输出到标准输出</span>
+$ stylus <span class="token parameter variable">--compress</span> <span class="token operator">&lt;</span> some.styl <span class="token operator">&gt;</span> some.css
+<span class="token comment"># 将 css 目录中的文件编译输出到 `public/css`</span>
+$ stylus css <span class="token parameter variable">--out</span> public/css
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>转换 CSS，输出 <code>*.styl</code> 文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ stylus --css &lt; test.css &gt; test.styl
+$ stylus --css test.css /tmp/out.styl
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="支持-css-嵌套语法"><a href="#支持-css-嵌套语法" class="header-anchor">#</a> 支持 CSS 嵌套语法</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token selector">.box <span class="token punctuation">{</span></span>
+  <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">blue</span><span class="token punctuation">;</span></span>
+  <span class="token selector">.button <span class="token punctuation">{</span></span>
+    <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">red</span><span class="token punctuation">;</span></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>Stylus 是一个 CSS 预处理器。另见: <a href="http://stylus-lang.com/" target="_blank" rel="noopener noreferrer">stylus-lang.com<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="支持类-python-缩进语法"><a href="#支持类-python-缩进语法" class="header-anchor">#</a> 支持类 python 缩进语法</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token selector">.box</span>
+  <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">blue</span></span>
+  <span class="token selector">.button</span>
+    <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">red</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>也有效！冒号也是可选的。这通常用于 Stylus 文档的语法</p> <h3 id="混合-mixins"><a href="#混合-mixins" class="header-anchor">#</a> 混合 Mixins</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">caps-type</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">letter-spacing</span><span class="token punctuation">:</span> <span class="token number">0.05</span><span class="token unit">em</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token selector">h5</span>
+  <span class="token func"><span class="token function">caps-type</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>编译 css 为：</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">h5</span> <span class="token punctuation">{</span>
+  <span class="token property">letter-spacing</span><span class="token punctuation">:</span> 0.05em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div> <p>另见：下面<a href="#%E6%B7%B7%E5%90%88-Mixins">Mixins</a></p> <h3 id="变量-variables"><a href="#变量-variables" class="header-anchor">#</a> 变量 Variables</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token variable-declaration"><span class="token variable">royal-blue</span> <span class="token operator">=</span> <span class="token hexcode">#36a</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token selector">div</span>
+  <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> royal-<span class="token color">blue</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>标识符（变量名、函数等）也可以包括 <code>$</code> 字符</p> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token variable-declaration"><span class="token variable">$font-size</span> <span class="token operator">=</span> <span class="token number">14</span><span class="token unit">px</span></span>
+<span class="token selector">body <span class="token punctuation">{</span></span>
+  <span class="token property-declaration"><span class="token property">font</span><span class="token punctuation">:</span> $font-size sans-serif<span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>另见：<a href="https://stylus-lang.com/docs/variables.html" target="_blank" rel="noopener noreferrer">变量 Variables<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="混合-mixins-2"><a href="#混合-mixins-2" class="header-anchor">#</a> 混合 Mixins</h2> <h3 id="没有参数"><a href="#没有参数" class="header-anchor">#</a> 没有参数</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><br><br></div><pre class="language-stylus"><code><span class="token func"><span class="token function">red-border</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">border</span><span class="token punctuation">:</span> solid <span class="token number">2</span><span class="token unit">px</span> <span class="token color">red</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token selector">div</span>
+  <span class="token func"><span class="token function">red-border</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/mixins.html" target="_blank" rel="noopener noreferrer">Mixins<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="有参数"><a href="#有参数" class="header-anchor">#</a> 有参数</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br></div><pre class="language-stylus"><code><span class="token func"><span class="token function">border-radius</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> n</span>
+  <span class="token property-declaration"><span class="token property">border-radius</span><span class="token punctuation">:</span> n</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token selector">div</span>
+  <span class="token property-declaration"><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token unit">px</span></span>
+  <span class="token func"><span class="token function">border-radius</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token unit">px</span><span class="token punctuation">)</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>Mixins can be applied in two different ways.</p> <h3 id="参数默认值"><a href="#参数默认值" class="header-anchor">#</a> 参数默认值</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><br><br></div><pre class="language-stylus"><code><span class="token func"><span class="token function">border-radius</span><span class="token punctuation">(</span>n <span class="token operator">=</span> <span class="token number">2</span><span class="token unit">px</span><span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> n</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="块混合"><a href="#块混合" class="header-anchor">#</a> 块混合</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><br><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token func"><span class="token function">mobile</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+  <span class="token atrule-declaration"><span class="token atrule">@media</span> <span class="token punctuation">(</span>max-width<span class="token punctuation">:</span> <span class="token number">480</span><span class="token unit">px</span><span class="token punctuation">)</span></span>
+    <span class="token interpolation variable"><span class="token delimiter punctuation">{</span>block<span class="token delimiter punctuation">}</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><br><br></div><pre class="language-stylus"><code>+<span class="token func"><span class="token function">mobile</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/mixins.html#block-mixins" target="_blank" rel="noopener noreferrer">块混合<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="rest-参数"><a href="#rest-参数" class="header-anchor">#</a> Rest 参数</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br></div><pre class="language-stylus"><code><span class="token func"><span class="token function">shadow</span><span class="token punctuation">(</span>offset-x<span class="token punctuation">,</span> args<span class="token operator">...</span><span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">box-shadow</span><span class="token punctuation">:</span> offset-x args</span>
+  <span class="token property-declaration"><span class="token property">margin-top</span><span class="token punctuation">:</span> offset-x</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token selector">#login</span>
+  <span class="token property-declaration"><span class="token property">shadow</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token unit">px</span> <span class="token number">2</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token hexcode">#eee</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/vargs.html" target="_blank" rel="noopener noreferrer">Rest 参数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="函数-functions"><a href="#函数-functions" class="header-anchor">#</a> 函数 Functions</h2> <h3 id="函数-functions-2"><a href="#函数-functions-2" class="header-anchor">#</a> 函数 Functions</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><br><br></div><pre class="language-stylus"><code><span class="token func"><span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">a</span> <span class="token operator">+</span> b</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token selector">body</span>
+  <span class="token property-declaration"><span class="token property">padding</span><span class="token punctuation">:</span> <span class="token func"><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span></span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/functions.html" target="_blank" rel="noopener noreferrer">Functions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="参数默认值-2"><a href="#参数默认值-2" class="header-anchor">#</a> 参数默认值</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><br><br></div><pre class="language-stylus"><code><span class="token func"><span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">a</span> <span class="token operator">+</span> b</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/functions.html#argument-defaults" target="_blank" rel="noopener noreferrer">参数默认值<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="命名参数"><a href="#命名参数" class="header-anchor">#</a> 命名参数</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">shadow</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">x</span> y <span class="token punctuation">(</span>y <span class="token operator">*</span> <span class="token number">1.5</span><span class="token punctuation">)</span> <span class="token hexcode">#000</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token selector">.button</span>
+  <span class="token property-declaration"><span class="token property">box-shadow</span><span class="token punctuation">:</span> <span class="token func"><span class="token function">shadow</span><span class="token punctuation">(</span>x<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">)</span></span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/functions.html#named-parameters" target="_blank" rel="noopener noreferrer">命名参数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="多个返回值"><a href="#多个返回值" class="header-anchor">#</a> 多个返回值</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token func"><span class="token function">sizes</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">8px</span> <span class="token number">16</span><span class="token unit">px</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">sizes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>  <span class="token comment">// → 8px</span></span>
+<span class="token func"><span class="token function">sizes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>  <span class="token comment">// → 16px</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/functions.html#multiple-return-values" target="_blank" rel="noopener noreferrer">多个返回值<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="arguments"><a href="#arguments" class="header-anchor">#</a> arguments</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+  <span class="token variable-declaration"><span class="token variable">n</span> <span class="token operator">=</span> <span class="token number">0</span></span>
+  <span class="token statement"><span class="token keyword">for</span> num <span class="token operator">in</span> arguments</span>
+    <span class="token variable-declaration"><span class="token variable">n</span> <span class="token operator">=</span> n <span class="token operator">+</span> num</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment">// =&gt; 15</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>参数 local 可用于所有函数体，并包含所有传递的参数</p> <h3 id="hash-示例"><a href="#hash-示例" class="header-anchor">#</a> hash 示例</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">get</span><span class="token punctuation">(</span>hash<span class="token punctuation">,</span> key<span class="token punctuation">)</span></span>
+  <span class="token statement"><span class="token keyword">return</span> pair<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">if</span> pair<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">==</span> key <span class="token keyword">for</span> pair <span class="token operator">in</span> hash</span>
+
+<span class="token variable-declaration"><span class="token variable">hash</span> <span class="token operator">=</span> <span class="token punctuation">(</span>one <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>two <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>three <span class="token number">3</span><span class="token punctuation">)</span></span>
+
+<span class="token func"><span class="token function">get</span><span class="token punctuation">(</span>hash<span class="token punctuation">,</span> two<span class="token punctuation">)</span></span>
+<span class="token comment">// =&gt; 2</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div> <h2 id="值-values"><a href="#值-values" class="header-anchor">#</a> 值 Values</h2> <h3 id="条件赋值"><a href="#条件赋值" class="header-anchor">#</a> 条件赋值</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token variable-declaration"><span class="token variable">royal-blue</span> <span class="token operator">=</span> <span class="token hexcode">#36a</span></span>
+<span class="token variable-declaration"><span class="token variable">royal-blue</span> <span class="token operator">?=</span> <span class="token hexcode">#89f</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token selector">div</span>
+  <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> royal-<span class="token color">blue</span>  <span class="token comment">// #36a</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><code>?=</code> 只会在之前未设置的情况下设置变量</p> <p>另见: <a href="https://stylus-lang.com/docs/operators.html#conditional-assignment--" target="_blank" rel="noopener noreferrer">条件赋值<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="属性查找"><a href="#属性查找" class="header-anchor">#</a> 属性查找</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br></div><pre class="language-stylus"><code><span class="token selector">.logo</span>
+  <span class="token property-declaration"><span class="token property">width</span><span class="token punctuation">:</span> w <span class="token operator">=</span> <span class="token number">150</span></span>
+  <span class="token property-declaration"><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token func"><span class="token function">-</span><span class="token punctuation">(</span>w <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span></span></span>
+  <span class="token comment">// or</span>
+  <span class="token property-declaration"><span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">80</span><span class="token unit">px</span></span>
+  <span class="token property-declaration"><span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token func"><span class="token function">-</span><span class="token punctuation">(</span>@height <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span></span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>另见: <a href="https://stylus-lang.com/docs/variables.html#property-lookup" target="_blank" rel="noopener noreferrer">属性查找<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="插值"><a href="#插值" class="header-anchor">#</a> 插值</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token property-declaration"><span class="token property">-<span class="token interpolation variable"><span class="token delimiter punctuation">{</span>prefix<span class="token delimiter punctuation">}</span></span>-border-radius</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token unit">px</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>另见: <a href="https://stylus-lang.com/docs/interpolation.html" target="_blank" rel="noopener noreferrer">Interpolation<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="color-operators"><a href="#color-operators" class="header-anchor">#</a> Color operators</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code>#888 + 50%    <span class="token comment">// → #c3c3c3 (lighten)</span>
+#888 - 50%    <span class="token comment">// → #444 (darken)</span>
+#f00 + 50deg  <span class="token comment">// → #ffd500 (hue)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="casting"><a href="#casting" class="header-anchor">#</a> Casting</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token variable-declaration"><span class="token variable">n</span> <span class="token operator">=</span> <span class="token number">5</span><span class="token unit">px</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token property-declaration"><span class="token property">foo</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>n<span class="token punctuation">)</span>em</span>
+<span class="token property-declaration"><span class="token property">foo</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>n <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token operator">%</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="lookup"><a href="#lookup" class="header-anchor">#</a> Lookup</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><br><div class="highlighted"> </div><br></div><pre class="language-stylus"><code><span class="token variable-declaration"><span class="token variable">light-blue</span> <span class="token operator">=</span> <span class="token hexcode">#3bd</span></span>
+<span class="token variable-declaration"><span class="token variable">name</span> <span class="token operator">=</span> <span class="token string">'blue'</span></span>
+<span class="token func"><span class="token function">lookup</span><span class="token punctuation">(</span><span class="token string">'light-'</span> <span class="token operator">+</span> name<span class="token punctuation">)</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>另见: <a href="https://stylus-lang.com/docs/bifs.html#lookupname" target="_blank" rel="noopener noreferrer">lookup<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="高级功能"><a href="#高级功能" class="header-anchor">#</a> 高级功能</h2> <h3 id="有条件的"><a href="#有条件的" class="header-anchor">#</a> 有条件的</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token statement"><span class="token keyword">if</span> color <span class="token operator">==</span> <span class="token color">blue</span></span>
+  <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> block</span>
+<span class="token statement"><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token boolean">true</span> <span class="token operator">and</span> <span class="token boolean">true</span></span>
+  <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> inline</span>
+<span class="token statement"><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token string">'hey'</span> <span class="token operator">is not</span> <span class="token string">'bye'</span></span>
+  <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> flex</span>
+<span class="token selector">else</span>
+  <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> none</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>别名:</p> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>==</code></td> <td style="text-align:left;"><code>is</code></td></tr> <tr><td style="text-align:left;"><code>!=</code></td> <td style="text-align:left;"><code>is not</code></td></tr> <tr><td style="text-align:left;"><code>!=</code></td> <td style="text-align:left;"><code>isnt</code></td></tr></tbody></table> <p>另见: <a href="https://stylus-lang.com/docs/functions.html#conditionals" target="_blank" rel="noopener noreferrer">Conditionals<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="对于循环"><a href="#对于循环" class="header-anchor">#</a> 对于循环</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><br><br><br><br><div class="highlighted"> </div><br><br></div><pre class="language-stylus"><code><span class="token variable-declaration"><span class="token variable">font-size-1</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token unit">px</span></span>
+<span class="token variable-declaration"><span class="token variable">font-size-2</span> <span class="token operator">=</span> <span class="token number">20</span><span class="token unit">px</span></span>
+<span class="token variable-declaration"><span class="token variable">font-size-3</span> <span class="token operator">=</span> <span class="token number">30</span><span class="token unit">px</span></span>
+<span class="token statement"><span class="token keyword">for</span> i <span class="token operator">in</span> <span class="token number">1</span><span class="token operator">..</span><span class="token number">3</span></span>
+  <span class="token selector">.text-<span class="token interpolation variable"><span class="token delimiter punctuation">{</span>i<span class="token delimiter punctuation">}</span></span></span>
+    <span class="token property-declaration"><span class="token property">font-size</span><span class="token punctuation">:</span> lookup<span class="token punctuation">(</span><span class="token string">'font-size-'</span> <span class="token operator">+</span> i<span class="token punctuation">)</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="定义检查"><a href="#定义检查" class="header-anchor">#</a> 定义检查</h3> <div class="language-stylus line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><br><br></div><pre class="language-stylus"><code><span class="token statement"><span class="token keyword">if</span> ohnoes <span class="token operator">is defined</span></span>
+  <span class="token property-declaration"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">blue</span></span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="https://stylus-lang.com/docs/operators.html#variable-definition-is-defined" target="_blank" rel="noopener noreferrer">is defined<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="false-值"><a href="#false-值" class="header-anchor">#</a> False 值</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code>0
+null
+false
+<span class="token string">''</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="类型检查"><a href="#类型检查" class="header-anchor">#</a> 类型检查</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token statement"><span class="token keyword">if</span> val <span class="token operator">is a</span> <span class="token string">'string'</span></span>
+<span class="token statement"><span class="token keyword">if</span> val <span class="token operator">is a</span> <span class="token string">'ident'</span></span>
+<span class="token statement"><span class="token keyword">if</span> <span class="token hexcode">#fff</span> <span class="token operator">is a</span> <span class="token string">'rgba'</span>    <span class="token comment">// → true</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>另见: <a href="https://stylus-lang.com/docs/operators.html#instance-check-is-a" target="_blank" rel="noopener noreferrer">Instance check<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="内置函数"><a href="#内置函数" class="header-anchor">#</a> 内置函数</h2> <h3 id="颜色函数"><a href="#颜色函数" class="header-anchor">#</a> 颜色函数</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">alpha</span><span class="token punctuation">(</span><span class="token hexcode">#fff</span><span class="token punctuation">)</span>   <span class="token comment">//→ 1</span></span>
+<span class="token func"><span class="token function">alpha</span><span class="token punctuation">(</span><span class="token func"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   </span><span class="token comment">//→ 0.2</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">dark</span><span class="token punctuation">(</span><span class="token color">black</span><span class="token punctuation">)</span>  <span class="token comment">//→ true</span></span>
+<span class="token func"><span class="token function">light</span><span class="token punctuation">(</span><span class="token color">black</span><span class="token punctuation">)</span> <span class="token comment">//→ false</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">hue</span><span class="token punctuation">(</span><span class="token hexcode">#0a0</span><span class="token punctuation">)</span>         <span class="token comment">//→ 50deg</span></span>
+<span class="token func"><span class="token function">saturation</span><span class="token punctuation">(</span><span class="token hexcode">#f00</span><span class="token punctuation">)</span>  <span class="token comment">//→ 100%</span></span>
+<span class="token func"><span class="token function">lightness</span><span class="token punctuation">(</span><span class="token hexcode">#f00</span><span class="token punctuation">)</span>   <span class="token comment">//→ 50%</span></span>
+<span class="token func"><span class="token function">luminosity</span><span class="token punctuation">(</span><span class="token hexcode">#f00</span><span class="token punctuation">)</span>  <span class="token comment">//→ 0.2126</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">hue</span><span class="token punctuation">(</span><span class="token hexcode">#0a0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token unit">deg</span><span class="token punctuation">)</span></span>
+<span class="token func"><span class="token function">saturation</span><span class="token punctuation">(</span><span class="token hexcode">#f00</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token unit">%</span><span class="token punctuation">)</span></span>
+<span class="token func"><span class="token function">lightness</span><span class="token punctuation">(</span><span class="token hexcode">#f00</span><span class="token punctuation">)</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">lighten</span><span class="token punctuation">(</span>color<span class="token punctuation">,</span> <span class="token number">10</span><span class="token unit">%</span><span class="token punctuation">)</span></span>
+<span class="token func"><span class="token function">darken</span><span class="token punctuation">(</span>color<span class="token punctuation">,</span> <span class="token number">10</span><span class="token unit">%</span><span class="token punctuation">)</span></span>
+<span class="token func"><span class="token function">saturate</span><span class="token punctuation">(</span>color<span class="token punctuation">,</span> <span class="token number">10</span><span class="token unit">%</span><span class="token punctuation">)</span></span>
+<span class="token func"><span class="token function">desaturate</span><span class="token punctuation">(</span>color<span class="token punctuation">,</span> <span class="token number">10</span><span class="token unit">%</span><span class="token punctuation">)</span></span>
+<span class="token func"><span class="token function">invert</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">tint</span><span class="token punctuation">(</span>color<span class="token punctuation">,</span> <span class="token number">50</span><span class="token unit">%</span><span class="token punctuation">)</span>  <span class="token comment">// mix with white</span></span>
+<span class="token func"><span class="token function">shade</span><span class="token punctuation">(</span>color<span class="token punctuation">,</span> <span class="token number">50</span><span class="token unit">%</span><span class="token punctuation">)</span> <span class="token comment">// mix with black</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">unquote</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/bifs.html" target="_blank" rel="noopener noreferrer">Built-in functions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="图片尺寸"><a href="#图片尺寸" class="header-anchor">#</a> 图片尺寸</h3> <p>返回给定图像的宽度和高度</p> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token property-declaration"><span class="token property">width</span><span class="token punctuation">:</span>  image-size<span class="token punctuation">(</span><span class="token string">'tux.png'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span></span>
+<span class="token property-declaration"><span class="token property">height</span><span class="token punctuation">:</span> image-size<span class="token punctuation">(</span><span class="token string">'tux.png'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/bifs.html#image-sizepath" target="_blank" rel="noopener noreferrer">image-size<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="缓存-caching"><a href="#缓存-caching" class="header-anchor">#</a> 缓存 Caching</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">size</span><span class="token punctuation">(</span>$width<span class="token punctuation">)</span></span>
+  +<span class="token func"><span class="token function">cache</span><span class="token punctuation">(</span><span class="token string">'w'</span> <span class="token operator">+</span> $width<span class="token punctuation">)</span></span>
+    <span class="token property-declaration"><span class="token property">width</span><span class="token punctuation">:</span> $width</span>
+<span class="token selector">.a <span class="token punctuation">{</span></span> <span class="token property-declaration"><span class="token property">size</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span> <span class="token punctuation">}</span></span>
+<span class="token selector">.b <span class="token punctuation">{</span></span> <span class="token property-declaration"><span class="token property">size</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span> <span class="token punctuation">}</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token comment">// 输出: .a, b { width: 10px }</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在第一次调用时将其内容应用于给定的选择器，但会在第二次调用时使用相同的参数 <code>@extend</code> 第一次调用的选择器。另见: <a href="http://stylus-lang.com/docs/bifs.html#cachekeys" target="_blank" rel="noopener noreferrer">cache<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="embed-url"><a href="#embed-url" class="header-anchor">#</a> Embed URL</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>background: embedurl('logo.png')
+// → background: url(&quot;data:image/png;base64,…&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div> <p>另见: <a href="http://stylus-lang.com/docs/bifs.html#embedurlpath-encoding" target="_blank" rel="noopener noreferrer">embedurl<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="添加属性"><a href="#添加属性" class="header-anchor">#</a> 添加属性</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">gradient</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span></span>
+  <span class="token func"><span class="token function">add-property</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token func"><span class="token function">linear-gradient</span><span class="token punctuation">(</span>top<span class="token punctuation">,</span> color<span class="token punctuation">,</span> <span class="token func"><span class="token function">darken</span><span class="token punctuation">(</span>color<span class="token punctuation">,</span> <span class="token number">20</span><span class="token unit">%</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span></span></span>
+  color
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token selector">body</span>
+  <span class="token property-declaration"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token func"><span class="token function">gradient</span><span class="token punctuation">(</span><span class="token color">red</span><span class="token punctuation">)</span></span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/bifs.html#add-propertyname-expr" target="_blank" rel="noopener noreferrer">add-property<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="sprintf"><a href="#sprintf" class="header-anchor">#</a> sprintf</h3> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token string">'-webkit-gradient(%s, %s, %s)'</span> % <span class="token punctuation">(</span>linear <span class="token punctuation">(</span>0 0<span class="token punctuation">)</span> <span class="token punctuation">(</span>0 100%<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">// → -webkit-gradient(linear, 0 0, 0 100%)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div> <hr> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">s</span><span class="token punctuation">(</span><span class="token string">&quot;rgba(0, 0, 0, %s)&quot;</span><span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">)</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>另见: <a href="http://stylus-lang.com/docs/bifs.html#sfmt-" target="_blank" rel="noopener noreferrer">s<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="另见"><a href="#另见" class="header-anchor">#</a> 另见</h2> <ul><li><a href="/frontend/css.html">CSS 备忘清单</a> <em>(jaywcjlove.github.io)</em></li> <li><a href="https://stylus-lang.com/try.html" target="_blank" rel="noopener noreferrer">在线编译预览<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(stylus-lang.com)</em></li> <li><a href="/frontend/lessjs.html">Less.js 备忘清单</a> <em>(jaywcjlove.github.io)</em></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3a46bf88.js" defer></script><script src="/assets/js/2.f44a4f26.js" defer></script><script src="/assets/js/66.942b56ee.js" defer></script>
+  </body>
+</html>

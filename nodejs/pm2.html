@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文档搬运工</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="学习笔记，包含前端开发、后端开发、服务器运维等">
+    
+    <link rel="preload" href="/assets/css/0.styles.fad71e8e.css" as="style"><link rel="preload" href="/assets/js/app.3a46bf88.js" as="script"><link rel="preload" href="/assets/js/2.f44a4f26.js" as="script"><link rel="preload" href="/assets/js/78.0cf01321.js" as="script"><link rel="prefetch" href="/assets/js/10.68d16472.js"><link rel="prefetch" href="/assets/js/100.26fb461d.js"><link rel="prefetch" href="/assets/js/101.99f6fe89.js"><link rel="prefetch" href="/assets/js/102.60bd959c.js"><link rel="prefetch" href="/assets/js/103.a5bef55e.js"><link rel="prefetch" href="/assets/js/104.9e65001d.js"><link rel="prefetch" href="/assets/js/105.98405eef.js"><link rel="prefetch" href="/assets/js/106.25cb57c6.js"><link rel="prefetch" href="/assets/js/107.3c928538.js"><link rel="prefetch" href="/assets/js/108.1e11cfcd.js"><link rel="prefetch" href="/assets/js/109.9685d555.js"><link rel="prefetch" href="/assets/js/11.e0ba19d3.js"><link rel="prefetch" href="/assets/js/110.beb6355c.js"><link rel="prefetch" href="/assets/js/111.d06a8ab8.js"><link rel="prefetch" href="/assets/js/112.73e715bc.js"><link rel="prefetch" href="/assets/js/113.027cbad8.js"><link rel="prefetch" href="/assets/js/114.cdb47c6f.js"><link rel="prefetch" href="/assets/js/115.dfcd1446.js"><link rel="prefetch" href="/assets/js/116.aeed61bf.js"><link rel="prefetch" href="/assets/js/117.e075fd6b.js"><link rel="prefetch" href="/assets/js/118.ce568921.js"><link rel="prefetch" href="/assets/js/119.b5b67f32.js"><link rel="prefetch" href="/assets/js/12.67495675.js"><link rel="prefetch" href="/assets/js/120.ab67ec9d.js"><link rel="prefetch" href="/assets/js/121.9860eb66.js"><link rel="prefetch" href="/assets/js/122.ca89c077.js"><link rel="prefetch" href="/assets/js/123.147c11fd.js"><link rel="prefetch" href="/assets/js/124.dafa8a75.js"><link rel="prefetch" href="/assets/js/125.a52297cb.js"><link rel="prefetch" href="/assets/js/126.c909f3ad.js"><link rel="prefetch" href="/assets/js/127.aa57b945.js"><link rel="prefetch" href="/assets/js/128.461ff8c0.js"><link rel="prefetch" href="/assets/js/129.cae51842.js"><link rel="prefetch" href="/assets/js/13.6727ab98.js"><link rel="prefetch" href="/assets/js/130.e8788a6c.js"><link rel="prefetch" href="/assets/js/131.b82cd77a.js"><link rel="prefetch" href="/assets/js/14.70b0cf01.js"><link rel="prefetch" href="/assets/js/15.ba9580a7.js"><link rel="prefetch" href="/assets/js/16.1a8c733f.js"><link rel="prefetch" href="/assets/js/17.6657a227.js"><link rel="prefetch" href="/assets/js/18.65942dbb.js"><link rel="prefetch" href="/assets/js/19.7d801cca.js"><link rel="prefetch" href="/assets/js/20.34077e32.js"><link rel="prefetch" href="/assets/js/21.a30264d9.js"><link rel="prefetch" href="/assets/js/22.813d2339.js"><link rel="prefetch" href="/assets/js/23.1a059155.js"><link rel="prefetch" href="/assets/js/24.d9971ac4.js"><link rel="prefetch" href="/assets/js/25.6c1d4926.js"><link rel="prefetch" href="/assets/js/26.21e8c7b4.js"><link rel="prefetch" href="/assets/js/27.1c159b31.js"><link rel="prefetch" href="/assets/js/28.178c1649.js"><link rel="prefetch" href="/assets/js/29.3872d2cb.js"><link rel="prefetch" href="/assets/js/3.d00959e5.js"><link rel="prefetch" href="/assets/js/30.fea18838.js"><link rel="prefetch" href="/assets/js/31.364afb36.js"><link rel="prefetch" href="/assets/js/32.3a14b962.js"><link rel="prefetch" href="/assets/js/33.ebb8c231.js"><link rel="prefetch" href="/assets/js/34.bbba3f86.js"><link rel="prefetch" href="/assets/js/35.ebc83e54.js"><link rel="prefetch" href="/assets/js/36.949b4b98.js"><link rel="prefetch" href="/assets/js/37.63a219a5.js"><link rel="prefetch" href="/assets/js/38.2abdd62c.js"><link rel="prefetch" href="/assets/js/39.f31baba8.js"><link rel="prefetch" href="/assets/js/4.7ac2b204.js"><link rel="prefetch" href="/assets/js/40.f1973b4d.js"><link rel="prefetch" href="/assets/js/41.b2b7deaa.js"><link rel="prefetch" href="/assets/js/42.d94268bc.js"><link rel="prefetch" href="/assets/js/43.a747dc86.js"><link rel="prefetch" href="/assets/js/44.d3cdaea4.js"><link rel="prefetch" href="/assets/js/45.6cedb636.js"><link rel="prefetch" href="/assets/js/46.d7f3520c.js"><link rel="prefetch" href="/assets/js/47.07c50e1c.js"><link rel="prefetch" href="/assets/js/48.9d8d71f9.js"><link rel="prefetch" href="/assets/js/49.a8a8fe51.js"><link rel="prefetch" href="/assets/js/5.f702624b.js"><link rel="prefetch" href="/assets/js/50.d67120fa.js"><link rel="prefetch" href="/assets/js/51.828b01e6.js"><link rel="prefetch" href="/assets/js/52.a09e7b67.js"><link rel="prefetch" href="/assets/js/53.78d609f7.js"><link rel="prefetch" href="/assets/js/54.74ce3aad.js"><link rel="prefetch" href="/assets/js/55.2185c55b.js"><link rel="prefetch" href="/assets/js/56.d63cb6fd.js"><link rel="prefetch" href="/assets/js/57.7122bef1.js"><link rel="prefetch" href="/assets/js/58.0129486a.js"><link rel="prefetch" href="/assets/js/59.9c3525c6.js"><link rel="prefetch" href="/assets/js/6.c76c0e1e.js"><link rel="prefetch" href="/assets/js/60.2e0f3f3e.js"><link rel="prefetch" href="/assets/js/61.85ed198d.js"><link rel="prefetch" href="/assets/js/62.984e9c14.js"><link rel="prefetch" href="/assets/js/63.cf37edfe.js"><link rel="prefetch" href="/assets/js/64.927b9eba.js"><link rel="prefetch" href="/assets/js/65.36872208.js"><link rel="prefetch" href="/assets/js/66.942b56ee.js"><link rel="prefetch" href="/assets/js/67.842217e0.js"><link rel="prefetch" href="/assets/js/68.8498477f.js"><link rel="prefetch" href="/assets/js/69.535880a4.js"><link rel="prefetch" href="/assets/js/7.96bc15e3.js"><link rel="prefetch" href="/assets/js/70.230cf70e.js"><link rel="prefetch" href="/assets/js/71.87227e95.js"><link rel="prefetch" href="/assets/js/72.f561a602.js"><link rel="prefetch" href="/assets/js/73.4da6f710.js"><link rel="prefetch" href="/assets/js/74.5bd744fd.js"><link rel="prefetch" href="/assets/js/75.0c2bfa50.js"><link rel="prefetch" href="/assets/js/76.66b79cbf.js"><link rel="prefetch" href="/assets/js/77.23824254.js"><link rel="prefetch" href="/assets/js/79.c6cd4e4b.js"><link rel="prefetch" href="/assets/js/8.9ae3aef7.js"><link rel="prefetch" href="/assets/js/80.5f96d029.js"><link rel="prefetch" href="/assets/js/81.12b2268c.js"><link rel="prefetch" href="/assets/js/82.48e0404e.js"><link rel="prefetch" href="/assets/js/83.04aa4502.js"><link rel="prefetch" href="/assets/js/84.7040c45c.js"><link rel="prefetch" href="/assets/js/85.9bc44a80.js"><link rel="prefetch" href="/assets/js/86.72c3105d.js"><link rel="prefetch" href="/assets/js/87.ee1d77a7.js"><link rel="prefetch" href="/assets/js/88.0b2a0796.js"><link rel="prefetch" href="/assets/js/89.0aa458ed.js"><link rel="prefetch" href="/assets/js/9.49b97fd1.js"><link rel="prefetch" href="/assets/js/90.15f95c52.js"><link rel="prefetch" href="/assets/js/91.6dcc07bb.js"><link rel="prefetch" href="/assets/js/92.caf4fe2f.js"><link rel="prefetch" href="/assets/js/93.0d99442a.js"><link rel="prefetch" href="/assets/js/94.48481fb4.js"><link rel="prefetch" href="/assets/js/95.0d9dc56d.js"><link rel="prefetch" href="/assets/js/96.9c03084a.js"><link rel="prefetch" href="/assets/js/97.079298c2.js"><link rel="prefetch" href="/assets/js/98.7a13bae0.js"><link rel="prefetch" href="/assets/js/99.2d538296.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fad71e8e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">文档搬运工</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/pm2.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/pm2.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/nodejs/pm2.html#入门" class="sidebar-link">入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#启动应用程序" class="sidebar-link">启动应用程序</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#您可以传递给-cli-的一些选项" class="sidebar-link">您可以传递给 CLI 的一些选项</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#管理流程" class="sidebar-link">管理流程</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#检查状态、日志、指标" class="sidebar-link">检查状态、日志、指标</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#集群模式" class="sidebar-link">集群模式</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#生态系统文件" class="sidebar-link">生态系统文件</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#设置启动脚本" class="sidebar-link">设置启动脚本</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#重新启动应用程序更改" class="sidebar-link">重新启动应用程序更改</a></li></ul></li><li><a href="/nodejs/pm2.html#pm2-cheatsheet" class="sidebar-link">PM2 CheatSheet</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#pm2-分叉模式" class="sidebar-link">PM2 分叉模式</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#pm2-集群模式" class="sidebar-link">PM2 集群模式</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#pm2-清单" class="sidebar-link">PM2 清单</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#pm2-日志" class="sidebar-link">PM2 日志</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#pm2-动作" class="sidebar-link">PM2 动作</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#pm2-杂项" class="sidebar-link">PM2 杂项</a></li><li class="sidebar-sub-header"><a href="/nodejs/pm2.html#更新-pm2" class="sidebar-link">更新 PM2</a></li></ul></li><li><a href="/nodejs/pm2.html#另见" class="sidebar-link">另见</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="pm2-备忘清单"><a href="#pm2-备忘清单" class="header-anchor">#</a> PM2 备忘清单</h1> <p><a href="https://npmjs.org/package/pm2" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/v/pm2.svg?style=flat" alt="NPM version"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://www.npmjs.com/package/pm2" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/dm/pm2.svg?style=flat" alt="Downloads"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://github.com/Unitech/pm2/network/dependents" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/dependents-repo/Unitech/pm2" alt="Repo Dependents"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://github.com/Unitech/pm2" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/badge/icon/Github?icon=github&amp;label" alt="Github repo"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://pm2.keymetrics.io/" target="_blank" rel="noopener noreferrer">PM2<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 是一个守护进程管理器，它将帮助您管理和保持您的应用程序在线。PM2 入门非常简单，它以简单直观的 CLI 形式提供
+</p> <h2 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h2> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <p>最新的 PM2 版本可通过 NPM 或 Yarn 安装</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">npm</span> <span class="token function">install</span> pm2@latest <span class="token parameter variable">-g</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>或者</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">yarn</span> global <span class="token function">add</span> pm2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="启动应用程序"><a href="#启动应用程序" class="header-anchor">#</a> 启动应用程序</h3> <p>启动、守护进程和监视应用程序的最简单方法是使用此命令行</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 start app.js
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>或者轻松启动任何其他应用程序</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 start bashscript.sh
+$ pm2 start python-app.py <span class="token parameter variable">--watch</span>
+$ pm2 start binary-file -- <span class="token parameter variable">--port</span> <span class="token number">1520</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="您可以传递给-cli-的一些选项"><a href="#您可以传递给-cli-的一些选项" class="header-anchor">#</a> 您可以传递给 CLI 的一些选项</h3> <p>指定应用名称</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token parameter variable">--name</span> <span class="token operator">&lt;</span>app_name<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>文件更改时监视并重新启动应用程序</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token parameter variable">--watch</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>设置应用重新加载的内存阈值</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>--max-memory-restart <span class="token operator">&lt;</span>200MB<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>指定日志文件</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token parameter variable">--log</span> <span class="token operator">&lt;</span>log_path<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>将额外的参数传递给脚本</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>-- arg1 arg2 arg3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>自动重启之间的延迟</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>--restart-delay <span class="token operator">&lt;</span>delay <span class="token keyword">in</span> ms<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>带时间的前缀日志</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token parameter variable">--time</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>不要自动重启应用程序</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>--no-autorestart
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>指定 cron 强制重启</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token parameter variable">--cron</span> <span class="token operator">&lt;</span>cron_pattern<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>附加到应用程序日志</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>--no-daemon
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="管理流程"><a href="#管理流程" class="header-anchor">#</a> 管理流程</h3> <p>管理应用程序状态很简单，这里是命令</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 restart app_name
+$ pm2 reload app_name
+$ pm2 stop app_name
+$ pm2 delete app_name
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="你可以传递而不是-app-name"><a href="#你可以传递而不是-app-name" class="header-anchor">#</a> 你可以传递而不是 app_name</h4> <ul><li><code>all</code> 作用于所有进程</li> <li><code>id</code> 作用于特定的进程 ID</li></ul> <h3 id="检查状态、日志、指标"><a href="#检查状态、日志、指标" class="header-anchor">#</a> 检查状态、日志、指标</h3> <p>现在您已经启动了这个应用程序，您可以检查它的状态、日志、指标，甚至可以使用 <a href="https://pm2.io/" target="_blank" rel="noopener noreferrer">pm2.io<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 获取在线仪表板</p> <p>列出PM2管理的所有应用的状态</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 <span class="token punctuation">[</span>list<span class="token operator">|</span><span class="token function">ls</span><span class="token operator">|</span>status<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>实时显示日志</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 logs
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>挖掘旧日志</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 logs <span class="token parameter variable">--lines</span> <span class="token number">200</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这是一个直接适合您的终端的实时仪表板</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 monit
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>基于 Web 的仪表板，具有诊断系统的跨服务器</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 plus
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="集群模式"><a href="#集群模式" class="header-anchor">#</a> 集群模式</h3> <p>对于 Node.js 应用程序，PM2 包括一个自动负载均衡器，它将在每个衍生进程之间共享所有 HTTP[s]/Websocket/TCP/UDP 连接</p> <p>以集群模式启动应用程序</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 start app.js <span class="token parameter variable">-i</span> max
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在 <a href="https://pm2.keymetrics.io/docs/usage/quick-start/" target="_blank" rel="noopener noreferrer">此处<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 阅读有关集群模式的更多信息</p> <h3 id="生态系统文件"><a href="#生态系统文件" class="header-anchor">#</a> 生态系统文件</h3> <p>您还可以创建一个称为生态系统文件的配置文件来管理多个应用程序。生成生态系统文件</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 ecosystem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这将生成一个 <code>ecosystem.config.js</code> 文件</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">apps</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;app&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">script</span><span class="token operator">:</span> <span class="token string">&quot;./app.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">env</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token constant">NODE_ENV</span><span class="token operator">:</span> <span class="token string">&quot;development&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">env_production</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token constant">NODE_ENV</span><span class="token operator">:</span> <span class="token string">&quot;production&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+     <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'worker'</span><span class="token punctuation">,</span>
+     <span class="token literal-property property">script</span><span class="token operator">:</span> <span class="token string">'worker.js'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>并轻松启动</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 start ecosystem.config.js
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在 <a href="https://pm2.keymetrics.io/docs/usage/application-declaration/" target="_blank" rel="noopener noreferrer">此处<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 阅读有关应用程序声明的更多信息</p> <h3 id="设置启动脚本"><a href="#设置启动脚本" class="header-anchor">#</a> 设置启动脚本</h3> <p>使用您在服务器启动/重新启动时管理的进程重新启动 PM2 至关重要。为了解决这个问题，只需运行这个命令来生成一个活动的启动脚本</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 save
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在 <a href="https://pm2.keymetrics.io/docs/usage/startup/" target="_blank" rel="noopener noreferrer">此处<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 阅读有关启动脚本生成器的更多信息</p> <h3 id="重新启动应用程序更改"><a href="#重新启动应用程序更改" class="header-anchor">#</a> 重新启动应用程序更改</h3> <p>使用 <code>--watch</code> 选项非常简单</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token builtin class-name">cd</span> /path/to/my/app
+$ pm2 start env.js <span class="token parameter variable">--watch</span> --ignore-watch<span class="token operator">=</span><span class="token string">&quot;node_modules&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>这将在当前目录 <code>+</code> 所有子文件夹中的任何文件更改时监视并重新启动应用程序，并且它将忽略 <code>node_modules</code> 文件夹中的任何更改 <code>--ignore-watch=&quot;node_modules&quot;</code>。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ pm2 logs
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>然后，您可以使用上面命令来检查重新启动的应用程序日志。</p> <h2 id="pm2-cheatsheet"><a href="#pm2-cheatsheet" class="header-anchor">#</a> PM2 CheatSheet</h2> <p>以下是一些值得了解的命令。 只需使用示例应用程序或开发机器上当前的 Web 应用程序来尝试它们</p> <h3 id="pm2-分叉模式"><a href="#pm2-分叉模式" class="header-anchor">#</a> PM2 分叉模式</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 start app.js <span class="token parameter variable">--name</span> my-api <span class="token comment"># 名称进程</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="pm2-集群模式"><a href="#pm2-集群模式" class="header-anchor">#</a> PM2 集群模式</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 start app.js <span class="token parameter variable">-i</span> <span class="token number">0</span>     <span class="token comment"># 将根据可用的 CPU 使用 LB 启动最大进程</span>
+$ pm2 start app.js <span class="token parameter variable">-i</span> max   <span class="token comment"># 与上面相同，但已弃用。</span>
+$ pm2 scale app +3          <span class="token comment"># 将 `app` 增加 3 名工人</span>
+$ pm2 scale app <span class="token number">2</span>           <span class="token comment"># 将 `app` 向上或向下扩展到总共 2 个工人</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="pm2-清单"><a href="#pm2-清单" class="header-anchor">#</a> PM2 清单</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 list        <span class="token comment"># 显示所有进程状态</span>
+$ pm2 jlist       <span class="token comment"># 以原始 JSON 格式打印进程列表</span>
+$ pm2 prettylist  <span class="token comment"># 以美化JSON打印进程列表</span>
+$ pm2 describe <span class="token number">0</span>  <span class="token comment"># 显示有关特定进程的所有信息</span>
+$ pm2 monit       <span class="token comment"># 监控所有进程</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="pm2-日志"><a href="#pm2-日志" class="header-anchor">#</a> PM2 日志</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 logs <span class="token punctuation">[</span>--raw<span class="token punctuation">]</span>  <span class="token comment"># 在流中显示所有进程日志</span>
+$ pm2 flush         <span class="token comment"># 清空所有日志文件</span>
+$ pm2 reloadLogs    <span class="token comment"># 重新加载所有日志</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="pm2-动作"><a href="#pm2-动作" class="header-anchor">#</a> PM2 动作</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 stop all     <span class="token comment"># 停止所有进程</span>
+$ pm2 restart all  <span class="token comment"># 重启所有进程</span>
+$ pm2 reload all   <span class="token comment"># 将 0s 停机时间重新加载（对于 NETWORKED 应用程序）</span>
+$ pm2 stop <span class="token number">0</span>       <span class="token comment"># 停止特定进程 ID</span>
+$ pm2 restart <span class="token number">0</span>    <span class="token comment"># 重启特定进程id</span>
+$ pm2 delete <span class="token number">0</span>     <span class="token comment"># 将从 pm2 列表中删除进程</span>
+$ pm2 delete all   <span class="token comment"># 将从 pm2 列表中删除所有进程</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="pm2-杂项"><a href="#pm2-杂项" class="header-anchor">#</a> PM2 杂项</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 reset <span class="token operator">&lt;</span>process<span class="token operator">&gt;</span>    <span class="token comment"># 重置元数据（重启时间...）</span>
+$ pm2 updatePM2          <span class="token comment"># 更新内存 pm2</span>
+$ pm2 <span class="token function">ping</span>               <span class="token comment"># 确保 pm2 守护进程已经启动</span>
+$ pm2 sendSignal SIGUSR2 my-app <span class="token comment"># 向脚本发送系统信号</span>
+$ pm2 start app.js --no-daemon
+$ pm2 start app.js --no-vizion
+$ pm2 start app.js --no-autorestart
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="更新-pm2"><a href="#更新-pm2" class="header-anchor">#</a> 更新 PM2</h3> <p>我们让它变得简单，版本之间没有重大变化，过程很简单</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ <span class="token function">npm</span> <span class="token function">install</span> pm2@latest <span class="token parameter variable">-g</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>然后更新内存中的PM2</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ pm2 update
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="另见"><a href="#另见" class="header-anchor">#</a> 另见</h2> <ul><li><a href="https://pm2.keymetrics.io/docs/usage/quick-start/" target="_blank" rel="noopener noreferrer">QUICK START<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(pm2.keymetrics.io)</em></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3a46bf88.js" defer></script><script src="/assets/js/2.f44a4f26.js" defer></script><script src="/assets/js/78.0cf01321.js" defer></script>
+  </body>
+</html>

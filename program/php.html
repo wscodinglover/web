@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文档搬运工</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="学习笔记，包含前端开发、后端开发、服务器运维等">
+    
+    <link rel="preload" href="/assets/css/0.styles.fad71e8e.css" as="style"><link rel="preload" href="/assets/js/app.3a46bf88.js" as="script"><link rel="preload" href="/assets/js/2.f44a4f26.js" as="script"><link rel="preload" href="/assets/js/103.a5bef55e.js" as="script"><link rel="prefetch" href="/assets/js/10.68d16472.js"><link rel="prefetch" href="/assets/js/100.26fb461d.js"><link rel="prefetch" href="/assets/js/101.99f6fe89.js"><link rel="prefetch" href="/assets/js/102.60bd959c.js"><link rel="prefetch" href="/assets/js/104.9e65001d.js"><link rel="prefetch" href="/assets/js/105.98405eef.js"><link rel="prefetch" href="/assets/js/106.25cb57c6.js"><link rel="prefetch" href="/assets/js/107.3c928538.js"><link rel="prefetch" href="/assets/js/108.1e11cfcd.js"><link rel="prefetch" href="/assets/js/109.9685d555.js"><link rel="prefetch" href="/assets/js/11.e0ba19d3.js"><link rel="prefetch" href="/assets/js/110.beb6355c.js"><link rel="prefetch" href="/assets/js/111.d06a8ab8.js"><link rel="prefetch" href="/assets/js/112.73e715bc.js"><link rel="prefetch" href="/assets/js/113.027cbad8.js"><link rel="prefetch" href="/assets/js/114.cdb47c6f.js"><link rel="prefetch" href="/assets/js/115.dfcd1446.js"><link rel="prefetch" href="/assets/js/116.aeed61bf.js"><link rel="prefetch" href="/assets/js/117.e075fd6b.js"><link rel="prefetch" href="/assets/js/118.ce568921.js"><link rel="prefetch" href="/assets/js/119.b5b67f32.js"><link rel="prefetch" href="/assets/js/12.67495675.js"><link rel="prefetch" href="/assets/js/120.ab67ec9d.js"><link rel="prefetch" href="/assets/js/121.9860eb66.js"><link rel="prefetch" href="/assets/js/122.ca89c077.js"><link rel="prefetch" href="/assets/js/123.147c11fd.js"><link rel="prefetch" href="/assets/js/124.dafa8a75.js"><link rel="prefetch" href="/assets/js/125.a52297cb.js"><link rel="prefetch" href="/assets/js/126.c909f3ad.js"><link rel="prefetch" href="/assets/js/127.aa57b945.js"><link rel="prefetch" href="/assets/js/128.461ff8c0.js"><link rel="prefetch" href="/assets/js/129.cae51842.js"><link rel="prefetch" href="/assets/js/13.6727ab98.js"><link rel="prefetch" href="/assets/js/130.e8788a6c.js"><link rel="prefetch" href="/assets/js/131.b82cd77a.js"><link rel="prefetch" href="/assets/js/14.70b0cf01.js"><link rel="prefetch" href="/assets/js/15.ba9580a7.js"><link rel="prefetch" href="/assets/js/16.1a8c733f.js"><link rel="prefetch" href="/assets/js/17.6657a227.js"><link rel="prefetch" href="/assets/js/18.65942dbb.js"><link rel="prefetch" href="/assets/js/19.7d801cca.js"><link rel="prefetch" href="/assets/js/20.34077e32.js"><link rel="prefetch" href="/assets/js/21.a30264d9.js"><link rel="prefetch" href="/assets/js/22.813d2339.js"><link rel="prefetch" href="/assets/js/23.1a059155.js"><link rel="prefetch" href="/assets/js/24.d9971ac4.js"><link rel="prefetch" href="/assets/js/25.6c1d4926.js"><link rel="prefetch" href="/assets/js/26.21e8c7b4.js"><link rel="prefetch" href="/assets/js/27.1c159b31.js"><link rel="prefetch" href="/assets/js/28.178c1649.js"><link rel="prefetch" href="/assets/js/29.3872d2cb.js"><link rel="prefetch" href="/assets/js/3.d00959e5.js"><link rel="prefetch" href="/assets/js/30.fea18838.js"><link rel="prefetch" href="/assets/js/31.364afb36.js"><link rel="prefetch" href="/assets/js/32.3a14b962.js"><link rel="prefetch" href="/assets/js/33.ebb8c231.js"><link rel="prefetch" href="/assets/js/34.bbba3f86.js"><link rel="prefetch" href="/assets/js/35.ebc83e54.js"><link rel="prefetch" href="/assets/js/36.949b4b98.js"><link rel="prefetch" href="/assets/js/37.63a219a5.js"><link rel="prefetch" href="/assets/js/38.2abdd62c.js"><link rel="prefetch" href="/assets/js/39.f31baba8.js"><link rel="prefetch" href="/assets/js/4.7ac2b204.js"><link rel="prefetch" href="/assets/js/40.f1973b4d.js"><link rel="prefetch" href="/assets/js/41.b2b7deaa.js"><link rel="prefetch" href="/assets/js/42.d94268bc.js"><link rel="prefetch" href="/assets/js/43.a747dc86.js"><link rel="prefetch" href="/assets/js/44.d3cdaea4.js"><link rel="prefetch" href="/assets/js/45.6cedb636.js"><link rel="prefetch" href="/assets/js/46.d7f3520c.js"><link rel="prefetch" href="/assets/js/47.07c50e1c.js"><link rel="prefetch" href="/assets/js/48.9d8d71f9.js"><link rel="prefetch" href="/assets/js/49.a8a8fe51.js"><link rel="prefetch" href="/assets/js/5.f702624b.js"><link rel="prefetch" href="/assets/js/50.d67120fa.js"><link rel="prefetch" href="/assets/js/51.828b01e6.js"><link rel="prefetch" href="/assets/js/52.a09e7b67.js"><link rel="prefetch" href="/assets/js/53.78d609f7.js"><link rel="prefetch" href="/assets/js/54.74ce3aad.js"><link rel="prefetch" href="/assets/js/55.2185c55b.js"><link rel="prefetch" href="/assets/js/56.d63cb6fd.js"><link rel="prefetch" href="/assets/js/57.7122bef1.js"><link rel="prefetch" href="/assets/js/58.0129486a.js"><link rel="prefetch" href="/assets/js/59.9c3525c6.js"><link rel="prefetch" href="/assets/js/6.c76c0e1e.js"><link rel="prefetch" href="/assets/js/60.2e0f3f3e.js"><link rel="prefetch" href="/assets/js/61.85ed198d.js"><link rel="prefetch" href="/assets/js/62.984e9c14.js"><link rel="prefetch" href="/assets/js/63.cf37edfe.js"><link rel="prefetch" href="/assets/js/64.927b9eba.js"><link rel="prefetch" href="/assets/js/65.36872208.js"><link rel="prefetch" href="/assets/js/66.942b56ee.js"><link rel="prefetch" href="/assets/js/67.842217e0.js"><link rel="prefetch" href="/assets/js/68.8498477f.js"><link rel="prefetch" href="/assets/js/69.535880a4.js"><link rel="prefetch" href="/assets/js/7.96bc15e3.js"><link rel="prefetch" href="/assets/js/70.230cf70e.js"><link rel="prefetch" href="/assets/js/71.87227e95.js"><link rel="prefetch" href="/assets/js/72.f561a602.js"><link rel="prefetch" href="/assets/js/73.4da6f710.js"><link rel="prefetch" href="/assets/js/74.5bd744fd.js"><link rel="prefetch" href="/assets/js/75.0c2bfa50.js"><link rel="prefetch" href="/assets/js/76.66b79cbf.js"><link rel="prefetch" href="/assets/js/77.23824254.js"><link rel="prefetch" href="/assets/js/78.0cf01321.js"><link rel="prefetch" href="/assets/js/79.c6cd4e4b.js"><link rel="prefetch" href="/assets/js/8.9ae3aef7.js"><link rel="prefetch" href="/assets/js/80.5f96d029.js"><link rel="prefetch" href="/assets/js/81.12b2268c.js"><link rel="prefetch" href="/assets/js/82.48e0404e.js"><link rel="prefetch" href="/assets/js/83.04aa4502.js"><link rel="prefetch" href="/assets/js/84.7040c45c.js"><link rel="prefetch" href="/assets/js/85.9bc44a80.js"><link rel="prefetch" href="/assets/js/86.72c3105d.js"><link rel="prefetch" href="/assets/js/87.ee1d77a7.js"><link rel="prefetch" href="/assets/js/88.0b2a0796.js"><link rel="prefetch" href="/assets/js/89.0aa458ed.js"><link rel="prefetch" href="/assets/js/9.49b97fd1.js"><link rel="prefetch" href="/assets/js/90.15f95c52.js"><link rel="prefetch" href="/assets/js/91.6dcc07bb.js"><link rel="prefetch" href="/assets/js/92.caf4fe2f.js"><link rel="prefetch" href="/assets/js/93.0d99442a.js"><link rel="prefetch" href="/assets/js/94.48481fb4.js"><link rel="prefetch" href="/assets/js/95.0d9dc56d.js"><link rel="prefetch" href="/assets/js/96.9c03084a.js"><link rel="prefetch" href="/assets/js/97.079298c2.js"><link rel="prefetch" href="/assets/js/98.7a13bae0.js"><link rel="prefetch" href="/assets/js/99.2d538296.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fad71e8e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">文档搬运工</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/program/php.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/program/php.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/program/php.html#入门" class="sidebar-link">入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#hello-php" class="sidebar-link">hello.php</a></li><li class="sidebar-sub-header"><a href="/program/php.html#变量-variables" class="sidebar-link">变量 Variables</a></li><li class="sidebar-sub-header"><a href="/program/php.html#字符串-strings" class="sidebar-link">字符串 Strings</a></li><li class="sidebar-sub-header"><a href="/program/php.html#数组-arrays" class="sidebar-link">数组 Arrays</a></li><li class="sidebar-sub-header"><a href="/program/php.html#运算符-operators" class="sidebar-link">运算符 Operators</a></li><li class="sidebar-sub-header"><a href="/program/php.html#include" class="sidebar-link">Include</a></li><li class="sidebar-sub-header"><a href="/program/php.html#功能-functions" class="sidebar-link">功能 Functions</a></li><li class="sidebar-sub-header"><a href="/program/php.html#注释-comments" class="sidebar-link">注释 Comments</a></li><li class="sidebar-sub-header"><a href="/program/php.html#常数-constants" class="sidebar-link">常数 Constants</a></li><li class="sidebar-sub-header"><a href="/program/php.html#类-classes" class="sidebar-link">类 Classes</a></li></ul></li><li><a href="/program/php.html#php-类型" class="sidebar-link">PHP 类型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#布尔值-boolean" class="sidebar-link">布尔值 Boolean</a></li><li class="sidebar-sub-header"><a href="/program/php.html#整数-integer" class="sidebar-link">整数 Integer</a></li><li class="sidebar-sub-header"><a href="/program/php.html#字符串-strings-2" class="sidebar-link">字符串 Strings</a></li><li class="sidebar-sub-header"><a href="/program/php.html#数组-arrays-2" class="sidebar-link">数组 Arrays</a></li><li class="sidebar-sub-header"><a href="/program/php.html#浮点数-float-double" class="sidebar-link">浮点数 Float (Double)</a></li><li class="sidebar-sub-header"><a href="/program/php.html#null" class="sidebar-link">Null</a></li><li class="sidebar-sub-header"><a href="/program/php.html#可迭代对象-iterables" class="sidebar-link">可迭代对象 Iterables</a></li></ul></li><li><a href="/program/php.html#php-字符串" class="sidebar-link">PHP 字符串</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#字符串-string" class="sidebar-link">字符串 String</a></li><li class="sidebar-sub-header"><a href="/program/php.html#多行-multi-line" class="sidebar-link">多行 Multi-line</a></li><li class="sidebar-sub-header"><a href="/program/php.html#操作-manipulation" class="sidebar-link">操作 Manipulation</a></li></ul></li><li><a href="/program/php.html#php-数组" class="sidebar-link">PHP 数组</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#定义" class="sidebar-link">定义</a></li><li class="sidebar-sub-header"><a href="/program/php.html#多阵列" class="sidebar-link">多阵列</a></li><li class="sidebar-sub-header"><a href="/program/php.html#多类型" class="sidebar-link">多类型</a></li><li class="sidebar-sub-header"><a href="/program/php.html#操作" class="sidebar-link">操作</a></li><li class="sidebar-sub-header"><a href="/program/php.html#索引迭代" class="sidebar-link">索引迭代</a></li><li class="sidebar-sub-header"><a href="/program/php.html#价值迭代" class="sidebar-link">价值迭代</a></li><li class="sidebar-sub-header"><a href="/program/php.html#关键迭代" class="sidebar-link">关键迭代</a></li><li class="sidebar-sub-header"><a href="/program/php.html#串联阵列" class="sidebar-link">串联阵列</a></li><li class="sidebar-sub-header"><a href="/program/php.html#into-函数" class="sidebar-link">Into 函数</a></li><li class="sidebar-sub-header"><a href="/program/php.html#splat运算符" class="sidebar-link">Splat运算符</a></li></ul></li><li><a href="/program/php.html#php-运算符" class="sidebar-link">PHP 运算符</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#算术" class="sidebar-link">算术</a></li><li class="sidebar-sub-header"><a href="/program/php.html#分配" class="sidebar-link">分配</a></li><li class="sidebar-sub-header"><a href="/program/php.html#比较" class="sidebar-link">比较</a></li><li class="sidebar-sub-header"><a href="/program/php.html#逻辑的" class="sidebar-link">逻辑的</a></li><li class="sidebar-sub-header"><a href="/program/php.html#算术-2" class="sidebar-link">算术</a></li><li class="sidebar-sub-header"><a href="/program/php.html#按位" class="sidebar-link">按位</a></li></ul></li><li><a href="/program/php.html#php-条件" class="sidebar-link">PHP 条件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#if-elseif-else" class="sidebar-link">If elseif else</a></li><li class="sidebar-sub-header"><a href="/program/php.html#switch" class="sidebar-link">Switch</a></li><li class="sidebar-sub-header"><a href="/program/php.html#三元运算符" class="sidebar-link">三元运算符</a></li><li class="sidebar-sub-header"><a href="/program/php.html#匹配" class="sidebar-link">匹配</a></li><li class="sidebar-sub-header"><a href="/program/php.html#匹配表达式" class="sidebar-link">匹配表达式</a></li></ul></li><li><a href="/program/php.html#php-循环" class="sidebar-link">PHP 循环</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#while-循环" class="sidebar-link">while 循环</a></li><li class="sidebar-sub-header"><a href="/program/php.html#do-while-循环" class="sidebar-link">do while 循环</a></li><li class="sidebar-sub-header"><a href="/program/php.html#for-i-循环" class="sidebar-link">for i 循环</a></li><li class="sidebar-sub-header"><a href="/program/php.html#break-跳出循环" class="sidebar-link">break 跳出循环</a></li><li class="sidebar-sub-header"><a href="/program/php.html#continue-继续" class="sidebar-link">continue 继续</a></li><li class="sidebar-sub-header"><a href="/program/php.html#foreach-循环" class="sidebar-link">foreach 循环</a></li></ul></li><li><a href="/program/php.html#php-函数" class="sidebar-link">PHP 函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#返回值" class="sidebar-link">返回值</a></li><li class="sidebar-sub-header"><a href="/program/php.html#返回类型" class="sidebar-link">返回类型</a></li><li class="sidebar-sub-header"><a href="/program/php.html#可空返回类型" class="sidebar-link">可空返回类型</a></li><li class="sidebar-sub-header"><a href="/program/php.html#无效函数" class="sidebar-link">无效函数</a></li><li class="sidebar-sub-header"><a href="/program/php.html#变量函数" class="sidebar-link">变量函数</a></li><li class="sidebar-sub-header"><a href="/program/php.html#匿名函数" class="sidebar-link">匿名函数</a></li><li class="sidebar-sub-header"><a href="/program/php.html#递归函数" class="sidebar-link">递归函数</a></li><li class="sidebar-sub-header"><a href="/program/php.html#默认参数" class="sidebar-link">默认参数</a></li><li class="sidebar-sub-header"><a href="/program/php.html#箭头函数" class="sidebar-link">箭头函数</a></li></ul></li><li><a href="/program/php.html#php-类" class="sidebar-link">PHP 类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#构造函数-constructor" class="sidebar-link">构造函数 Constructor</a></li><li class="sidebar-sub-header"><a href="/program/php.html#继承-inheritance" class="sidebar-link">继承 Inheritance</a></li><li class="sidebar-sub-header"><a href="/program/php.html#类变量-classes-variables" class="sidebar-link">类变量 Classes variables</a></li><li class="sidebar-sub-header"><a href="/program/php.html#魔术方法" class="sidebar-link">魔术方法</a></li><li class="sidebar-sub-header"><a href="/program/php.html#接口" class="sidebar-link">接口</a></li></ul></li><li><a href="/program/php.html#各种各样的" class="sidebar-link">各种各样的</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/program/php.html#基本错误处理" class="sidebar-link">基本错误处理</a></li><li class="sidebar-sub-header"><a href="/program/php.html#php-8-0-中的异常" class="sidebar-link">PHP 8.0 中的异常</a></li><li class="sidebar-sub-header"><a href="/program/php.html#自定义异常" class="sidebar-link">自定义异常</a></li><li class="sidebar-sub-header"><a href="/program/php.html#nullsafe-运算符" class="sidebar-link">Nullsafe 运算符</a></li><li class="sidebar-sub-header"><a href="/program/php.html#常用表达" class="sidebar-link">常用表达</a></li><li class="sidebar-sub-header"><a href="/program/php.html#fopen-模式" class="sidebar-link">fopen() 模式</a></li><li class="sidebar-sub-header"><a href="/program/php.html#运行时定义的常量" class="sidebar-link">运行时定义的常量</a></li></ul></li><li><a href="/program/php.html#另见" class="sidebar-link">另见</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="php-备忘清单"><a href="#php-备忘清单" class="header-anchor">#</a> PHP 备忘清单</h1> <p>这份 <a href="https://www.php.net/manual/zh/index.php" target="_blank" rel="noopener noreferrer">PHP<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 备忘单为快速查找最常用代码的正确语法提供了参考</p> <h2 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h2> <h3 id="hello-php"><a href="#hello-php" class="header-anchor">#</a> hello.php</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span> <span class="token comment">// 以 PHP 开放标签开头</span>
+<span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;Hello World\n&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;Hello jaywcjlove.github.io&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token delimiter important">?&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>PHP 运行命令</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ php hello.php
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="变量-variables"><a href="#变量-variables" class="header-anchor">#</a> 变量 Variables</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$boolean1</span> <span class="token operator">=</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>
+<span class="token variable">$boolean2</span> <span class="token operator">=</span> <span class="token constant boolean">True</span><span class="token punctuation">;</span>
+<span class="token variable">$int</span> <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token variable">$float</span> <span class="token operator">=</span> <span class="token number">3.1415926</span><span class="token punctuation">;</span>
+<span class="token keyword">unset</span><span class="token punctuation">(</span><span class="token variable">$float</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 删除变量</span>
+<span class="token variable">$str1</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;How are you?&quot;</span><span class="token punctuation">;</span>
+<span class="token variable">$str2</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'Fine, thanks'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>查看: <a href="#php-%E7%B1%BB%E5%9E%8B">Types</a></p> <h3 id="字符串-strings"><a href="#字符串-strings" class="header-anchor">#</a> 字符串 Strings</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$url</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;jaywcjlove.github.io&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;I'm learning PHP at <span class="token interpolation"><span class="token variable">$url</span></span>&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// 连接字符串</span>
+<span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;I'm learning PHP at &quot;</span> <span class="token operator">.</span> <span class="token variable">$url</span><span class="token punctuation">;</span>
+<span class="token variable">$hello</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;Hello, &quot;</span><span class="token punctuation">;</span>
+<span class="token variable">$hello</span> <span class="token operator">.=</span> <span class="token string double-quoted-string">&quot;World!&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$hello</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; Hello, World!</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>查看: <a href="#php-%E5%AD%97%E7%AC%A6%E4%B8%B2">Strings</a></p> <h3 id="数组-arrays"><a href="#数组-arrays" class="header-anchor">#</a> 数组 Arrays</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$num</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token variable">$num</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">11</span><span class="token punctuation">;</span>
+<span class="token keyword">unset</span><span class="token punctuation">(</span><span class="token variable">$num</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 删除变量</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$num</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment"># =&gt; 1 3 7 9 11</span>
+<span class="token keyword">echo</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token variable">$num</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment"># =&gt; 5</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>查看: <a href="#php-%E6%95%B0%E7%BB%84">Arrays</a></p> <h3 id="运算符-operators"><a href="#运算符-operators" class="header-anchor">#</a> 运算符 Operators</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$x</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token variable">$y</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token variable">$sum</span> <span class="token operator">=</span> <span class="token variable">$x</span> <span class="token operator">+</span> <span class="token variable">$y</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$sum</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; 3</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>查看: <a href="#php-%E8%BF%90%E7%AE%97%E7%AC%A6">Operators</a></p> <h3 id="include"><a href="#include" class="header-anchor">#</a> Include</h3> <h4 id="vars-php"><a href="#vars-php" class="header-anchor">#</a> vars.php</h4> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span> <span class="token comment">// 以 PHP 开放标签开头。</span>
+<span class="token variable">$fruit</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'apple'</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;I was imported&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> <span class="token string single-quoted-string">'Anything you like.'</span><span class="token punctuation">;</span>
+<span class="token delimiter important">?&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="test-php"><a href="#test-php" class="header-anchor">#</a> test.php</h4> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">include</span> <span class="token string single-quoted-string">'vars.php'</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$fruit</span> <span class="token operator">.</span> <span class="token string double-quoted-string">&quot;\n&quot;</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; apple</span>
+<span class="token comment">/* 与 include 相同，
+如果不能包含则导致错误*/</span>
+<span class="token keyword">require</span> <span class="token string single-quoted-string">'vars.php'</span><span class="token punctuation">;</span>
+<span class="token comment">// 也有效</span>
+<span class="token keyword">include</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'vars.php'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'vars.php'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 通过 HTTP 包含</span>
+<span class="token keyword">include</span> <span class="token string single-quoted-string">'http://x.com/file.php'</span><span class="token punctuation">;</span>
+<span class="token comment">// 包含和返回语句</span>
+<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token keyword">include</span> <span class="token string single-quoted-string">'vars.php'</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$result</span><span class="token punctuation">;</span>  <span class="token comment"># =&gt; Anything you like.</span>
+<span class="token delimiter important">?&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="功能-functions"><a href="#功能-functions" class="header-anchor">#</a> 功能 Functions</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">function</span> <span class="token function-definition function">add</span><span class="token punctuation">(</span><span class="token variable">$num1</span><span class="token punctuation">,</span> <span class="token variable">$num2</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token variable">$num1</span> <span class="token operator">+</span> <span class="token variable">$num2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">echo</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment"># =&gt; 11</span>
+<span class="token keyword">echo</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; 15</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>查看: <a href="#php-%E5%87%BD%E6%95%B0">Functions</a></p> <h3 id="注释-comments"><a href="#注释-comments" class="header-anchor">#</a> 注释 Comments</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment"># 这是一个单行 shell 样式的注释</span>
+<span class="token comment">// 这是一行 c++ 风格的注释</span>
+<span class="token comment">/* 这是一个多行注释
+    另一行注释 */</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="常数-constants"><a href="#常数-constants" class="header-anchor">#</a> 常数 Constants</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">const</span> <span class="token constant">MY_CONST</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token constant">MY_CONST</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; hello</span>
+
+<span class="token comment"># =&gt; MY_CONST is: hello</span>
+<span class="token keyword">echo</span> <span class="token string single-quoted-string">'MY_CONST is: '</span> <span class="token operator">.</span> <span class="token constant">MY_CONST</span><span class="token punctuation">;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="类-classes"><a href="#类-classes" class="header-anchor">#</a> 类 Classes</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name-definition class-name">Student</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token variable">$name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">name</span> <span class="token operator">=</span> <span class="token variable">$name</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token variable">$alex</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;Alex&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>查看: <a href="#php-%E7%B1%BB">Classes</a></p> <h2 id="php-类型"><a href="#php-类型" class="header-anchor">#</a> PHP 类型</h2> <h3 id="布尔值-boolean"><a href="#布尔值-boolean" class="header-anchor">#</a> 布尔值 Boolean</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$boolean1</span> <span class="token operator">=</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>
+<span class="token variable">$boolean2</span> <span class="token operator">=</span> <span class="token constant boolean">TRUE</span><span class="token punctuation">;</span>
+<span class="token variable">$boolean3</span> <span class="token operator">=</span> <span class="token constant boolean">false</span><span class="token punctuation">;</span>
+<span class="token variable">$boolean4</span> <span class="token operator">=</span> <span class="token constant boolean">FALSE</span><span class="token punctuation">;</span>
+<span class="token variable">$boolean5</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword type-casting">boolean</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; true</span>
+<span class="token variable">$boolean6</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword type-casting">boolean</span><span class="token punctuation">)</span> <span class="token number">0</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; false</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>布尔值不区分大小写</p> <h3 id="整数-integer"><a href="#整数-integer" class="header-anchor">#</a> 整数 Integer</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$int1</span> <span class="token operator">=</span> <span class="token number">28</span><span class="token punctuation">;</span>    <span class="token comment"># =&gt; 28</span>
+<span class="token variable">$int2</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">32</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; -32</span>
+<span class="token variable">$int3</span> <span class="token operator">=</span> <span class="token number">012</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; 10 (octal)</span>
+<span class="token variable">$int4</span> <span class="token operator">=</span> <span class="token number">0x0F</span><span class="token punctuation">;</span>  <span class="token comment"># =&gt; 15 (hex)</span>
+<span class="token variable">$int5</span> <span class="token operator">=</span> <span class="token number">0b101</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; 5  (binary)</span>
+<span class="token comment"># =&gt; 2000100000 (decimal, PHP 7.4.0)</span>
+<span class="token variable">$int6</span> <span class="token operator">=</span> <span class="token number">2_000_100_000</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>另见: <a href="https://www.php.net/manual/en/language.types.integer.php" target="_blank" rel="noopener noreferrer">Integers<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="字符串-strings-2"><a href="#字符串-strings-2" class="header-anchor">#</a> 字符串 Strings</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">echo</span> <span class="token string single-quoted-string">'this is a simple string'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查看: <a href="#php-%E5%AD%97%E7%AC%A6%E4%B8%B2">Strings</a></p> <h3 id="数组-arrays-2"><a href="#数组-arrays-2" class="header-anchor">#</a> 数组 Arrays</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$arr</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;hello&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;world&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查看: <a href="#php-%E6%95%B0%E7%BB%84">Arrays</a></p> <h3 id="浮点数-float-double"><a href="#浮点数-float-double" class="header-anchor">#</a> 浮点数 Float (Double)</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$float1</span> <span class="token operator">=</span> <span class="token number">1.234</span><span class="token punctuation">;</span>
+<span class="token variable">$float2</span> <span class="token operator">=</span> <span class="token number">1.2e7</span><span class="token punctuation">;</span>
+<span class="token variable">$float3</span> <span class="token operator">=</span> <span class="token number">7E-10</span><span class="token punctuation">;</span>
+<span class="token variable">$float4</span> <span class="token operator">=</span> <span class="token number">1_234.567</span><span class="token punctuation">;</span>  <span class="token comment">// as of PHP 7.4.0</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$float4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// float(1234.567)</span>
+<span class="token variable">$float5</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token string double-quoted-string">&quot;10.5&quot;</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; 11.5</span>
+<span class="token variable">$float6</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token string double-quoted-string">&quot;-1.3e3&quot;</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; -1299</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="null"><a href="#null" class="header-anchor">#</a> Null</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$a</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">;</span>
+<span class="token variable">$b</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'Hello php!'</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$a</span> <span class="token operator">??</span> <span class="token string single-quoted-string">'a is unset'</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; a is unset</span>
+<span class="token keyword">echo</span> <span class="token variable">$b</span> <span class="token operator">??</span> <span class="token string single-quoted-string">'b is unset'</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; Hello php</span>
+<span class="token variable">$a</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$a</span> <span class="token operator">==</span> <span class="token constant">null</span>    <span class="token comment"># =&gt; true</span>
+<span class="token variable">$a</span> <span class="token operator">===</span> <span class="token constant">null</span>   <span class="token comment"># =&gt; false</span>
+<span class="token function">is_null</span><span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">)</span>   <span class="token comment"># =&gt; false</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="可迭代对象-iterables"><a href="#可迭代对象-iterables" class="header-anchor">#</a> 可迭代对象 Iterables</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">function</span> <span class="token function-definition function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">iterable</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function-definition function">gen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">iterable</span> <span class="token punctuation">{</span>
+  <span class="token keyword">yield</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">yield</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token keyword">yield</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token variable">$value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">echo</span> <span class="token variable">$value</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; 123</span>
+<span class="token punctuation">}</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="php-字符串"><a href="#php-字符串" class="header-anchor">#</a> PHP 字符串</h2> <h3 id="字符串-string"><a href="#字符串-string" class="header-anchor">#</a> 字符串 String</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment"># =&gt; '$String'</span>
+<span class="token variable">$sgl_quotes</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'$String'</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; 'This is a $String.'</span>
+<span class="token variable">$dbl_quotes</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;This is a <span class="token interpolation"><span class="token variable">$sgl_quotes</span></span>.&quot;</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; a    tab character.</span>
+<span class="token variable">$escaped</span>   <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;a \t tab character.&quot;</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; a slash and a t: \t</span>
+<span class="token variable">$unescaped</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'a slash and a t: \t'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="多行-multi-line"><a href="#多行-multi-line" class="header-anchor">#</a> 多行 Multi-line</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$str</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;foo&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// 未插值的多行</span>
+<span class="token variable">$nowdoc</span> <span class="token operator">=</span> <span class="token string nowdoc-string"><span class="token delimiter symbol"><span class="token punctuation">&lt;&lt;&lt;'</span>END<span class="token punctuation">'</span></span>
+Multi line string
+$str
+<span class="token delimiter symbol">END<span class="token punctuation">;</span></span></span>
+<span class="token comment">// 将执行字符串插值</span>
+<span class="token variable">$heredoc</span> <span class="token operator">=</span> <span class="token string heredoc-string"><span class="token delimiter symbol"><span class="token punctuation">&lt;&lt;&lt;</span>END</span>
+Multi line
+<span class="token interpolation"><span class="token variable">$str</span></span>
+<span class="token delimiter symbol">END<span class="token punctuation">;</span></span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="操作-manipulation"><a href="#操作-manipulation" class="header-anchor">#</a> 操作 Manipulation</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$s</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;Hello Phper&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token function">strlen</span><span class="token punctuation">(</span><span class="token variable">$s</span><span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment"># =&gt; 11</span>
+<span class="token keyword">echo</span> <span class="token function">substr</span><span class="token punctuation">(</span><span class="token variable">$s</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; Hel</span>
+<span class="token keyword">echo</span> <span class="token function">substr</span><span class="token punctuation">(</span><span class="token variable">$s</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment"># =&gt; ello Phper</span>
+<span class="token keyword">echo</span> <span class="token function">substr</span><span class="token punctuation">(</span><span class="token variable">$s</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment"># =&gt; hpe</span>
+<span class="token keyword">echo</span> <span class="token function">strtoupper</span><span class="token punctuation">(</span><span class="token variable">$s</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; HELLO PHPER</span>
+<span class="token keyword">echo</span> <span class="token function">strtolower</span><span class="token punctuation">(</span><span class="token variable">$s</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; hello phper</span>
+<span class="token keyword">echo</span> <span class="token function">strpos</span><span class="token punctuation">(</span><span class="token variable">$s</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;l&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment"># =&gt; 2</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token function">strpos</span><span class="token punctuation">(</span><span class="token variable">$s</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;L&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; false</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>另见: <a href="https://www.php.net/manual/en/ref.strings.php" target="_blank" rel="noopener noreferrer">字符串函数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="php-数组"><a href="#php-数组" class="header-anchor">#</a> PHP 数组</h2> <h3 id="定义"><a href="#定义" class="header-anchor">#</a> 定义</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$a1</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string double-quoted-string">&quot;hello&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;world&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;!&quot;</span><span class="token punctuation">]</span>
+<span class="token variable">$a2</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;hello&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;world&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$a3</span> <span class="token operator">=</span> <span class="token function">explode</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;,&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;apple,pear,peach&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="混合-int-和-string-键"><a href="#混合-int-和-string-键" class="header-anchor">#</a> 混合 int 和 string 键</h4> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$array</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span>
+    <span class="token string double-quoted-string">&quot;foo&quot;</span> <span class="token operator">=&gt;</span> <span class="token string double-quoted-string">&quot;bar&quot;</span><span class="token punctuation">,</span>
+    <span class="token string double-quoted-string">&quot;bar&quot;</span> <span class="token operator">=&gt;</span> <span class="token string double-quoted-string">&quot;foo&quot;</span><span class="token punctuation">,</span>
+    <span class="token number">100</span>   <span class="token operator">=&gt;</span> <span class="token operator">-</span><span class="token number">100</span><span class="token punctuation">,</span>
+    <span class="token operator">-</span><span class="token number">100</span>  <span class="token operator">=&gt;</span> <span class="token number">100</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$array</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="短数组语法"><a href="#短数组语法" class="header-anchor">#</a> 短数组语法</h4> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$array</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token string double-quoted-string">&quot;foo&quot;</span> <span class="token operator">=&gt;</span> <span class="token string double-quoted-string">&quot;bar&quot;</span><span class="token punctuation">,</span>
+    <span class="token string double-quoted-string">&quot;bar&quot;</span> <span class="token operator">=&gt;</span> <span class="token string double-quoted-string">&quot;foo&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="多阵列"><a href="#多阵列" class="header-anchor">#</a> 多阵列</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$multiArray</span> <span class="token operator">=</span> <span class="token punctuation">[</span> 
+    <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$multiArray</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment"># =&gt; 1</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$multiArray</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment"># =&gt; 2</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$multiArray</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment"># =&gt; 3</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="多类型"><a href="#多类型" class="header-anchor">#</a> 多类型</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$array</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span>
+    <span class="token string double-quoted-string">&quot;foo&quot;</span> <span class="token operator">=&gt;</span> <span class="token string double-quoted-string">&quot;bar&quot;</span><span class="token punctuation">,</span>
+    <span class="token number">42</span>    <span class="token operator">=&gt;</span> <span class="token number">24</span><span class="token punctuation">,</span>
+    <span class="token string double-quoted-string">&quot;multi&quot;</span> <span class="token operator">=&gt;</span> <span class="token keyword">array</span><span class="token punctuation">(</span>
+         <span class="token string double-quoted-string">&quot;dim&quot;</span> <span class="token operator">=&gt;</span> <span class="token keyword">array</span><span class="token punctuation">(</span>
+             <span class="token string double-quoted-string">&quot;a&quot;</span> <span class="token operator">=&gt;</span> <span class="token string double-quoted-string">&quot;foo&quot;</span>
+         <span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; string(3) &quot;bar&quot;</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$array</span><span class="token punctuation">[</span><span class="token string double-quoted-string">&quot;foo&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; int(24)</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$array</span><span class="token punctuation">[</span><span class="token number">42</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
+<span class="token comment"># =&gt;  string(3) &quot;foo&quot;</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$array</span><span class="token punctuation">[</span><span class="token string double-quoted-string">&quot;multi&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string double-quoted-string">&quot;dim&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string double-quoted-string">&quot;a&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="操作"><a href="#操作" class="header-anchor">#</a> 操作</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$arr</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">=&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">12</span> <span class="token operator">=&gt;</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$arr</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">56</span><span class="token punctuation">;</span>      <span class="token comment">// 附加</span>
+<span class="token variable">$arr</span><span class="token punctuation">[</span><span class="token string double-quoted-string">&quot;x&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">42</span><span class="token punctuation">;</span>   <span class="token comment">// 用键添加</span>
+<span class="token function">sort</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment">// 排序</span>
+<span class="token keyword">unset</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 消除</span>
+<span class="token keyword">unset</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">// 移除所有</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>查看: <a href="https://www.php.net/manual/en/ref.array.php" target="_blank" rel="noopener noreferrer">数组函数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="索引迭代"><a href="#索引迭代" class="header-anchor">#</a> 索引迭代</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$array</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'a'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'b'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'c'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$count</span> <span class="token operator">=</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token variable">$array</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token variable">$i</span> <span class="token operator">&lt;</span> <span class="token variable">$count</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;i:<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$i</span><span class="token punctuation">}</span></span>, v:<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$array</span><span class="token punctuation">[</span><span class="token variable">$i</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span>\n&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="价值迭代"><a href="#价值迭代" class="header-anchor">#</a> 价值迭代</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$colors</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'red'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'blue'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'green'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$colors</span> <span class="token keyword">as</span> <span class="token variable">$color</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;Do you like <span class="token interpolation"><span class="token variable">$color</span></span>?\n&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="关键迭代"><a href="#关键迭代" class="header-anchor">#</a> 关键迭代</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$arr</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string double-quoted-string">&quot;foo&quot;</span> <span class="token operator">=&gt;</span> <span class="token string double-quoted-string">&quot;bar&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;bar&quot;</span> <span class="token operator">=&gt;</span> <span class="token string double-quoted-string">&quot;foo&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span> <span class="token variable">$arr</span> <span class="token keyword">as</span> <span class="token variable">$key</span> <span class="token operator">=&gt;</span> <span class="token variable">$value</span> <span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;key: &quot;</span> <span class="token operator">.</span> <span class="token variable">$key</span> <span class="token operator">.</span> <span class="token string double-quoted-string">&quot;\n&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;val: <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$arr</span><span class="token punctuation">[</span><span class="token variable">$key</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span>\n&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="串联阵列"><a href="#串联阵列" class="header-anchor">#</a> 串联阵列</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$a</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token variable">$b</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">// PHP 7.4 以后</span>
+<span class="token comment"># =&gt; [1, 2, 3, 4]</span>
+<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token variable">$a</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token variable">$b</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="into-函数"><a href="#into-函数" class="header-anchor">#</a> Into 函数</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$array</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function-definition function">foo</span><span class="token punctuation">(</span><span class="token keyword type-hint">int</span> <span class="token variable">$a</span><span class="token punctuation">,</span> <span class="token keyword type-hint">int</span> <span class="token variable">$b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">echo</span> <span class="token variable">$a</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; 1</span>
+    <span class="token keyword">echo</span> <span class="token variable">$b</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; 2</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token variable">$array</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="splat运算符"><a href="#splat运算符" class="header-anchor">#</a> Splat运算符</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">function</span> <span class="token function-definition function">foo</span><span class="token punctuation">(</span><span class="token variable">$first</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token variable">$other</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$first</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; a</span>
+    <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$other</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; ['b', 'c']</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'a'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'b'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'c'</span> <span class="token comment">/*, ...*/</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 或</span>
+<span class="token keyword">function</span> <span class="token function-definition function">foo</span><span class="token punctuation">(</span><span class="token variable">$first</span><span class="token punctuation">,</span> <span class="token keyword type-declaration">string</span> <span class="token operator">...</span><span class="token variable">$other</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="php-运算符"><a href="#php-运算符" class="header-anchor">#</a> PHP 运算符</h2> <h3 id="算术"><a href="#算术" class="header-anchor">#</a> 算术</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th>-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>+</code></td> <td>添加</td></tr> <tr><td style="text-align:left;"><code>-</code></td> <td>减法</td></tr> <tr><td style="text-align:left;"><code>*</code></td> <td>乘法</td></tr> <tr><td style="text-align:left;"><code>/</code></td> <td>分配</td></tr> <tr><td style="text-align:left;"><code>%</code></td> <td>取模</td></tr> <tr><td style="text-align:left;"><code>**</code></td> <td>求幂</td></tr></tbody></table> <h3 id="分配"><a href="#分配" class="header-anchor">#</a> 分配</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th>-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>a += b</code></td> <td>如同 <code>a = a + b</code></td></tr> <tr><td style="text-align:left;"><code>a -= b</code></td> <td>如同 <code>a = a – b</code></td></tr> <tr><td style="text-align:left;"><code>a *= b</code></td> <td>如同 <code>a = a * b</code></td></tr> <tr><td style="text-align:left;"><code>a /= b</code></td> <td>如同 <code>a = a / b</code></td></tr> <tr><td style="text-align:left;"><code>a %= b</code></td> <td>如同 <code>a = a % b</code></td></tr></tbody></table> <h3 id="比较"><a href="#比较" class="header-anchor">#</a> 比较</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th>-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>==</code></td> <td>平等的</td></tr> <tr><td style="text-align:left;"><code>===</code></td> <td>完全相同的</td></tr> <tr><td style="text-align:left;"><code>!=</code></td> <td>不相等</td></tr> <tr><td style="text-align:left;"><code>&lt;&gt;</code></td> <td>不相等</td></tr> <tr><td style="text-align:left;"><code>!==</code></td> <td>不相同</td></tr> <tr><td style="text-align:left;"><code>&lt;</code></td> <td>少于</td></tr> <tr><td style="text-align:left;"><code>&gt;</code></td> <td>比...更棒</td></tr> <tr><td style="text-align:left;"><code>&lt;=</code></td> <td>小于或等于</td></tr> <tr><td style="text-align:left;"><code>&gt;=</code></td> <td>大于或等于</td></tr> <tr><td style="text-align:left;"><code>&lt;=&gt;</code></td> <td>小于/等于/大于</td></tr></tbody></table> <h3 id="逻辑的"><a href="#逻辑的" class="header-anchor">#</a> 逻辑的</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th>-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>and</code></td> <td>和</td></tr> <tr><td style="text-align:left;"><code>or</code></td> <td>或者</td></tr> <tr><td style="text-align:left;"><code>xor</code></td> <td>独家或</td></tr> <tr><td style="text-align:left;"><code>!</code></td> <td>不是</td></tr> <tr><td style="text-align:left;"><code>&amp;&amp;</code></td> <td>和</td></tr> <tr><td style="text-align:left;"><code>\|\|</code></td> <td>或者</td></tr></tbody></table> <h3 id="算术-2"><a href="#算术-2" class="header-anchor">#</a> 算术</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment">// 算术</span>
+<span class="token variable">$sum</span>        <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 2</span>
+<span class="token variable">$difference</span> <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 1</span>
+<span class="token variable">$product</span>    <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// 4</span>
+<span class="token variable">$quotient</span>   <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">/</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 2</span>
+<span class="token comment">// 速记算术</span>
+<span class="token variable">$num</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token variable">$num</span> <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>       <span class="token comment">// 将 $num 增加 1</span>
+<span class="token keyword">echo</span> <span class="token variable">$num</span><span class="token operator">++</span><span class="token punctuation">;</span>     <span class="token comment">// 打印 1（评估后的增量）</span>
+<span class="token keyword">echo</span> <span class="token operator">++</span><span class="token variable">$num</span><span class="token punctuation">;</span>     <span class="token comment">// 打印 3（评估前的增量）</span>
+<span class="token variable">$num</span> <span class="token operator">/=</span> <span class="token variable">$float</span><span class="token punctuation">;</span>  <span class="token comment">// 将商除并分配给 $num</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="按位"><a href="#按位" class="header-anchor">#</a> 按位</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th>-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>&amp;</code></td> <td>和</td></tr> <tr><td style="text-align:left;"><code>|</code></td> <td>或（包括或）</td></tr> <tr><td style="text-align:left;"><code>^</code></td> <td>异或（异或）</td></tr> <tr><td style="text-align:left;"><code>~</code></td> <td>不是</td></tr> <tr><td style="text-align:left;"><code>&lt;&lt;</code></td> <td>左移</td></tr> <tr><td style="text-align:left;"><code>&gt;&gt;</code></td> <td>右移</td></tr></tbody></table> <h2 id="php-条件"><a href="#php-条件" class="header-anchor">#</a> PHP 条件</h2> <h3 id="if-elseif-else"><a href="#if-elseif-else" class="header-anchor">#</a> If elseif else</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$a</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token variable">$b</span> <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$a</span> <span class="token operator">&gt;</span> <span class="token variable">$b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;a is bigger than b&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">elseif</span> <span class="token punctuation">(</span><span class="token variable">$a</span> <span class="token operator">==</span> <span class="token variable">$b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;a is equal to b&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;a is smaller than b&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="switch"><a href="#switch" class="header-anchor">#</a> Switch</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$x</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token variable">$x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token string single-quoted-string">'0'</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span> <span class="token string double-quoted-string">&quot;it's zero&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span> 
+    <span class="token keyword">case</span> <span class="token string single-quoted-string">'two'</span><span class="token punctuation">:</span>
+    <span class="token keyword">case</span> <span class="token string single-quoted-string">'three'</span><span class="token punctuation">:</span>
+        <span class="token comment">// do something</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token comment">// do something</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="三元运算符"><a href="#三元运算符" class="header-anchor">#</a> 三元运算符</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment"># =&gt; Does</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token constant boolean">false</span> <span class="token operator">?</span> <span class="token string single-quoted-string">'Not'</span> <span class="token punctuation">:</span> <span class="token string single-quoted-string">'Does'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$x</span> <span class="token operator">=</span> <span class="token constant boolean">false</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; Does</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token variable">$x</span> <span class="token operator">?</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'Does'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$a</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">;</span>
+<span class="token variable">$b</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'Does print'</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; a is unsert</span>
+<span class="token keyword">echo</span> <span class="token variable">$a</span> <span class="token operator">??</span> <span class="token string single-quoted-string">'a is unset'</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; print</span>
+<span class="token keyword">echo</span> <span class="token variable">$b</span> <span class="token operator">??</span> <span class="token string single-quoted-string">'b is unset'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="匹配"><a href="#匹配" class="header-anchor">#</a> 匹配</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$statusCode</span> <span class="token operator">=</span> <span class="token number">500</span><span class="token punctuation">;</span>
+<span class="token variable">$message</span> <span class="token operator">=</span> <span class="token keyword">match</span><span class="token punctuation">(</span><span class="token variable">$statusCode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">300</span> <span class="token operator">=&gt;</span> <span class="token constant">null</span><span class="token punctuation">,</span>
+  <span class="token number">400</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'未找到'</span><span class="token punctuation">,</span>
+  <span class="token number">500</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'服务器错误'</span><span class="token punctuation">,</span>
+  <span class="token keyword">default</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'已知状态码'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$message</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; 服务器错误</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>查看: <a href="https://www.php.net/manual/en/control-structures.match.php" target="_blank" rel="noopener noreferrer">Match<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="匹配表达式"><a href="#匹配表达式" class="header-anchor">#</a> 匹配表达式</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$age</span> <span class="token operator">=</span> <span class="token number">23</span><span class="token punctuation">;</span>
+<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token keyword">match</span> <span class="token punctuation">(</span><span class="token constant boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$age</span> <span class="token operator">&gt;=</span> <span class="token number">65</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'senior'</span><span class="token punctuation">,</span>
+    <span class="token variable">$age</span> <span class="token operator">&gt;=</span> <span class="token number">25</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'adult'</span><span class="token punctuation">,</span>
+    <span class="token variable">$age</span> <span class="token operator">&gt;=</span> <span class="token number">18</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'young adult'</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'kid'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$result</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; young adult</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="php-循环"><a href="#php-循环" class="header-anchor">#</a> PHP 循环</h2> <h3 id="while-循环"><a href="#while-循环" class="header-anchor">#</a> while 循环</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; 12345</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="do-while-循环"><a href="#do-while-循环" class="header-anchor">#</a> do while 循环</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; 12345</span>
+<span class="token keyword">do</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="for-i-循环"><a href="#for-i-循环" class="header-anchor">#</a> for i 循环</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment"># =&gt; 12345</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token variable">$i</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="break-跳出循环"><a href="#break-跳出循环" class="header-anchor">#</a> break 跳出循环</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment"># =&gt; 123</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">echo</span> <span class="token variable">$i</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="continue-继续"><a href="#continue-继续" class="header-anchor">#</a> continue 继续</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment"># =&gt; 1235</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">continue</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">echo</span> <span class="token variable">$i</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="foreach-循环"><a href="#foreach-循环" class="header-anchor">#</a> foreach 循环</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$a</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'foo'</span> <span class="token operator">=&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'bar'</span> <span class="token operator">=&gt;</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; 12</span>
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$a</span> <span class="token keyword">as</span> <span class="token variable">$k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token variable">$k</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>查看: <a href="#%E5%85%B3%E9%94%AE%E8%BF%AD%E4%BB%A3">Array iteration</a></p> <h2 id="php-函数"><a href="#php-函数" class="header-anchor">#</a> PHP 函数</h2> <h3 id="返回值"><a href="#返回值" class="header-anchor">#</a> 返回值</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">function</span> <span class="token function-definition function">square</span><span class="token punctuation">(</span><span class="token variable">$x</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token variable">$x</span> <span class="token operator">*</span> <span class="token variable">$x</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">echo</span> <span class="token function">square</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment"># =&gt; 16</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="返回类型"><a href="#返回类型" class="header-anchor">#</a> 返回类型</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment">// 基本返回类型声明</span>
+<span class="token keyword">function</span> <span class="token function-definition function">sum</span><span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">,</span> <span class="token variable">$b</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">float</span> <span class="token punctuation">{</span><span class="token comment">/*...*/</span><span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function-definition function">get_item</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">string</span> <span class="token punctuation">{</span><span class="token comment">/*...*/</span><span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">C</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token comment">// 返回一个对象</span>
+<span class="token keyword">function</span> <span class="token function-definition function">getC</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">C</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">C</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="可空返回类型"><a href="#可空返回类型" class="header-anchor">#</a> 可空返回类型</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment">// 在 PHP 7.1 中可用</span>
+<span class="token keyword">function</span> <span class="token function-definition function">nullOrString</span><span class="token punctuation">(</span><span class="token keyword type-hint">int</span> <span class="token variable">$v</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token operator">?</span><span class="token keyword return-type">string</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token variable">$v</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">?</span> <span class="token string double-quoted-string">&quot;odd&quot;</span> <span class="token punctuation">:</span> <span class="token constant">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">echo</span> <span class="token function">nullOrString</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment"># =&gt; odd</span>
+<span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token function">nullOrString</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment"># =&gt; NULL</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>查看: <a href="https://www.php.net/manual/en/migration71.new-features.php" target="_blank" rel="noopener noreferrer">Nullable types<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="无效函数"><a href="#无效函数" class="header-anchor">#</a> 无效函数</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment">// 在 PHP 7.1 中可用</span>
+<span class="token keyword">function</span> <span class="token function-definition function">voidFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">echo</span> <span class="token string single-quoted-string">'Hello'</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">voidFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment"># =&gt; Hello</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="变量函数"><a href="#变量函数" class="header-anchor">#</a> 变量函数</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">function</span> <span class="token function-definition function">bar</span><span class="token punctuation">(</span><span class="token variable">$arg</span> <span class="token operator">=</span> <span class="token string single-quoted-string">''</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;In bar(); arg: '<span class="token interpolation"><span class="token variable">$arg</span></span>'.\n&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token variable">$func</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'bar'</span><span class="token punctuation">;</span>
+<span class="token variable">$func</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; In bar(); arg: test</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="匿名函数"><a href="#匿名函数" class="header-anchor">#</a> 匿名函数</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$greet</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token variable">$name</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;Hello %s\r\n&quot;</span><span class="token punctuation">,</span> <span class="token variable">$name</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token variable">$greet</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'World'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; Hello World</span>
+<span class="token variable">$greet</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'PHP'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; Hello PHP</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="递归函数"><a href="#递归函数" class="header-anchor">#</a> 递归函数</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">function</span> <span class="token function-definition function">recursion</span><span class="token punctuation">(</span><span class="token variable">$x</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$x</span> <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;<span class="token interpolation"><span class="token variable">$x</span></span>&quot;</span><span class="token punctuation">;</span>
+        <span class="token function">recursion</span><span class="token punctuation">(</span><span class="token variable">$x</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token function">recursion</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment"># =&gt; 1234</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="默认参数"><a href="#默认参数" class="header-anchor">#</a> 默认参数</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">function</span> <span class="token function-definition function">coffee</span><span class="token punctuation">(</span><span class="token variable">$type</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;cappuccino&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string double-quoted-string">&quot;Making a cup of <span class="token interpolation"><span class="token variable">$type</span></span>.\n&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># =&gt; 制作一杯卡布奇诺</span>
+<span class="token keyword">echo</span> <span class="token function">coffee</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; 制作一杯</span>
+<span class="token keyword">echo</span> <span class="token function">coffee</span><span class="token punctuation">(</span><span class="token constant">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment"># =&gt; 制作一杯浓缩咖啡</span>
+<span class="token keyword">echo</span> <span class="token function">coffee</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;espresso&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="箭头函数"><a href="#箭头函数" class="header-anchor">#</a> 箭头函数</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$y</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+ 
+<span class="token variable">$fn1</span> <span class="token operator">=</span> <span class="token keyword">fn</span><span class="token punctuation">(</span><span class="token variable">$x</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token variable">$x</span> <span class="token operator">+</span> <span class="token variable">$y</span><span class="token punctuation">;</span>
+<span class="token comment">// 相当于按值使用 $y：</span>
+<span class="token variable">$fn2</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token variable">$x</span><span class="token punctuation">)</span> <span class="token keyword">use</span> <span class="token punctuation">(</span><span class="token variable">$y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token variable">$x</span> <span class="token operator">+</span> <span class="token variable">$y</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$fn1</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; 6</span>
+<span class="token keyword">echo</span> <span class="token variable">$fn2</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; 6</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="php-类"><a href="#php-类" class="header-anchor">#</a> PHP 类</h2> <h3 id="构造函数-constructor"><a href="#构造函数-constructor" class="header-anchor">#</a> 构造函数 Constructor</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name-definition class-name">Student</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token variable">$name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">name</span> <span class="token operator">=</span> <span class="token variable">$name</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;Name: &quot;</span> <span class="token operator">.</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">name</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token variable">$alex</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;Alex&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$alex</span><span class="token operator">-&gt;</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment"># =&gt; Name: Alex</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="继承-inheritance"><a href="#继承-inheritance" class="header-anchor">#</a> 继承 Inheritance</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name-definition class-name">ExtendClass</span> <span class="token keyword">extends</span> <span class="token class-name">SimpleClass</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">// 重新定义父方法</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">displayVar</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;Extending class\n&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword static-context">parent</span><span class="token operator">::</span><span class="token function">displayVar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token variable">$extended</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ExtendClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$extended</span><span class="token operator">-&gt;</span><span class="token function">displayVar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="类变量-classes-variables"><a href="#类变量-classes-variables" class="header-anchor">#</a> 类变量 Classes variables</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name-definition class-name">MyClass</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token constant">MY_CONST</span>         <span class="token operator">=</span> <span class="token string single-quoted-string">'value'</span><span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token variable">$staticVar</span>      <span class="token operator">=</span> <span class="token string single-quoted-string">'static'</span><span class="token punctuation">;</span>
+    <span class="token comment">// 可见度</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token variable">$var1</span>    <span class="token operator">=</span> <span class="token string single-quoted-string">'pubs'</span><span class="token punctuation">;</span>
+    <span class="token comment">// 仅限类</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token variable">$var2</span>   <span class="token operator">=</span> <span class="token string single-quoted-string">'pris'</span><span class="token punctuation">;</span>
+    <span class="token comment">// 类和子类</span>
+    <span class="token keyword">protected</span> <span class="token keyword">static</span> <span class="token variable">$var3</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'pros'</span><span class="token punctuation">;</span>
+    <span class="token comment">// 类和子类</span>
+    <span class="token keyword">protected</span> <span class="token variable">$var6</span>        <span class="token operator">=</span> <span class="token string single-quoted-string">'pro'</span><span class="token punctuation">;</span>
+    <span class="token comment">// 仅限类</span>
+    <span class="token keyword">private</span> <span class="token variable">$var7</span>          <span class="token operator">=</span> <span class="token string single-quoted-string">'pri'</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>静态访问</p> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">echo</span> <span class="token class-name static-context">MyClass</span><span class="token operator">::</span><span class="token constant">MY_CONST</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; value</span>
+<span class="token keyword">echo</span> <span class="token class-name static-context">MyClass</span><span class="token operator">::</span><span class="token variable">$staticVar</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; static</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="魔术方法"><a href="#魔术方法" class="header-anchor">#</a> 魔术方法</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name-definition class-name">MyClass</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">// 对象被视为字符串</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$property</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 与 __construct() 相反</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__destruct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">print</span> <span class="token string double-quoted-string">&quot;Destroying&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="接口"><a href="#接口" class="header-anchor">#</a> 接口</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">interface</span> <span class="token class-name-definition class-name">Foo</span> 
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">interface</span> <span class="token class-name-definition class-name">Bar</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">doSomethingElse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Cls</span> <span class="token keyword">implements</span> <span class="token class-name">Foo</span><span class="token punctuation">,</span> Bar 
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">doSomethingElse</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="各种各样的"><a href="#各种各样的" class="header-anchor">#</a> 各种各样的</h2> <h3 id="基本错误处理"><a href="#基本错误处理" class="header-anchor">#</a> 基本错误处理</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 做一点事</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> <span class="token variable">$e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 处理异常</span>
+<span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;Always print!&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="php-8-0-中的异常"><a href="#php-8-0-中的异常" class="header-anchor">#</a> PHP 8.0 中的异常</h3> <div class="language-php {.wrap} line-numbers-mode"><pre class="language-php"><code><span class="token variable">$nullableValue</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">;</span>
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token variable">$value</span> <span class="token operator">=</span> <span class="token variable">$nullableValue</span> <span class="token operator">??</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">InvalidArgumentException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InvalidArgumentException</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 变量是可选的</span>
+    <span class="token comment">// 处理我的异常</span>
+    <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;print me!&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="自定义异常"><a href="#自定义异常" class="header-anchor">#</a> 自定义异常</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name-definition class-name">MyException</span> <span class="token keyword">extends</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 做一点事</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>用法</p> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token variable">$condition</span> <span class="token operator">=</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$condition</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">MyException</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'bala'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">MyException</span> <span class="token variable">$e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 处理我的异常</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="nullsafe-运算符"><a href="#nullsafe-运算符" class="header-anchor">#</a> Nullsafe 运算符</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token comment">// 从 PHP 8.0.0 开始，这一行：</span>
+<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$repo</span><span class="token operator">?-&gt;</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token operator">?-&gt;</span><span class="token property">name</span><span class="token punctuation">;</span>
+<span class="token comment">// 相当于下面的代码：</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">is_null</span><span class="token punctuation">(</span><span class="token variable">$repo</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token variable">$user</span> <span class="token operator">=</span> <span class="token variable">$repository</span><span class="token operator">-&gt;</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">is_null</span><span class="token punctuation">(</span><span class="token variable">$user</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$user</span><span class="token operator">-&gt;</span><span class="token property">name</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>另见: <a href="https://wiki.php.net/rfc/nullsafe_operator" target="_blank" rel="noopener noreferrer">Nullsafe 运算符<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="常用表达"><a href="#常用表达" class="header-anchor">#</a> 常用表达</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token variable">$str</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;Visit jaywcjlove.github.io&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token function">preg_match</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;/qu/i&quot;</span><span class="token punctuation">,</span> <span class="token variable">$str</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># =&gt; 1</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>查看: <a href="/program/regex.html#php中的正则表达式">PHP中的正则表达式</a></p> <h3 id="fopen-模式"><a href="#fopen-模式" class="header-anchor">#</a> fopen() 模式</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th>-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>r</code></td> <td>读</td></tr> <tr><td style="text-align:left;"><code>r+</code></td> <td>读写，前置</td></tr> <tr><td style="text-align:left;"><code>w</code></td> <td>写入，截断</td></tr> <tr><td style="text-align:left;"><code>w+</code></td> <td>读写，截断</td></tr> <tr><td style="text-align:left;"><code>a</code></td> <td>写，追加</td></tr> <tr><td style="text-align:left;"><code>a+</code></td> <td>读写，追加</td></tr></tbody></table> <h3 id="运行时定义的常量"><a href="#运行时定义的常量" class="header-anchor">#</a> 运行时定义的常量</h3> <div class="language-php line-numbers-mode"><pre class="language-php"><code><span class="token function">define</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;CURRENT_DATE&quot;</span><span class="token punctuation">,</span> <span class="token function">date</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Y-m-d'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 一种可能的表示</span>
+<span class="token keyword">echo</span> <span class="token constant">CURRENT_DATE</span><span class="token punctuation">;</span>   <span class="token comment"># =&gt; 2021-01-05</span>
+<span class="token comment"># =&gt; CURRENT_DATE is: 2021-01-05</span>
+<span class="token keyword">echo</span> <span class="token string single-quoted-string">'CURRENT_DATE is: '</span> <span class="token operator">.</span> <span class="token constant">CURRENT_DATE</span><span class="token punctuation">;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="另见"><a href="#另见" class="header-anchor">#</a> 另见</h2> <ul><li><a href="https://www.php.net/manual/zh/index.php" target="_blank" rel="noopener noreferrer">PHP 官方中文文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(php.net)</em></li> <li><a href="https://learnxinyminutes.com/docs/php/" target="_blank" rel="noopener noreferrer">Learn X in Y minutes<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(learnxinyminutes.com)</em></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3a46bf88.js" defer></script><script src="/assets/js/2.f44a4f26.js" defer></script><script src="/assets/js/103.a5bef55e.js" defer></script>
+  </body>
+</html>
