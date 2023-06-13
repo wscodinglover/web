@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文档搬运工</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="学习笔记，包含前端开发、后端开发、服务器运维等">
+    
+    <link rel="preload" href="/assets/css/0.styles.fad71e8e.css" as="style"><link rel="preload" href="/assets/js/app.c8ed8bcf.js" as="script"><link rel="preload" href="/assets/js/2.f44a4f26.js" as="script"><link rel="preload" href="/assets/js/117.a91f9e15.js" as="script"><link rel="prefetch" href="/assets/js/10.68d16472.js"><link rel="prefetch" href="/assets/js/100.9d57c6dd.js"><link rel="prefetch" href="/assets/js/101.7685a749.js"><link rel="prefetch" href="/assets/js/102.1dae5789.js"><link rel="prefetch" href="/assets/js/103.31c8c6f7.js"><link rel="prefetch" href="/assets/js/104.1aabc831.js"><link rel="prefetch" href="/assets/js/105.f188b2cc.js"><link rel="prefetch" href="/assets/js/106.7706f598.js"><link rel="prefetch" href="/assets/js/107.98bf6cba.js"><link rel="prefetch" href="/assets/js/108.78c41dbf.js"><link rel="prefetch" href="/assets/js/109.a8c6ac5f.js"><link rel="prefetch" href="/assets/js/11.e0ba19d3.js"><link rel="prefetch" href="/assets/js/110.2cccc8fa.js"><link rel="prefetch" href="/assets/js/111.19a4e086.js"><link rel="prefetch" href="/assets/js/112.d940b1c0.js"><link rel="prefetch" href="/assets/js/113.58a5e756.js"><link rel="prefetch" href="/assets/js/114.950b8113.js"><link rel="prefetch" href="/assets/js/115.9712a524.js"><link rel="prefetch" href="/assets/js/116.dacaa4fa.js"><link rel="prefetch" href="/assets/js/118.84772b6e.js"><link rel="prefetch" href="/assets/js/119.6e3567ca.js"><link rel="prefetch" href="/assets/js/12.67495675.js"><link rel="prefetch" href="/assets/js/120.9eb24a02.js"><link rel="prefetch" href="/assets/js/121.38bbf647.js"><link rel="prefetch" href="/assets/js/122.2f7ab3f4.js"><link rel="prefetch" href="/assets/js/123.419b99f0.js"><link rel="prefetch" href="/assets/js/124.4764bbe8.js"><link rel="prefetch" href="/assets/js/125.87d74ae9.js"><link rel="prefetch" href="/assets/js/126.3bbeef41.js"><link rel="prefetch" href="/assets/js/127.8bdba5aa.js"><link rel="prefetch" href="/assets/js/128.029c8965.js"><link rel="prefetch" href="/assets/js/129.ee2d4363.js"><link rel="prefetch" href="/assets/js/13.6727ab98.js"><link rel="prefetch" href="/assets/js/130.42157c82.js"><link rel="prefetch" href="/assets/js/131.f62c81df.js"><link rel="prefetch" href="/assets/js/14.70b0cf01.js"><link rel="prefetch" href="/assets/js/15.ba9580a7.js"><link rel="prefetch" href="/assets/js/16.1a8c733f.js"><link rel="prefetch" href="/assets/js/17.6657a227.js"><link rel="prefetch" href="/assets/js/18.65942dbb.js"><link rel="prefetch" href="/assets/js/19.7d801cca.js"><link rel="prefetch" href="/assets/js/20.7ca56ddb.js"><link rel="prefetch" href="/assets/js/21.a30264d9.js"><link rel="prefetch" href="/assets/js/22.fca662dd.js"><link rel="prefetch" href="/assets/js/23.1a059155.js"><link rel="prefetch" href="/assets/js/24.d9971ac4.js"><link rel="prefetch" href="/assets/js/25.6c1d4926.js"><link rel="prefetch" href="/assets/js/26.21e8c7b4.js"><link rel="prefetch" href="/assets/js/27.cfff7ef0.js"><link rel="prefetch" href="/assets/js/28.405bf1b8.js"><link rel="prefetch" href="/assets/js/29.3872d2cb.js"><link rel="prefetch" href="/assets/js/3.d00959e5.js"><link rel="prefetch" href="/assets/js/30.fea18838.js"><link rel="prefetch" href="/assets/js/31.364afb36.js"><link rel="prefetch" href="/assets/js/32.3a14b962.js"><link rel="prefetch" href="/assets/js/33.ebb8c231.js"><link rel="prefetch" href="/assets/js/34.bbba3f86.js"><link rel="prefetch" href="/assets/js/35.ebc83e54.js"><link rel="prefetch" href="/assets/js/36.949b4b98.js"><link rel="prefetch" href="/assets/js/37.63a219a5.js"><link rel="prefetch" href="/assets/js/38.2abdd62c.js"><link rel="prefetch" href="/assets/js/39.f31baba8.js"><link rel="prefetch" href="/assets/js/4.7ac2b204.js"><link rel="prefetch" href="/assets/js/40.f1973b4d.js"><link rel="prefetch" href="/assets/js/41.b2b7deaa.js"><link rel="prefetch" href="/assets/js/42.94a89008.js"><link rel="prefetch" href="/assets/js/43.cb36fa9a.js"><link rel="prefetch" href="/assets/js/44.d3cdaea4.js"><link rel="prefetch" href="/assets/js/45.6cedb636.js"><link rel="prefetch" href="/assets/js/46.d7f3520c.js"><link rel="prefetch" href="/assets/js/47.c34ac17e.js"><link rel="prefetch" href="/assets/js/48.d9fffe3c.js"><link rel="prefetch" href="/assets/js/49.a8a8fe51.js"><link rel="prefetch" href="/assets/js/5.f702624b.js"><link rel="prefetch" href="/assets/js/50.d67120fa.js"><link rel="prefetch" href="/assets/js/51.828b01e6.js"><link rel="prefetch" href="/assets/js/52.a09e7b67.js"><link rel="prefetch" href="/assets/js/53.78d609f7.js"><link rel="prefetch" href="/assets/js/54.56dd39fd.js"><link rel="prefetch" href="/assets/js/55.59d3c972.js"><link rel="prefetch" href="/assets/js/56.e8d448dc.js"><link rel="prefetch" href="/assets/js/57.b25a333a.js"><link rel="prefetch" href="/assets/js/58.3a58c623.js"><link rel="prefetch" href="/assets/js/59.d45955ca.js"><link rel="prefetch" href="/assets/js/6.c76c0e1e.js"><link rel="prefetch" href="/assets/js/60.70ea5158.js"><link rel="prefetch" href="/assets/js/61.39efc969.js"><link rel="prefetch" href="/assets/js/62.492b7cb3.js"><link rel="prefetch" href="/assets/js/63.c955736f.js"><link rel="prefetch" href="/assets/js/64.7249d228.js"><link rel="prefetch" href="/assets/js/65.df7d1f53.js"><link rel="prefetch" href="/assets/js/66.0993568b.js"><link rel="prefetch" href="/assets/js/67.ef9dd414.js"><link rel="prefetch" href="/assets/js/68.65bb0d00.js"><link rel="prefetch" href="/assets/js/69.5e0c247c.js"><link rel="prefetch" href="/assets/js/7.96bc15e3.js"><link rel="prefetch" href="/assets/js/70.f563832a.js"><link rel="prefetch" href="/assets/js/71.f9db52a9.js"><link rel="prefetch" href="/assets/js/72.704dde50.js"><link rel="prefetch" href="/assets/js/73.f196359d.js"><link rel="prefetch" href="/assets/js/74.616d3b86.js"><link rel="prefetch" href="/assets/js/75.8a040688.js"><link rel="prefetch" href="/assets/js/76.bb1c773f.js"><link rel="prefetch" href="/assets/js/77.764a298e.js"><link rel="prefetch" href="/assets/js/78.7a1fb4f4.js"><link rel="prefetch" href="/assets/js/79.6c2f29c0.js"><link rel="prefetch" href="/assets/js/8.f652ff79.js"><link rel="prefetch" href="/assets/js/80.2d0b63c6.js"><link rel="prefetch" href="/assets/js/81.3aa6d63c.js"><link rel="prefetch" href="/assets/js/82.26b67013.js"><link rel="prefetch" href="/assets/js/83.04d03012.js"><link rel="prefetch" href="/assets/js/84.c2c2bb57.js"><link rel="prefetch" href="/assets/js/85.529d11ae.js"><link rel="prefetch" href="/assets/js/86.4c1e0495.js"><link rel="prefetch" href="/assets/js/87.fd3ba140.js"><link rel="prefetch" href="/assets/js/88.bda10190.js"><link rel="prefetch" href="/assets/js/89.adb017da.js"><link rel="prefetch" href="/assets/js/9.6b06aa53.js"><link rel="prefetch" href="/assets/js/90.a8757e00.js"><link rel="prefetch" href="/assets/js/91.a492ff4f.js"><link rel="prefetch" href="/assets/js/92.c6410bf2.js"><link rel="prefetch" href="/assets/js/93.5ec8e566.js"><link rel="prefetch" href="/assets/js/94.a0e9ad4f.js"><link rel="prefetch" href="/assets/js/95.3010b85f.js"><link rel="prefetch" href="/assets/js/96.99ce2ecd.js"><link rel="prefetch" href="/assets/js/97.91811599.js"><link rel="prefetch" href="/assets/js/98.3becd40f.js"><link rel="prefetch" href="/assets/js/99.a166247a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fad71e8e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">文档搬运工</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gmail.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gmail.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/quicklink/gmail.html#gmail-快捷键" class="sidebar-link">Gmail 快捷键</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/quicklink/gmail.html#gmail-导航" class="sidebar-link">Gmail 导航</a></li><li class="sidebar-sub-header"><a href="/quicklink/gmail.html#gmail-应用程序" class="sidebar-link">Gmail 应用程序</a></li><li class="sidebar-sub-header"><a href="/quicklink/gmail.html#gmail-操作" class="sidebar-link">Gmail 操作</a></li><li class="sidebar-sub-header"><a href="/quicklink/gmail.html#gmail-跳转" class="sidebar-link">Gmail 跳转</a></li><li class="sidebar-sub-header"><a href="/quicklink/gmail.html#gmail-主题列表选择" class="sidebar-link">Gmail 主题列表选择</a></li><li class="sidebar-sub-header"><a href="/quicklink/gmail.html#gmail-搜索语法" class="sidebar-link">Gmail 搜索语法</a></li><li class="sidebar-sub-header"><a href="/quicklink/gmail.html#gmail-提示和技巧" class="sidebar-link">Gmail 提示和技巧</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="gmail-备忘清单"><a href="#gmail-备忘清单" class="header-anchor">#</a> Gmail 备忘清单</h1> <p>本备忘单总结了常用的 <a href="https://gmail.com/" target="_blank" rel="noopener noreferrer">Gmail<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 快捷键，以供快速参考。</p> <h2 id="gmail-快捷键"><a href="#gmail-快捷键" class="header-anchor">#</a> Gmail 快捷键</h2> <h3 id="gmail-导航"><a href="#gmail-导航" class="header-anchor">#</a> Gmail 导航</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>u</code></td> <td style="text-align:left;">返回话题列表（或刷新话题列表）</td></tr> <tr><td style="text-align:left;"><code>k</code> / <code>j</code></td> <td style="text-align:left;">较新/较旧的对话</td></tr> <tr><td style="text-align:left;"><code>o</code> or <code>Enter</code></td> <td style="text-align:left;">打开对话； 折叠/展开</td></tr> <tr><td style="text-align:left;"><code>p</code> / <code>n</code></td> <td style="text-align:left;">阅读上一条/下一条消息</td></tr> <tr><td style="text-align:left;"><code>`</code></td> <td style="text-align:left;">转到下一个收件箱部分</td></tr> <tr><td style="text-align:left;"><code>~</code></td> <td style="text-align:left;">转到上一个收件箱部分</td></tr></tbody></table> <h3 id="gmail-应用程序"><a href="#gmail-应用程序" class="header-anchor">#</a> Gmail 应用程序</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>c</code></td> <td style="text-align:left;">撰写</td></tr> <tr><td style="text-align:left;"><code>d</code></td> <td style="text-align:left;">添加 cc 撰写</td></tr> <tr><td style="text-align:left;"><code>b</code></td> <td style="text-align:left;">添加 cc 和 bcc 撰写</td></tr> <tr><td style="text-align:left;"><code>/</code></td> <td style="text-align:left;">搜索</td></tr> <tr><td style="text-align:left;"><code>q</code></td> <td style="text-align:left;">焦点聊天联系人搜索</td></tr> <tr><td style="text-align:left;"><code>?</code></td> <td style="text-align:left;">打开快捷方式帮助</td></tr></tbody></table> <h3 id="gmail-操作"><a href="#gmail-操作" class="header-anchor">#</a> Gmail 操作</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>,</code></td> <td style="text-align:left;">将焦点移至工具栏</td></tr> <tr><td style="text-align:left;"><code>x</code></td> <td style="text-align:left;">选择对话</td></tr> <tr><td style="text-align:left;"><code>s</code></td> <td style="text-align:left;">旋转超级巨星</td></tr> <tr><td style="text-align:left;"><code>y</code></td> <td style="text-align:left;">删除标签</td></tr> <tr><td style="text-align:left;"><code>e</code></td> <td style="text-align:left;">档案</td></tr> <tr><td style="text-align:left;"><code>m</code></td> <td style="text-align:left;">忽略对话</td></tr> <tr><td style="text-align:left;"><code>!</code></td> <td style="text-align:left;">报告为垃圾邮件</td></tr> <tr><td style="text-align:left;"><code>v</code></td> <td style="text-align:left;">打开移动到菜单</td></tr> <tr><td style="text-align:left;"><code>#</code></td> <td style="text-align:left;">移到废纸篓</td></tr> <tr><td style="text-align:left;"><code>r</code></td> <td style="text-align:left;">回复</td></tr> <tr><td style="text-align:left;"><code>Shift+r</code></td> <td style="text-align:left;">在新窗口中回复</td></tr> <tr><td style="text-align:left;"><code>a</code></td> <td style="text-align:left;">全部回复</td></tr> <tr><td style="text-align:left;"><code>Shift+a</code></td> <td style="text-align:left;">在新窗口中回复所有</td></tr> <tr><td style="text-align:left;"><code>f</code></td> <td style="text-align:left;">向前</td></tr> <tr><td style="text-align:left;"><code>Shift+f</code></td> <td style="text-align:left;">在新窗口中转发</td></tr> <tr><td style="text-align:left;"><code>Shift+n</code></td> <td style="text-align:left;">更新对话</td></tr> <tr><td style="text-align:left;"><code>Tab</code> 然后 <code>Enter</code></td> <td style="text-align:left;">发邮件</td></tr> <tr><td style="text-align:left;"><code>Esc</code></td> <td style="text-align:left;">焦点最后聊天痣</td></tr> <tr><td style="text-align:left;"><code>]</code> / <code>[</code></td> <td style="text-align:left;">删除并转到上一个/下一个</td></tr> <tr><td style="text-align:left;"><code>}</code> / <code>{</code></td> <td style="text-align:left;">存档并转到上一个/下一个</td></tr> <tr><td style="text-align:left;"><code>z</code></td> <td style="text-align:left;">撤消上一个操作</td></tr> <tr><td style="text-align:left;"><code>.</code></td> <td style="text-align:left;">打开更多操作菜单</td></tr> <tr><td style="text-align:left;"><code>l</code></td> <td style="text-align:left;">打开标签菜单</td></tr> <tr><td style="text-align:left;"><code>Shift+i</code></td> <td style="text-align:left;">标记为已读</td></tr> <tr><td style="text-align:left;"><code>Shift+u</code></td> <td style="text-align:left;">标记为未读</td></tr> <tr><td style="text-align:left;"><code>_</code></td> <td style="text-align:left;">将所选邮件标记为未读</td></tr> <tr><td style="text-align:left;"><code>Ctrl+s</code></td> <td style="text-align:left;">保存草稿</td></tr> <tr><td style="text-align:left;"><code>+</code> 或 <code>=</code></td> <td style="text-align:left;">标记为重要</td></tr> <tr><td style="text-align:left;"><code>-</code></td> <td style="text-align:left;">标记为不重要</td></tr> <tr><td style="text-align:left;"><code>Shift+l</code></td> <td style="text-align:left;">喜欢/不喜欢嗡嗡声</td></tr> <tr><td style="text-align:left;"><code>h</code></td> <td style="text-align:left;">抢先看</td></tr> <tr><td style="text-align:left;"><code>g</code> 然后 <code>p</code></td> <td style="text-align:left;">打个电话</td></tr> <tr><td style="text-align:left;"><code>&amp;</code></td> <td style="text-align:left;">启动老蛇</td></tr> <tr><td style="text-align:left;"><code>Shift+t</code></td> <td style="text-align:left;">将对话添加到任务</td></tr></tbody></table> <h3 id="gmail-跳转"><a href="#gmail-跳转" class="header-anchor">#</a> Gmail 跳转</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>g</code> 然后 <code>i</code></td> <td style="text-align:left;">打开收件箱</td></tr> <tr><td style="text-align:left;"><code>g</code> 然后 <code>s</code></td> <td style="text-align:left;">打开已加星标的对话</td></tr> <tr><td style="text-align:left;"><code>g</code> 然后 <code>t</code></td> <td style="text-align:left;">打开已发送消息</td></tr> <tr><td style="text-align:left;"><code>g</code> 然后 <code>d</code></td> <td style="text-align:left;">打开草稿</td></tr> <tr><td style="text-align:left;"><code>g</code> 然后 <code>a</code></td> <td style="text-align:left;">打开所有消息</td></tr> <tr><td style="text-align:left;"><code>g</code> 然后 <code>c</code></td> <td style="text-align:left;">打开联系人</td></tr> <tr><td style="text-align:left;"><code>g</code> 然后 <code>b</code></td> <td style="text-align:left;">去嗡嗡声</td></tr> <tr><td style="text-align:left;"><code>g</code> 然后 <code>l</code></td> <td style="text-align:left;">转到标签</td></tr> <tr><td style="text-align:left;"><code>g</code> 然后 <code>k</code></td> <td style="text-align:left;">前往任务</td></tr></tbody></table> <h3 id="gmail-主题列表选择"><a href="#gmail-主题列表选择" class="header-anchor">#</a> Gmail 主题列表选择</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>*</code> 然后 <code>a</code></td> <td style="text-align:left;">选择所有对话</td></tr> <tr><td style="text-align:left;"><code>*</code> 然后 <code>n</code></td> <td style="text-align:left;">取消选择所有对话</td></tr> <tr><td style="text-align:left;"><code>*</code> 然后 <code>r</code></td> <td style="text-align:left;">选择阅读对话</td></tr> <tr><td style="text-align:left;"><code>*</code> 然后 <code>u</code></td> <td style="text-align:left;">选择未读对话</td></tr> <tr><td style="text-align:left;"><code>*</code> 然后 <code>s</code></td> <td style="text-align:left;">选择加星标的对话</td></tr> <tr><td style="text-align:left;"><code>*</code> 然后 <code>t</code></td> <td style="text-align:left;">选择未加星标的对话</td></tr></tbody></table> <h3 id="gmail-搜索语法"><a href="#gmail-搜索语法" class="header-anchor">#</a> Gmail 搜索语法</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>from:[arg]</code></td> <td style="text-align:left;">从</td></tr> <tr><td style="text-align:left;"><code>to:[arg]</code></td> <td style="text-align:left;">至</td></tr> <tr><td style="text-align:left;"><code>label:­[arg]</code></td> <td style="text-align:left;">标签</td></tr> <tr><td style="text-align:left;"><code>subjec­t:[arg]</code></td> <td style="text-align:left;">主题</td></tr> <tr><td style="text-align:left;"><code>-[arg]</code></td> <td style="text-align:left;">不包含</td></tr> <tr><td style="text-align:left;"><code>has:at­tac­hment</code></td> <td style="text-align:left;">有附件</td></tr> <tr><td style="text-align:left;"><code>filena­me:­[fi­lename]</code></td> <td style="text-align:left;">附件文件名</td></tr> <tr><td style="text-align:left;"><code>before­:20­11/­11/20</code></td> <td style="text-align:left;">之前（日期）</td></tr> <tr><td style="text-align:left;"><code>after:­201­1/11/20</code></td> <td style="text-align:left;">之后（日期）</td></tr> <tr><td style="text-align:left;"><code>from:annie</code> 或 <code>from:david</code></td> <td style="text-align:left;">或运算符</td></tr> <tr><td style="text-align:left;"><code>list:[arg]</code></td> <td style="text-align:left;">邮件列表</td></tr> <tr><td style="text-align:left;"><code>subjec­t:(­word1 word2)</code></td> <td style="text-align:left;">组词</td></tr> <tr><td style="text-align:left;"><code>in:any­where</code></td> <td style="text-align:left;">在所有框中搜索（垃圾邮件和垃圾邮件除外）</td></tr> <tr><td style="text-align:left;"><code>in:trash in:inbox in:spam</code></td> <td style="text-align:left;">在特定框中搜索</td></tr> <tr><td style="text-align:left;"><code>is:starred is:read is:unread</code></td> <td style="text-align:left;">搜索特定消息</td></tr> <tr><td style="text-align:left;"><code>is:chat</code></td> <td style="text-align:left;">在聊天中搜索</td></tr> <tr><td style="text-align:left;"><code>cc:[arg] bcc:[arg]</code></td> <td style="text-align:left;">搜索副本收件人</td></tr></tbody></table> <h3 id="gmail-提示和技巧"><a href="#gmail-提示和技巧" class="header-anchor">#</a> Gmail 提示和技巧</h3> <ul><li>按 <code>u</code> 刷新话题列表</li> <li>对于多选，选择一个对话，然后 <code>shift+单击</code>另一个对话以选择其间的所有对话</li> <li>在主题中添加 <code>EOM</code>（消息结尾）以避免 <code>no-text-in-body</code> 警告</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c8ed8bcf.js" defer></script><script src="/assets/js/2.f44a4f26.js" defer></script><script src="/assets/js/117.a91f9e15.js" defer></script>
+  </body>
+</html>
