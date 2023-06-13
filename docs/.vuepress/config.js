@@ -7,7 +7,8 @@ module.exports = {
   ],
   host: 'localhost',
   port: '9000',
-  base: '/', // 这是部署到github相关的配置 下面会讲
+  base: '/web', // 这是部署到github相关的配置 下面会讲
+  dest: '/public',
   markdown: {
     lineNumbers: true // 代码块显示行号
   },
