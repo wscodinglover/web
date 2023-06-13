@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文档搬运工</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/webfavicon.ico">
+    <meta name="description" content="学习笔记，包含前端开发、后端开发、服务器运维等">
+    
+    <link rel="preload" href="/web/assets/css/0.styles.6a124c9c.css" as="style"><link rel="preload" href="/web/assets/js/app.4914d2c8.js" as="script"><link rel="preload" href="/web/assets/js/2.f44a4f26.js" as="script"><link rel="preload" href="/web/assets/js/109.a8c6ac5f.js" as="script"><link rel="prefetch" href="/web/assets/js/10.68d16472.js"><link rel="prefetch" href="/web/assets/js/100.c1165d99.js"><link rel="prefetch" href="/web/assets/js/101.7685a749.js"><link rel="prefetch" href="/web/assets/js/102.1dae5789.js"><link rel="prefetch" href="/web/assets/js/103.31c8c6f7.js"><link rel="prefetch" href="/web/assets/js/104.1aabc831.js"><link rel="prefetch" href="/web/assets/js/105.f188b2cc.js"><link rel="prefetch" href="/web/assets/js/106.7706f598.js"><link rel="prefetch" href="/web/assets/js/107.98bf6cba.js"><link rel="prefetch" href="/web/assets/js/108.78c41dbf.js"><link rel="prefetch" href="/web/assets/js/11.e0ba19d3.js"><link rel="prefetch" href="/web/assets/js/110.2cccc8fa.js"><link rel="prefetch" href="/web/assets/js/111.19a4e086.js"><link rel="prefetch" href="/web/assets/js/112.d940b1c0.js"><link rel="prefetch" href="/web/assets/js/113.58a5e756.js"><link rel="prefetch" href="/web/assets/js/114.950b8113.js"><link rel="prefetch" href="/web/assets/js/115.9712a524.js"><link rel="prefetch" href="/web/assets/js/116.dacaa4fa.js"><link rel="prefetch" href="/web/assets/js/117.a91f9e15.js"><link rel="prefetch" href="/web/assets/js/118.84772b6e.js"><link rel="prefetch" href="/web/assets/js/119.6e3567ca.js"><link rel="prefetch" href="/web/assets/js/12.67495675.js"><link rel="prefetch" href="/web/assets/js/120.9eb24a02.js"><link rel="prefetch" href="/web/assets/js/121.4f0440a2.js"><link rel="prefetch" href="/web/assets/js/122.a946a176.js"><link rel="prefetch" href="/web/assets/js/123.d3c64c4e.js"><link rel="prefetch" href="/web/assets/js/124.4764bbe8.js"><link rel="prefetch" href="/web/assets/js/125.87d74ae9.js"><link rel="prefetch" href="/web/assets/js/126.56ee5e62.js"><link rel="prefetch" href="/web/assets/js/127.948345dc.js"><link rel="prefetch" href="/web/assets/js/128.029c8965.js"><link rel="prefetch" href="/web/assets/js/129.f0356601.js"><link rel="prefetch" href="/web/assets/js/13.6727ab98.js"><link rel="prefetch" href="/web/assets/js/130.e6cc4cb8.js"><link rel="prefetch" href="/web/assets/js/131.2297c3b6.js"><link rel="prefetch" href="/web/assets/js/14.70b0cf01.js"><link rel="prefetch" href="/web/assets/js/15.ba9580a7.js"><link rel="prefetch" href="/web/assets/js/16.1a8c733f.js"><link rel="prefetch" href="/web/assets/js/17.6657a227.js"><link rel="prefetch" href="/web/assets/js/18.65942dbb.js"><link rel="prefetch" href="/web/assets/js/19.7d801cca.js"><link rel="prefetch" href="/web/assets/js/20.34077e32.js"><link rel="prefetch" href="/web/assets/js/21.a30264d9.js"><link rel="prefetch" href="/web/assets/js/22.813d2339.js"><link rel="prefetch" href="/web/assets/js/23.1a059155.js"><link rel="prefetch" href="/web/assets/js/24.d9971ac4.js"><link rel="prefetch" href="/web/assets/js/25.6c1d4926.js"><link rel="prefetch" href="/web/assets/js/26.21e8c7b4.js"><link rel="prefetch" href="/web/assets/js/27.cfff7ef0.js"><link rel="prefetch" href="/web/assets/js/28.405bf1b8.js"><link rel="prefetch" href="/web/assets/js/29.3872d2cb.js"><link rel="prefetch" href="/web/assets/js/3.d00959e5.js"><link rel="prefetch" href="/web/assets/js/30.fea18838.js"><link rel="prefetch" href="/web/assets/js/31.364afb36.js"><link rel="prefetch" href="/web/assets/js/32.3a14b962.js"><link rel="prefetch" href="/web/assets/js/33.ebb8c231.js"><link rel="prefetch" href="/web/assets/js/34.bbba3f86.js"><link rel="prefetch" href="/web/assets/js/35.ebc83e54.js"><link rel="prefetch" href="/web/assets/js/36.949b4b98.js"><link rel="prefetch" href="/web/assets/js/37.63a219a5.js"><link rel="prefetch" href="/web/assets/js/38.2abdd62c.js"><link rel="prefetch" href="/web/assets/js/39.f31baba8.js"><link rel="prefetch" href="/web/assets/js/4.7ac2b204.js"><link rel="prefetch" href="/web/assets/js/40.f1973b4d.js"><link rel="prefetch" href="/web/assets/js/41.b2b7deaa.js"><link rel="prefetch" href="/web/assets/js/42.d94268bc.js"><link rel="prefetch" href="/web/assets/js/43.a747dc86.js"><link rel="prefetch" href="/web/assets/js/44.d3cdaea4.js"><link rel="prefetch" href="/web/assets/js/45.6cedb636.js"><link rel="prefetch" href="/web/assets/js/46.d7f3520c.js"><link rel="prefetch" href="/web/assets/js/47.07c50e1c.js"><link rel="prefetch" href="/web/assets/js/48.9d8d71f9.js"><link rel="prefetch" href="/web/assets/js/49.a8a8fe51.js"><link rel="prefetch" href="/web/assets/js/5.f702624b.js"><link rel="prefetch" href="/web/assets/js/50.d67120fa.js"><link rel="prefetch" href="/web/assets/js/51.c0e05f5e.js"><link rel="prefetch" href="/web/assets/js/52.a09e7b67.js"><link rel="prefetch" href="/web/assets/js/53.3fa73368.js"><link rel="prefetch" href="/web/assets/js/54.56dd39fd.js"><link rel="prefetch" href="/web/assets/js/55.59d3c972.js"><link rel="prefetch" href="/web/assets/js/56.e8d448dc.js"><link rel="prefetch" href="/web/assets/js/57.b25a333a.js"><link rel="prefetch" href="/web/assets/js/58.3a58c623.js"><link rel="prefetch" href="/web/assets/js/59.a0748746.js"><link rel="prefetch" href="/web/assets/js/6.c76c0e1e.js"><link rel="prefetch" href="/web/assets/js/60.69e1f526.js"><link rel="prefetch" href="/web/assets/js/61.39efc969.js"><link rel="prefetch" href="/web/assets/js/62.492b7cb3.js"><link rel="prefetch" href="/web/assets/js/63.c955736f.js"><link rel="prefetch" href="/web/assets/js/64.7249d228.js"><link rel="prefetch" href="/web/assets/js/65.df7d1f53.js"><link rel="prefetch" href="/web/assets/js/66.0993568b.js"><link rel="prefetch" href="/web/assets/js/67.ef9dd414.js"><link rel="prefetch" href="/web/assets/js/68.2ec4de2e.js"><link rel="prefetch" href="/web/assets/js/69.95259dde.js"><link rel="prefetch" href="/web/assets/js/7.96bc15e3.js"><link rel="prefetch" href="/web/assets/js/70.f563832a.js"><link rel="prefetch" href="/web/assets/js/71.f9db52a9.js"><link rel="prefetch" href="/web/assets/js/72.704dde50.js"><link rel="prefetch" href="/web/assets/js/73.f196359d.js"><link rel="prefetch" href="/web/assets/js/74.616d3b86.js"><link rel="prefetch" href="/web/assets/js/75.8a040688.js"><link rel="prefetch" href="/web/assets/js/76.662690e0.js"><link rel="prefetch" href="/web/assets/js/77.2d0b3669.js"><link rel="prefetch" href="/web/assets/js/78.7a1fb4f4.js"><link rel="prefetch" href="/web/assets/js/79.dd0c8373.js"><link rel="prefetch" href="/web/assets/js/8.f652ff79.js"><link rel="prefetch" href="/web/assets/js/80.cc683017.js"><link rel="prefetch" href="/web/assets/js/81.3aa6d63c.js"><link rel="prefetch" href="/web/assets/js/82.e9dea0fc.js"><link rel="prefetch" href="/web/assets/js/83.04ad2625.js"><link rel="prefetch" href="/web/assets/js/84.c2c2bb57.js"><link rel="prefetch" href="/web/assets/js/85.529d11ae.js"><link rel="prefetch" href="/web/assets/js/86.4c1e0495.js"><link rel="prefetch" href="/web/assets/js/87.22881441.js"><link rel="prefetch" href="/web/assets/js/88.d1a28c80.js"><link rel="prefetch" href="/web/assets/js/89.adb017da.js"><link rel="prefetch" href="/web/assets/js/9.6b06aa53.js"><link rel="prefetch" href="/web/assets/js/90.a8757e00.js"><link rel="prefetch" href="/web/assets/js/91.a492ff4f.js"><link rel="prefetch" href="/web/assets/js/92.c6410bf2.js"><link rel="prefetch" href="/web/assets/js/93.5ec8e566.js"><link rel="prefetch" href="/web/assets/js/94.a0e9ad4f.js"><link rel="prefetch" href="/web/assets/js/95.3010b85f.js"><link rel="prefetch" href="/web/assets/js/96.99ce2ecd.js"><link rel="prefetch" href="/web/assets/js/97.91811599.js"><link rel="prefetch" href="/web/assets/js/98.3becd40f.js"><link rel="prefetch" href="/web/assets/js/99.ff73e7fc.js">
+    <link rel="stylesheet" href="/web/assets/css/0.styles.6a124c9c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/web/" class="home-link router-link-active"><!----> <span class="site-name">文档搬运工</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/yaml.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/yaml.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/program/yaml.html#入门" class="sidebar-link">入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/program/yaml.html#介绍" class="sidebar-link">介绍</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#标量类型" class="sidebar-link">标量类型</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#变量" class="sidebar-link">变量</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#注释" class="sidebar-link">注释</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#多行字符串" class="sidebar-link">多行字符串</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#继承" class="sidebar-link">继承</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#参考" class="sidebar-link">参考</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#折叠的字符串" class="sidebar-link">折叠的字符串</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#两份文件" class="sidebar-link">两份文件</a></li></ul></li><li><a href="/web/program/yaml.html#yaml-collections" class="sidebar-link">YAML Collections</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/program/yaml.html#序列" class="sidebar-link">序列</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#映射" class="sidebar-link">映射</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#映射到序列" class="sidebar-link">映射到序列</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#映射序列" class="sidebar-link">映射序列</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#序列的序列" class="sidebar-link">序列的序列</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#映射的映射" class="sidebar-link">映射的映射</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#嵌套集合" class="sidebar-link">嵌套集合</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#无序集" class="sidebar-link">无序集</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#有序映射" class="sidebar-link">有序映射</a></li></ul></li><li><a href="/web/program/yaml.html#yaml-参考" class="sidebar-link">YAML 参考</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/program/yaml.html#条款" class="sidebar-link">条款</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#文档指标" class="sidebar-link">文档指标</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#收集指标" class="sidebar-link">收集指标</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#别名指标" class="sidebar-link">别名指标</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#特殊键" class="sidebar-link">特殊键</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#标量指标" class="sidebar-link">标量指标</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#标签属性-通常未指定" class="sidebar-link">标签属性（通常未指定）</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#杂项指标" class="sidebar-link">杂项指标</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#核心类型-默认自动标签" class="sidebar-link">核心类型（默认自动标签）</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#转义码" class="sidebar-link">转义码</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#更多类型" class="sidebar-link">更多类型</a></li><li class="sidebar-sub-header"><a href="/web/program/yaml.html#与语言无关的标量类型" class="sidebar-link">与语言无关的标量类型</a></li></ul></li><li><a href="/web/program/yaml.html#另见" class="sidebar-link">另见</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="yaml-备忘清单"><a href="#yaml-备忘清单" class="header-anchor">#</a> YAML 备忘清单</h1> <p>这是理解和编写 YAML 格式配置文件的快速参考备忘单。</p> <h2 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h2> <h3 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h3> <p><a href="https://yaml.org/" target="_blank" rel="noopener noreferrer">YAML<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 是一种数据序列化语言，旨在供人类直接读写</p> <ul><li>YAML 不允许使用制表符</li> <li>元素部分之间必须有空间</li> <li>YAML 区分大小写</li> <li>以 <code>.yaml</code> 或 <code>.yml</code> 扩展名结束您的 YAML 文件</li> <li>YAML 是 JSON 的超集</li> <li>Ansible playbook 是 YAML 文件
+</li></ul> <h3 id="标量类型"><a href="#标量类型" class="header-anchor">#</a> 标量类型</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">n1</span><span class="token punctuation">:</span> <span class="token number">1</span>            <span class="token comment"># 整数</span>
+<span class="token key atrule">n2</span><span class="token punctuation">:</span> <span class="token number">1.234</span>        <span class="token comment"># 浮点</span>
+<span class="token key atrule">s1</span><span class="token punctuation">:</span> <span class="token string">'abc'</span>        <span class="token comment"># 字符串</span>
+<span class="token key atrule">s2</span><span class="token punctuation">:</span> <span class="token string">&quot;abc&quot;</span>        <span class="token comment"># 字符串</span>
+<span class="token key atrule">s3</span><span class="token punctuation">:</span> abc          <span class="token comment"># 字符串</span>
+<span class="token key atrule">b</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>         <span class="token comment"># 布尔类型</span>
+<span class="token key atrule">d</span><span class="token punctuation">:</span> <span class="token datetime number">2015-04-05</span>    <span class="token comment"># 日期类型</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="↓-等效的-json"><a href="#↓-等效的-json" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;n1&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;n2&quot;</span><span class="token operator">:</span> <span class="token number">1.234</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;s1&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;s2&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;s3&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;b&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;d&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2015-04-05&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>使用空格缩进。 元素部分之间必须有空间。</p> <h3 id="变量"><a href="#变量" class="header-anchor">#</a> 变量</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">some_thing</span><span class="token punctuation">:</span> <span class="token important">&amp;VAR_NAME</span> foobar
+<span class="token key atrule">other_thing</span><span class="token punctuation">:</span> <span class="token important">*VAR_NAME</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="↓-等效的-json-2"><a href="#↓-等效的-json-2" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;some_thing&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foobar&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;other_thing&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foobar&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="注释"><a href="#注释" class="header-anchor">#</a> 注释</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token comment"># A single line comment example</span>
+<span class="token comment"># block level comment example</span>
+<span class="token comment"># comment line 1</span>
+<span class="token comment"># comment line 2</span>
+<span class="token comment"># comment line 3</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="多行字符串"><a href="#多行字符串" class="header-anchor">#</a> 多行字符串</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+  hello
+  world</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="↓-等效的-json-3"><a href="#↓-等效的-json-3" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span><span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;hello\nworld\n&quot;</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="继承"><a href="#继承" class="header-anchor">#</a> 继承</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">parent</span><span class="token punctuation">:</span> <span class="token important">&amp;defaults</span>
+  <span class="token key atrule">a</span><span class="token punctuation">:</span> <span class="token number">2</span>
+  <span class="token key atrule">b</span><span class="token punctuation">:</span> <span class="token number">3</span>
+<span class="token key atrule">child</span><span class="token punctuation">:</span>
+  <span class="token key atrule">&lt;&lt;</span><span class="token punctuation">:</span> <span class="token important">*defaults</span>
+  <span class="token key atrule">b</span><span class="token punctuation">:</span> <span class="token number">4</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="↓-等效的-json-4"><a href="#↓-等效的-json-4" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;parent&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;a&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;b&quot;</span><span class="token operator">:</span> <span class="token number">3</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;child&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;a&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;b&quot;</span><span class="token operator">:</span> <span class="token number">4</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">values</span><span class="token punctuation">:</span> <span class="token important">&amp;ref</span>
+  <span class="token punctuation">-</span> Will be
+  <span class="token punctuation">-</span> reused below
+  
+<span class="token key atrule">other_values</span><span class="token punctuation">:</span>
+  <span class="token key atrule">i_am_ref</span><span class="token punctuation">:</span> <span class="token important">*ref</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="↓-等效的-json-5"><a href="#↓-等效的-json-5" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;values&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;Will be&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;reused below&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;other_values&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;i_am_ref&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;Will be&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;reused below&quot;</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="折叠的字符串"><a href="#折叠的字符串" class="header-anchor">#</a> 折叠的字符串</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token punctuation">&gt;</span><span class="token scalar string">
+  hello
+  world</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="↓-等效的-json-6"><a href="#↓-等效的-json-6" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span><span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;hello world\n&quot;</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="两份文件"><a href="#两份文件" class="header-anchor">#</a> 两份文件</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">document</span><span class="token punctuation">:</span> this is doc 1
+<span class="token punctuation">---</span>
+<span class="token key atrule">document</span><span class="token punctuation">:</span> this is doc 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>YAML使用<code>---</code>将指令与文档内容分开。</p> <h2 id="yaml-collections"><a href="#yaml-collections" class="header-anchor">#</a> YAML Collections</h2> <h3 id="序列"><a href="#序列" class="header-anchor">#</a> 序列</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token punctuation">-</span> Mark McGwire
+<span class="token punctuation">-</span> Sammy Sosa
+<span class="token punctuation">-</span> Ken Griffey
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="↓-等效的-json-7"><a href="#↓-等效的-json-7" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token string">&quot;Mark McGwire&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;Sammy Sosa&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;Ken Griffey&quot;</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="映射"><a href="#映射" class="header-anchor">#</a> 映射</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">hr</span><span class="token punctuation">:</span>  <span class="token number">65</span>       <span class="token comment"># Home runs</span>
+<span class="token key atrule">avg</span><span class="token punctuation">:</span> <span class="token number">0.278</span>    <span class="token comment"># Batting average</span>
+<span class="token key atrule">rbi</span><span class="token punctuation">:</span> <span class="token number">147</span>      <span class="token comment"># Runs Batted In</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="↓-等效的-json-8"><a href="#↓-等效的-json-8" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;hr&quot;</span><span class="token operator">:</span> <span class="token number">65</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;avg&quot;</span><span class="token operator">:</span> <span class="token number">0.278</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;rbi&quot;</span><span class="token operator">:</span> <span class="token number">147</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="映射到序列"><a href="#映射到序列" class="header-anchor">#</a> 映射到序列</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">attributes</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> a1
+  <span class="token punctuation">-</span> a2
+<span class="token key atrule">methods</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>getter<span class="token punctuation">,</span> setter<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="↓-等效的-json-9"><a href="#↓-等效的-json-9" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;attributes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;a1&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;a2&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;methods&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;getter&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;setter&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="映射序列"><a href="#映射序列" class="header-anchor">#</a> 映射序列</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">children</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Jimmy Smith
+    <span class="token key atrule">age</span><span class="token punctuation">:</span> <span class="token number">15</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Jimmy Smith
+    <span class="token key atrule">age</span><span class="token punctuation">:</span> <span class="token number">15</span>
+  <span class="token punctuation">-</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> Sammy Sosa
+    <span class="token key atrule">age</span><span class="token punctuation">:</span> <span class="token number">12</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="↓-等效的-json-10"><a href="#↓-等效的-json-10" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span><span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Jimmy Smith&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;age&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Jimmy Smith&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;age&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sammy Sosa&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;age&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="序列的序列"><a href="#序列的序列" class="header-anchor">#</a> 序列的序列</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">my_sequences</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span>  
+    <span class="token punctuation">-</span> <span class="token number">7</span>
+    <span class="token punctuation">-</span> <span class="token number">8</span>
+    <span class="token punctuation">-</span> <span class="token number">9</span>
+    <span class="token punctuation">-</span> <span class="token number">0</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="↓-等效的-json-11"><a href="#↓-等效的-json-11" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;my_sequences&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="映射的映射"><a href="#映射的映射" class="header-anchor">#</a> 映射的映射</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">Mark McGwire</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token key atrule">hr</span><span class="token punctuation">:</span> <span class="token number">65</span><span class="token punctuation">,</span> <span class="token key atrule">avg</span><span class="token punctuation">:</span> <span class="token number">0.278</span><span class="token punctuation">}</span>
+<span class="token key atrule">Sammy Sosa</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token key atrule">hr</span><span class="token punctuation">:</span> <span class="token number">63</span><span class="token punctuation">,</span>
+    <span class="token key atrule">avg</span><span class="token punctuation">:</span> <span class="token number">0.288</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="↓-等效的-json-12"><a href="#↓-等效的-json-12" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;Mark McGwire&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;hr&quot;</span><span class="token operator">:</span> <span class="token number">65</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;avg&quot;</span><span class="token operator">:</span> <span class="token number">0.278</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;Sammy Sosa&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;hr&quot;</span><span class="token operator">:</span> <span class="token number">63</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;avg&quot;</span><span class="token operator">:</span> <span class="token number">0.288</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="嵌套集合"><a href="#嵌套集合" class="header-anchor">#</a> 嵌套集合</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">Jack</span><span class="token punctuation">:</span>
+  <span class="token key atrule">id</span><span class="token punctuation">:</span> <span class="token number">1</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> Franc
+  <span class="token key atrule">salary</span><span class="token punctuation">:</span> <span class="token number">25000</span>
+  <span class="token key atrule">hobby</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> a
+    <span class="token punctuation">-</span> b
+  <span class="token key atrule">location</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token key atrule">country</span><span class="token punctuation">:</span> <span class="token string">&quot;A&quot;</span><span class="token punctuation">,</span> <span class="token key atrule">city</span><span class="token punctuation">:</span> <span class="token string">&quot;A-A&quot;</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="↓-等效的-json-13"><a href="#↓-等效的-json-13" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;Jack&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Franc&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;salary&quot;</span><span class="token operator">:</span> <span class="token number">25000</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;hobby&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;country&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A-A&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="无序集"><a href="#无序集" class="header-anchor">#</a> 无序集</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">set1</span><span class="token punctuation">:</span> <span class="token tag">!!set</span>
+  <span class="token punctuation">?</span> one
+  <span class="token punctuation">?</span> two
+<span class="token key atrule">set2</span><span class="token punctuation">:</span> <span class="token tag">!!set</span> <span class="token punctuation">{</span><span class="token string">'one'</span><span class="token punctuation">,</span> <span class="token string">&quot;two&quot;</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="↓-等效的-json-14"><a href="#↓-等效的-json-14" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;set1&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;one&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span> <span class="token property">&quot;two&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;set2&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;one&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span> <span class="token property">&quot;two&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>集合表示为一个映射，其中每个键都与一个空值相关联</p> <h3 id="有序映射"><a href="#有序映射" class="header-anchor">#</a> 有序映射</h3> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">ordered</span><span class="token punctuation">:</span> <span class="token tag">!!omap</span>
+<span class="token punctuation">-</span> <span class="token key atrule">Mark McGwire</span><span class="token punctuation">:</span> <span class="token number">65</span>
+<span class="token punctuation">-</span> <span class="token key atrule">Sammy Sosa</span><span class="token punctuation">:</span> <span class="token number">63</span>
+<span class="token punctuation">-</span> <span class="token key atrule">Ken Griffy</span><span class="token punctuation">:</span> <span class="token number">58</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="↓-等效的-json-15"><a href="#↓-等效的-json-15" class="header-anchor">#</a> ↓ 等效的 JSON</h4> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;ordered&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+     <span class="token punctuation">{</span><span class="token property">&quot;Mark McGwire&quot;</span><span class="token operator">:</span> <span class="token number">65</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token punctuation">{</span><span class="token property">&quot;Sammy Sosa&quot;</span><span class="token operator">:</span> <span class="token number">63</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token punctuation">{</span><span class="token property">&quot;Ken Griffy&quot;</span><span class="token operator">:</span> <span class="token number">58</span><span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="yaml-参考"><a href="#yaml-参考" class="header-anchor">#</a> YAML 参考</h2> <h3 id="条款"><a href="#条款" class="header-anchor">#</a> 条款</h3> <ul><li>序列又名数组或列表</li> <li>标量又名字符串或数字</li> <li>映射又名哈希或字典
+</li></ul> <p>基于 YAML.org <a href="https://yaml.org/refcard.html" target="_blank" rel="noopener noreferrer">refcard<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <h3 id="文档指标"><a href="#文档指标" class="header-anchor">#</a> 文档指标</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>%</code></td> <td style="text-align:left;">指令指标</td></tr> <tr><td style="text-align:left;"><code>---</code></td> <td style="text-align:left;">文档标题</td></tr> <tr><td style="text-align:left;"><code>...</code></td> <td style="text-align:left;">文档终结者</td></tr></tbody></table> <h3 id="收集指标"><a href="#收集指标" class="header-anchor">#</a> 收集指标</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>?</code></td> <td style="text-align:left;">关键指标</td></tr> <tr><td style="text-align:left;"><code>:</code></td> <td style="text-align:left;">价值指标</td></tr> <tr><td style="text-align:left;"><code>-</code></td> <td style="text-align:left;">嵌套系列条目指示器</td></tr> <tr><td style="text-align:left;"><code>,</code></td> <td style="text-align:left;">单独的内联分支条目</td></tr> <tr><td style="text-align:left;"><code>[]</code></td> <td style="text-align:left;">环绕串联系列分支</td></tr> <tr><td style="text-align:left;"><code>{}</code></td> <td style="text-align:left;">环绕在线键控分支</td></tr></tbody></table> <h3 id="别名指标"><a href="#别名指标" class="header-anchor">#</a> 别名指标</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>&amp;</code></td> <td style="text-align:left;">锚属性</td></tr> <tr><td style="text-align:left;"><code>*</code></td> <td style="text-align:left;">别名指示符</td></tr></tbody></table> <h3 id="特殊键"><a href="#特殊键" class="header-anchor">#</a> 特殊键</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>=</code></td> <td style="text-align:left;">默认“值”映射键</td></tr> <tr><td style="text-align:left;"><code>&lt;&lt;</code></td> <td style="text-align:left;">合并来自另一个映射的键</td></tr></tbody></table> <h3 id="标量指标"><a href="#标量指标" class="header-anchor">#</a> 标量指标</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>''</code></td> <td style="text-align:left;">环绕内联未转义标量</td></tr> <tr><td style="text-align:left;"><code>&quot;</code></td> <td style="text-align:left;">环绕内嵌转义标量</td></tr> <tr><td style="text-align:left;"><code>|</code></td> <td style="text-align:left;">块标量指示器</td></tr> <tr><td style="text-align:left;"><code>&gt;</code></td> <td style="text-align:left;">折叠标量指示器</td></tr> <tr><td style="text-align:left;"><code>-</code></td> <td style="text-align:left;">剥离 chomp 修饰符（<code>\|-</code> 或 <code>&gt;-</code>）</td></tr> <tr><td style="text-align:left;"><code>+</code></td> <td style="text-align:left;">保留 chomp 修饰符（<code>\|+</code> 或 <code>&gt;+</code>）</td></tr> <tr><td style="text-align:left;"><code>1-9</code></td> <td style="text-align:left;">显式缩进修饰符（<code>\|1</code> 或 <code>&gt;2</code>）。 <br> 修饰符可以组合（<code>\|2-</code>, <code>&gt;+1</code>）</td></tr></tbody></table> <h3 id="标签属性-通常未指定"><a href="#标签属性-通常未指定" class="header-anchor">#</a> 标签属性（通常未指定）</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>none</code></td> <td style="text-align:left;">未指定的标签（由应用程序自动解析）</td></tr> <tr><td style="text-align:left;"><code>!</code></td> <td style="text-align:left;">非特定标签（默认情况下，<code>!!map</code>/<code>!!seq</code>/<code>!!str</code>）</td></tr> <tr><td style="text-align:left;"><code>!foo</code></td> <td style="text-align:left;">主要（按照惯例，表示本地 <code>!foo</code> 标记）</td></tr> <tr><td style="text-align:left;"><code>!!foo</code></td> <td style="text-align:left;">次要的（按照惯例，表示 <code>tag:yaml.org,2002:foo</code>）</td></tr> <tr><td style="text-align:left;"><code>!h!foo</code></td> <td style="text-align:left;">需要 <code>%TAG !h! &lt;prefix&gt;</code>（然后表示 <code>&lt;prefix&gt;foo</code>）</td></tr> <tr><td style="text-align:left;"><code>!&lt;foo&gt;</code></td> <td style="text-align:left;">逐字标记（始终表示“foo”）</td></tr></tbody></table> <h3 id="杂项指标"><a href="#杂项指标" class="header-anchor">#</a> 杂项指标</h3> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td><code>#</code></td> <td>一次性评论指示器</td></tr> <tr><td><code>`@</code></td> <td>两者都保留供将来使用</td></tr></tbody></table> <h3 id="核心类型-默认自动标签"><a href="#核心类型-默认自动标签" class="header-anchor">#</a> 核心类型（默认自动标签）</h3> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td><code>!!map</code></td> <td><code>{Hash table, dictionary, mapping}</code></td></tr> <tr><td><code>!!seq</code></td> <td><code>{List, array, tuple, vector, sequence}</code></td></tr> <tr><td><code>!!str</code></td> <td>Unicode 字符串</td></tr></tbody></table> <h3 id="转义码"><a href="#转义码" class="header-anchor">#</a> 转义码</h3> <h4 id="numeric"><a href="#numeric" class="header-anchor">#</a> Numeric</h4> <ul><li><code>\x12</code> (8-bit)</li> <li><code>\u1234</code> (16-bit)</li> <li><code>\U00102030</code> (32-bit)
+</li></ul> <h4 id="protective"><a href="#protective" class="header-anchor">#</a> Protective</h4> <ul><li><code>\\</code> (\)</li> <li><code>\&quot;</code> (&quot;)</li> <li><code>\</code> ( )</li> <li><code>\&lt;TAB&gt;</code> (TAB)
+</li></ul> <h4 id="c"><a href="#c" class="header-anchor">#</a> C</h4> <ul><li><code>\0</code> (NUL)</li> <li><code>\a</code> (BEL)</li> <li><code>\b</code> (BS)</li> <li><code>\f</code> (FF)</li> <li><code>\n</code> (LF)</li> <li><code>\r</code> (CR)</li> <li><code>\t</code> (TAB)</li> <li><code>\v</code> (VTAB)
+</li></ul> <h4 id="额外的"><a href="#额外的" class="header-anchor">#</a> 额外的</h4> <ul><li><code>\e</code> (ESC)</li> <li><code>\_</code> (NBSP)</li> <li><code>\N</code> (NEL)</li> <li><code>\L</code> (LS)</li> <li><code>\P</code> (PS)
+</li></ul> <h3 id="更多类型"><a href="#更多类型" class="header-anchor">#</a> 更多类型</h3> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td><code>!!set</code></td> <td><code>{cherries, plums, apples}</code></td></tr> <tr><td><code>!!omap</code></td> <td><code>[one: 1, two: 2]</code></td></tr></tbody></table> <h3 id="与语言无关的标量类型"><a href="#与语言无关的标量类型" class="header-anchor">#</a> 与语言无关的标量类型</h3> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td><code>{~, null}</code></td> <td>空（无值）。</td></tr> <tr><td><code>[1234, 0x4D2, 02333]</code></td> <td>[十进制整数、十六进制整数、八进制整数]</td></tr> <tr><td><code>[1_230.15, 12.3015e+02]</code></td> <td>[固定浮点数，指数浮点数]</td></tr> <tr><td><code>[.inf, -.Inf, .NAN]</code></td> <td>[无穷大（浮点数），负数，不是数字]</td></tr> <tr><td><code>{Y, true, Yes, ON}</code></td> <td>布尔真</td></tr> <tr><td><code>{n, FALSE, No, off}</code></td> <td>布尔假</td></tr></tbody></table> <h2 id="另见"><a href="#另见" class="header-anchor">#</a> 另见</h2> <ul><li><a href="https://yaml.org/refcard.html" target="_blank" rel="noopener noreferrer">YAML Reference Card<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(yaml.org)</em></li> <li><a href="https://learnxinyminutes.com/docs/yaml/" target="_blank" rel="noopener noreferrer">Learn X in Y minutes<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(learnxinyminutes.com)</em></li> <li><a href="http://www.yamllint.com/" target="_blank" rel="noopener noreferrer">YAML lint online<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(yamllint.com)</em></li> <li><a href="/web/program/ini.html">INI 格式配置文件备忘清单</a> <em>(jaywcjlove.github.io)</em></li> <li><a href="/web/program/toml.html">TOML 格式配置文件备忘清单</a> <em>(jaywcjlove.github.io)</em></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/13/2023, 5:25:30 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/web/assets/js/app.4914d2c8.js" defer></script><script src="/web/assets/js/2.f44a4f26.js" defer></script><script src="/web/assets/js/109.a8c6ac5f.js" defer></script>
+  </body>
+</html>

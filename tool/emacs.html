@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文档搬运工</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/webfavicon.ico">
+    <meta name="description" content="学习笔记，包含前端开发、后端开发、服务器运维等">
+    
+    <link rel="preload" href="/web/assets/css/0.styles.6a124c9c.css" as="style"><link rel="preload" href="/web/assets/js/app.4914d2c8.js" as="script"><link rel="preload" href="/web/assets/js/2.f44a4f26.js" as="script"><link rel="preload" href="/web/assets/js/126.56ee5e62.js" as="script"><link rel="prefetch" href="/web/assets/js/10.68d16472.js"><link rel="prefetch" href="/web/assets/js/100.c1165d99.js"><link rel="prefetch" href="/web/assets/js/101.7685a749.js"><link rel="prefetch" href="/web/assets/js/102.1dae5789.js"><link rel="prefetch" href="/web/assets/js/103.31c8c6f7.js"><link rel="prefetch" href="/web/assets/js/104.1aabc831.js"><link rel="prefetch" href="/web/assets/js/105.f188b2cc.js"><link rel="prefetch" href="/web/assets/js/106.7706f598.js"><link rel="prefetch" href="/web/assets/js/107.98bf6cba.js"><link rel="prefetch" href="/web/assets/js/108.78c41dbf.js"><link rel="prefetch" href="/web/assets/js/109.a8c6ac5f.js"><link rel="prefetch" href="/web/assets/js/11.e0ba19d3.js"><link rel="prefetch" href="/web/assets/js/110.2cccc8fa.js"><link rel="prefetch" href="/web/assets/js/111.19a4e086.js"><link rel="prefetch" href="/web/assets/js/112.d940b1c0.js"><link rel="prefetch" href="/web/assets/js/113.58a5e756.js"><link rel="prefetch" href="/web/assets/js/114.950b8113.js"><link rel="prefetch" href="/web/assets/js/115.9712a524.js"><link rel="prefetch" href="/web/assets/js/116.dacaa4fa.js"><link rel="prefetch" href="/web/assets/js/117.a91f9e15.js"><link rel="prefetch" href="/web/assets/js/118.84772b6e.js"><link rel="prefetch" href="/web/assets/js/119.6e3567ca.js"><link rel="prefetch" href="/web/assets/js/12.67495675.js"><link rel="prefetch" href="/web/assets/js/120.9eb24a02.js"><link rel="prefetch" href="/web/assets/js/121.4f0440a2.js"><link rel="prefetch" href="/web/assets/js/122.a946a176.js"><link rel="prefetch" href="/web/assets/js/123.d3c64c4e.js"><link rel="prefetch" href="/web/assets/js/124.4764bbe8.js"><link rel="prefetch" href="/web/assets/js/125.87d74ae9.js"><link rel="prefetch" href="/web/assets/js/127.948345dc.js"><link rel="prefetch" href="/web/assets/js/128.029c8965.js"><link rel="prefetch" href="/web/assets/js/129.f0356601.js"><link rel="prefetch" href="/web/assets/js/13.6727ab98.js"><link rel="prefetch" href="/web/assets/js/130.e6cc4cb8.js"><link rel="prefetch" href="/web/assets/js/131.2297c3b6.js"><link rel="prefetch" href="/web/assets/js/14.70b0cf01.js"><link rel="prefetch" href="/web/assets/js/15.ba9580a7.js"><link rel="prefetch" href="/web/assets/js/16.1a8c733f.js"><link rel="prefetch" href="/web/assets/js/17.6657a227.js"><link rel="prefetch" href="/web/assets/js/18.65942dbb.js"><link rel="prefetch" href="/web/assets/js/19.7d801cca.js"><link rel="prefetch" href="/web/assets/js/20.34077e32.js"><link rel="prefetch" href="/web/assets/js/21.a30264d9.js"><link rel="prefetch" href="/web/assets/js/22.813d2339.js"><link rel="prefetch" href="/web/assets/js/23.1a059155.js"><link rel="prefetch" href="/web/assets/js/24.d9971ac4.js"><link rel="prefetch" href="/web/assets/js/25.6c1d4926.js"><link rel="prefetch" href="/web/assets/js/26.21e8c7b4.js"><link rel="prefetch" href="/web/assets/js/27.cfff7ef0.js"><link rel="prefetch" href="/web/assets/js/28.405bf1b8.js"><link rel="prefetch" href="/web/assets/js/29.3872d2cb.js"><link rel="prefetch" href="/web/assets/js/3.d00959e5.js"><link rel="prefetch" href="/web/assets/js/30.fea18838.js"><link rel="prefetch" href="/web/assets/js/31.364afb36.js"><link rel="prefetch" href="/web/assets/js/32.3a14b962.js"><link rel="prefetch" href="/web/assets/js/33.ebb8c231.js"><link rel="prefetch" href="/web/assets/js/34.bbba3f86.js"><link rel="prefetch" href="/web/assets/js/35.ebc83e54.js"><link rel="prefetch" href="/web/assets/js/36.949b4b98.js"><link rel="prefetch" href="/web/assets/js/37.63a219a5.js"><link rel="prefetch" href="/web/assets/js/38.2abdd62c.js"><link rel="prefetch" href="/web/assets/js/39.f31baba8.js"><link rel="prefetch" href="/web/assets/js/4.7ac2b204.js"><link rel="prefetch" href="/web/assets/js/40.f1973b4d.js"><link rel="prefetch" href="/web/assets/js/41.b2b7deaa.js"><link rel="prefetch" href="/web/assets/js/42.d94268bc.js"><link rel="prefetch" href="/web/assets/js/43.a747dc86.js"><link rel="prefetch" href="/web/assets/js/44.d3cdaea4.js"><link rel="prefetch" href="/web/assets/js/45.6cedb636.js"><link rel="prefetch" href="/web/assets/js/46.d7f3520c.js"><link rel="prefetch" href="/web/assets/js/47.07c50e1c.js"><link rel="prefetch" href="/web/assets/js/48.9d8d71f9.js"><link rel="prefetch" href="/web/assets/js/49.a8a8fe51.js"><link rel="prefetch" href="/web/assets/js/5.f702624b.js"><link rel="prefetch" href="/web/assets/js/50.d67120fa.js"><link rel="prefetch" href="/web/assets/js/51.c0e05f5e.js"><link rel="prefetch" href="/web/assets/js/52.a09e7b67.js"><link rel="prefetch" href="/web/assets/js/53.3fa73368.js"><link rel="prefetch" href="/web/assets/js/54.56dd39fd.js"><link rel="prefetch" href="/web/assets/js/55.59d3c972.js"><link rel="prefetch" href="/web/assets/js/56.e8d448dc.js"><link rel="prefetch" href="/web/assets/js/57.b25a333a.js"><link rel="prefetch" href="/web/assets/js/58.3a58c623.js"><link rel="prefetch" href="/web/assets/js/59.a0748746.js"><link rel="prefetch" href="/web/assets/js/6.c76c0e1e.js"><link rel="prefetch" href="/web/assets/js/60.69e1f526.js"><link rel="prefetch" href="/web/assets/js/61.39efc969.js"><link rel="prefetch" href="/web/assets/js/62.492b7cb3.js"><link rel="prefetch" href="/web/assets/js/63.c955736f.js"><link rel="prefetch" href="/web/assets/js/64.7249d228.js"><link rel="prefetch" href="/web/assets/js/65.df7d1f53.js"><link rel="prefetch" href="/web/assets/js/66.0993568b.js"><link rel="prefetch" href="/web/assets/js/67.ef9dd414.js"><link rel="prefetch" href="/web/assets/js/68.2ec4de2e.js"><link rel="prefetch" href="/web/assets/js/69.95259dde.js"><link rel="prefetch" href="/web/assets/js/7.96bc15e3.js"><link rel="prefetch" href="/web/assets/js/70.f563832a.js"><link rel="prefetch" href="/web/assets/js/71.f9db52a9.js"><link rel="prefetch" href="/web/assets/js/72.704dde50.js"><link rel="prefetch" href="/web/assets/js/73.f196359d.js"><link rel="prefetch" href="/web/assets/js/74.616d3b86.js"><link rel="prefetch" href="/web/assets/js/75.8a040688.js"><link rel="prefetch" href="/web/assets/js/76.662690e0.js"><link rel="prefetch" href="/web/assets/js/77.2d0b3669.js"><link rel="prefetch" href="/web/assets/js/78.7a1fb4f4.js"><link rel="prefetch" href="/web/assets/js/79.dd0c8373.js"><link rel="prefetch" href="/web/assets/js/8.f652ff79.js"><link rel="prefetch" href="/web/assets/js/80.cc683017.js"><link rel="prefetch" href="/web/assets/js/81.3aa6d63c.js"><link rel="prefetch" href="/web/assets/js/82.e9dea0fc.js"><link rel="prefetch" href="/web/assets/js/83.04ad2625.js"><link rel="prefetch" href="/web/assets/js/84.c2c2bb57.js"><link rel="prefetch" href="/web/assets/js/85.529d11ae.js"><link rel="prefetch" href="/web/assets/js/86.4c1e0495.js"><link rel="prefetch" href="/web/assets/js/87.22881441.js"><link rel="prefetch" href="/web/assets/js/88.d1a28c80.js"><link rel="prefetch" href="/web/assets/js/89.adb017da.js"><link rel="prefetch" href="/web/assets/js/9.6b06aa53.js"><link rel="prefetch" href="/web/assets/js/90.a8757e00.js"><link rel="prefetch" href="/web/assets/js/91.a492ff4f.js"><link rel="prefetch" href="/web/assets/js/92.c6410bf2.js"><link rel="prefetch" href="/web/assets/js/93.5ec8e566.js"><link rel="prefetch" href="/web/assets/js/94.a0e9ad4f.js"><link rel="prefetch" href="/web/assets/js/95.3010b85f.js"><link rel="prefetch" href="/web/assets/js/96.99ce2ecd.js"><link rel="prefetch" href="/web/assets/js/97.91811599.js"><link rel="prefetch" href="/web/assets/js/98.3becd40f.js"><link rel="prefetch" href="/web/assets/js/99.ff73e7fc.js">
+    <link rel="stylesheet" href="/web/assets/css/0.styles.6a124c9c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/web/" class="home-link router-link-active"><!----> <span class="site-name">文档搬运工</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/tool/emacs.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/tool/emacs.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/tool/emacs.html#入门" class="sidebar-link">入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#启动-emacs" class="sidebar-link">启动 Emacs</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#全局描述" class="sidebar-link">全局描述</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#移动" class="sidebar-link">移动</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#案例变更" class="sidebar-link">案例变更</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#文件" class="sidebar-link">文件</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#错误恢复" class="sidebar-link">错误恢复</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#transposing" class="sidebar-link">Transposing</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#标记" class="sidebar-link">标记</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#杀死和删除" class="sidebar-link">杀死和删除</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#获得帮助" class="sidebar-link">获得帮助</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#多个窗口" class="sidebar-link">多个窗口</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#格式化" class="sidebar-link">格式化</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#信息" class="sidebar-link">信息</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#小缓冲区" class="sidebar-link">小缓冲区</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#标签" class="sidebar-link">标签</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#缓冲器" class="sidebar-link">缓冲器</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#矩形" class="sidebar-link">矩形</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#键盘宏" class="sidebar-link">键盘宏</a></li></ul></li><li><a href="/web/tool/emacs.html#emacs-搜索" class="sidebar-link">Emacs 搜索</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#正则表达式-常用" class="sidebar-link">正则表达式（常用）</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#正则表达式-条目" class="sidebar-link">正则表达式（条目）</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#正则表达式-冲突" class="sidebar-link">正则表达式（冲突）</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#增量搜索" class="sidebar-link">增量搜索</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#查询替换" class="sidebar-link">查询替换</a></li></ul></li><li><a href="/web/tool/emacs.html#杂项" class="sidebar-link">杂项</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#shell" class="sidebar-link">Shell</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#国际字符集" class="sidebar-link">国际字符集</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#寄存器" class="sidebar-link">寄存器</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#各种各样的" class="sidebar-link">各种各样的</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#处理-emacs-lisp-的命令" class="sidebar-link">处理 Emacs Lisp 的命令</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#简单的定制" class="sidebar-link">简单的定制</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#缩写" class="sidebar-link">缩写</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#拼写检查" class="sidebar-link">拼写检查</a></li><li class="sidebar-sub-header"><a href="/web/tool/emacs.html#编写命令" class="sidebar-link">编写命令</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="emacs-备忘清单"><a href="#emacs-备忘清单" class="header-anchor">#</a> Emacs 备忘清单</h1> <p><a href="https://www.gnu.org/software/emacs" target="_blank" rel="noopener noreferrer">Emacs<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 是可扩展的、可定制的、自记录的实时显示文本编辑器。此参考适用于 Emacs 27+</p> <h2 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h2> <h3 id="启动-emacs"><a href="#启动-emacs" class="header-anchor">#</a> 启动 Emacs</h3> <p>要进入 Emacs，只需输入其名称：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ emacs
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><hr> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-z</code></td> <td style="text-align:left;">挂起 Emacs</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-c</code></td> <td style="text-align:left;">永久退出 Emacs</td></tr></tbody></table> <h3 id="全局描述"><a href="#全局描述" class="header-anchor">#</a> 全局描述</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-&lt;key&gt;</code></td> <td style="text-align:left;">表示按住控件，然后按 <code>&lt;key&gt;</code></td></tr> <tr><td style="text-align:left;"><code>M-&lt;key&gt;</code></td> <td style="text-align:left;">表示按 <code>Esc</code> 一次，然后按 <code>&lt;key&gt;</code></td></tr></tbody></table> <p>注意：本备忘单遵循上述规则</p> <h3 id="移动"><a href="#移动" class="header-anchor">#</a> 移动</h3> <table><thead><tr><th style="text-align:left;">返回</th> <th style="text-align:left;">向前</th> <th style="text-align:left;">要移动的实体</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-b</code></td> <td style="text-align:left;"><code>C-f</code></td> <td style="text-align:left;">Haracter</td></tr> <tr><td style="text-align:left;"><code>M-b</code></td> <td style="text-align:left;"><code>M-f</code></td> <td style="text-align:left;">单词</td></tr> <tr><td style="text-align:left;"><code>C-p</code></td> <td style="text-align:left;"><code>C-n</code></td> <td style="text-align:left;">线</td></tr> <tr><td style="text-align:left;"><code>C-a</code></td> <td style="text-align:left;"><code>C-e</code></td> <td style="text-align:left;">行开头<br><em>（或结尾）</em></td></tr> <tr><td style="text-align:left;"><code>M-a</code></td> <td style="text-align:left;"><code>M-e</code></td> <td style="text-align:left;">句子</td></tr> <tr><td style="text-align:left;"><code>M-{</code></td> <td style="text-align:left;"><code>M-}</code></td> <td style="text-align:left;">段落</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>[</code></td> <td style="text-align:left;"><code>C-x</code> <code>]</code></td> <td style="text-align:left;">页</td></tr> <tr><td style="text-align:left;"><code>C-M-b</code></td> <td style="text-align:left;"><code>C-M-f</code></td> <td style="text-align:left;">Sexp</td></tr> <tr><td style="text-align:left;"><code>C-M-a</code></td> <td style="text-align:left;"><code>C-M-e</code></td> <td style="text-align:left;">功能</td></tr> <tr><td style="text-align:left;"><code>M-&lt;</code></td> <td style="text-align:left;"><code>M-&gt;</code></td> <td style="text-align:left;">缓冲区开始<br><em>（或结束）</em></td></tr></tbody></table> <h3 id="案例变更"><a href="#案例变更" class="header-anchor">#</a> 案例变更</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>M-u</code></td> <td style="text-align:left;">大写单词</td></tr> <tr><td style="text-align:left;"><code>M-l</code></td> <td style="text-align:left;">小写单词</td></tr> <tr><td style="text-align:left;"><code>M-c</code></td> <td style="text-align:left;">大写单词</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-u</code></td> <td style="text-align:left;">大写区域</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-l</code></td> <td style="text-align:left;">小写区域</td></tr></tbody></table> <h3 id="文件"><a href="#文件" class="header-anchor">#</a> 文件</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>C-f</code></td> <td style="text-align:left;">将文件读入 Emacs</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-s</code></td> <td style="text-align:left;">将文件保存回磁盘</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>s</code></td> <td style="text-align:left;">保存所有文件</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>i</code></td> <td style="text-align:left;">将另一个文件的内容插入此缓冲区</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-v</code></td> <td style="text-align:left;">将此文件替换为您的文件</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-w</code></td> <td style="text-align:left;">将缓冲区写入指定文件</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-q</code></td> <td style="text-align:left;">切换缓冲区的只读状态</td></tr></tbody></table> <h3 id="错误恢复"><a href="#错误恢复" class="header-anchor">#</a> 错误恢复</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-g</code></td> <td style="text-align:left;">中止部分键入或执行的命令</td></tr> <tr><td style="text-align:left;"><code>M-x</code> 恢复会话</td> <td style="text-align:left;">恢复因系统崩溃而丢失的文件</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>u</code> <code>C-_</code> <code>C-/</code></td> <td style="text-align:left;">撤消不需要的更改</td></tr> <tr><td style="text-align:left;"><code>M-x</code> 恢复缓冲器</td> <td style="text-align:left;">将缓冲区恢复到其原始内容</td></tr> <tr><td style="text-align:left;"><code>C-l</code></td> <td style="text-align:left;">重绘垃圾屏幕</td></tr></tbody></table> <h3 id="transposing"><a href="#transposing" class="header-anchor">#</a> Transposing</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-t</code></td> <td style="text-align:left;">转置字符</td></tr> <tr><td style="text-align:left;"><code>M-t</code></td> <td style="text-align:left;">转置词</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-t</code></td> <td style="text-align:left;">转置线</td></tr> <tr><td style="text-align:left;"><code>C-M-t</code></td> <td style="text-align:left;">转置性别</td></tr></tbody></table> <h4 id="scroll"><a href="#scroll" class="header-anchor">#</a> Scroll</h4> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-v</code></td> <td style="text-align:left;">滚动到下一个屏幕</td></tr> <tr><td style="text-align:left;"><code>M-v</code></td> <td style="text-align:left;">滚动到上一个屏幕</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>&lt;</code></td> <td style="text-align:left;">向左滚动</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>&gt;</code></td> <td style="text-align:left;">向右滚动</td></tr> <tr><td style="text-align:left;"><code>C-l</code></td> <td style="text-align:left;">将当前行滚动到 <br> <em>center, top, bottom</em></td></tr></tbody></table> <h4 id="跳转"><a href="#跳转" class="header-anchor">#</a> 跳转</h4> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>M-g</code> <code>g</code></td> <td style="text-align:left;">转到行</td></tr> <tr><td style="text-align:left;"><code>M-g</code> <code>c</code></td> <td style="text-align:left;">转到字符</td></tr> <tr><td style="text-align:left;"><code>M-m</code></td> <td style="text-align:left;">返回缩进</td></tr></tbody></table> <h3 id="标记"><a href="#标记" class="header-anchor">#</a> 标记</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-@</code> <code>C-SPC</code></td> <td style="text-align:left;">在标记在这里</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-x</code></td> <td style="text-align:left;">交换点和标记</td></tr> <tr><td style="text-align:left;"><code>M-@</code></td> <td style="text-align:left;">设置标记 arg 单词</td></tr> <tr><td style="text-align:left;"><code>M-h</code></td> <td style="text-align:left;">标记段落</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-p</code></td> <td style="text-align:left;">标记页面</td></tr> <tr><td style="text-align:left;"><code>C-M-@</code></td> <td style="text-align:left;">标记性</td></tr> <tr><td style="text-align:left;"><code>C-M-h</code></td> <td style="text-align:left;">标记功能</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>h</code></td> <td style="text-align:left;">标记整个缓冲区</td></tr></tbody></table> <h3 id="杀死和删除"><a href="#杀死和删除" class="header-anchor">#</a> 杀死和删除</h3> <table><thead><tr><th style="text-align:left;">向后</th> <th style="text-align:left;">向前</th> <th style="text-align:left;">要杀死的实体</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>DEL</code></td> <td style="text-align:left;"><code>C-d</code></td> <td style="text-align:left;">字符 <br><em>(删除)</em></td></tr> <tr><td style="text-align:left;"><code>M-DEL</code></td> <td style="text-align:left;"><code>M-d</code></td> <td style="text-align:left;">单词</td></tr> <tr><td style="text-align:left;"><code>M-0</code> <code>C-k</code></td> <td style="text-align:left;"><code>C-k</code></td> <td style="text-align:left;">行 <br> <em>(到结尾)</em></td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>DEL</code></td> <td style="text-align:left;"><code>M-k</code></td> <td style="text-align:left;">句子</td></tr> <tr><td style="text-align:left;"><code>M--</code> <code>C-M-k</code></td> <td style="text-align:left;"><code>C-M-k</code></td> <td style="text-align:left;">性爱</td></tr></tbody></table> <h4 id="杀死"><a href="#杀死" class="header-anchor">#</a> 杀死</h4> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-W</code></td> <td style="text-align:left;">杀死区域 C-w</td></tr> <tr><td style="text-align:left;"><code>M-w</code></td> <td style="text-align:left;">复制区域杀死环</td></tr> <tr><td style="text-align:left;"><code>M-z</code> char</td> <td style="text-align:left;">杀死下一次出现的字符</td></tr> <tr><td style="text-align:left;"><code>C-y</code></td> <td style="text-align:left;">拉回最后一个被杀的东西</td></tr> <tr><td style="text-align:left;"><code>M-y</code></td> <td style="text-align:left;">用之前的杀戮替换最后的猛拉</td></tr></tbody></table> <h3 id="获得帮助"><a href="#获得帮助" class="header-anchor">#</a> 获得帮助</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>1</code></td> <td style="text-align:left;">删除帮助窗口</td></tr> <tr><td style="text-align:left;"><code>C-M-v</code></td> <td style="text-align:left;">滚动帮助窗口</td></tr> <tr><td style="text-align:left;"><code>C-h</code> <code>a</code></td> <td style="text-align:left;">Apropos：显示匹配字符串的命令</td></tr> <tr><td style="text-align:left;"><code>C-h</code> <code>k</code></td> <td style="text-align:left;">描述一个键运行的功能</td></tr> <tr><td style="text-align:left;"><code>C-h</code> <code>f</code></td> <td style="text-align:left;">描述一个函数</td></tr> <tr><td style="text-align:left;"><code>C-h</code> <code>m</code></td> <td style="text-align:left;">获取特定于模式的信息</td></tr></tbody></table> <p>帮助系统很简单。键入 <code>C-h</code>（或 <code>F1</code>）并按照说明进行操作。如果您是第一次使用，请键入 <code>C-h</code> <code>t</code> 以获得教程</p> <h3 id="多个窗口"><a href="#多个窗口" class="header-anchor">#</a> 多个窗口</h3> <p>当显示两个命令时，第二个命令是用于框架而不是窗口的类似命令</p> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>1</code></td> <td style="text-align:left;"><code>C-x</code> <code>1</code></td> <td style="text-align:left;">删除所有其他窗口</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>2</code></td> <td style="text-align:left;"><code>C-x</code> <code>2</code></td> <td style="text-align:left;">拆分窗口，上方和下方</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>0</code></td> <td style="text-align:left;"><code>C-x</code> <code>0</code></td> <td style="text-align:left;">删除此窗口</td></tr></tbody></table> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"></td> <td style="text-align:left;"><code>C-x</code> <code>3</code></td> <td style="text-align:left;">拆分窗口，并排</td></tr> <tr><td style="text-align:left;"></td> <td style="text-align:left;"><code>C-M-v</code></td> <td style="text-align:left;">滚动其他窗口</td></tr></tbody></table> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>o</code></td> <td style="text-align:left;"><code>C-x</code> <code>o</code></td> <td style="text-align:left;">将光标切换到另一个窗口</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>b</code></td> <td style="text-align:left;"><code>C-x</code> <code>4</code> <code>b</code></td> <td style="text-align:left;">在其他窗口中选择缓冲区</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>C-o</code></td> <td style="text-align:left;"><code>C-x</code> <code>4</code> <code>C-o</code></td> <td style="text-align:left;">在其他窗口中显示缓冲区</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>f</code></td> <td style="text-align:left;"><code>C-x</code> <code>4</code> <code>f</code></td> <td style="text-align:left;">在其他窗口中查找文件</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>r</code></td> <td style="text-align:left;"><code>C-x</code> <code>4</code> <code>r</code></td> <td style="text-align:left;">在其他窗口中以只读方式查找文件</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>d</code></td> <td style="text-align:left;"><code>C-x</code> <code>4</code> <code>d</code></td> <td style="text-align:left;">在其他窗口中运行 Dired</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>5</code> <code>.</code></td> <td style="text-align:left;"><code>C-x</code> <code>4</code> <code>.</code></td> <td style="text-align:left;">在其他窗口中查找标签</td></tr></tbody></table> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"></td> <td style="text-align:left;"><code>C-x</code> <code>^</code></td> <td style="text-align:left;">让窗户变高</td></tr> <tr><td style="text-align:left;"></td> <td style="text-align:left;"><code>C-x</code> <code>{</code></td> <td style="text-align:left;">缩小窗口</td></tr> <tr><td style="text-align:left;"></td> <td style="text-align:left;"><code>C-x</code> <code>}</code></td> <td style="text-align:left;">让窗口变宽</td></tr></tbody></table> <h3 id="格式化"><a href="#格式化" class="header-anchor">#</a> 格式化</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>TAB</code></td> <td style="text-align:left;">缩进当前行（取决于模式）</td></tr> <tr><td style="text-align:left;"><code>C-M-\</code></td> <td style="text-align:left;">缩进区域（取决于模式）</td></tr> <tr><td style="text-align:left;"><code>C-M-q</code></td> <td style="text-align:left;">缩进 sexp（取决于模式）</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>TAB</code></td> <td style="text-align:left;">缩进区域刚性 arg 列</td></tr> <tr><td style="text-align:left;"><code>M-;</code></td> <td style="text-align:left;">缩进评论</td></tr> <tr><td style="text-align:left;"><code>C-o</code></td> <td style="text-align:left;">在点后插入换行符</td></tr> <tr><td style="text-align:left;"><code>C-M-o</code></td> <td style="text-align:left;">将其余行垂直向下移动</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-o</code></td> <td style="text-align:left;">删除点周围的空行</td></tr> <tr><td style="text-align:left;"><code>M-^</code></td> <td style="text-align:left;">与上一个加入行（带 arg，下一个）</td></tr> <tr><td style="text-align:left;"><code>M-\</code></td> <td style="text-align:left;">删除点周围的所有空白</td></tr> <tr><td style="text-align:left;"><code>M-SPC</code></td> <td style="text-align:left;">在点上正好放一个空格</td></tr> <tr><td style="text-align:left;"><code>M-q</code></td> <td style="text-align:left;">填写段落</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>f</code></td> <td style="text-align:left;">将填充列设置为 arg</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>.</code></td> <td style="text-align:left;">设置每行开头的前缀</td></tr> <tr><td style="text-align:left;"><code>M-o</code></td> <td style="text-align:left;">设置面</td></tr></tbody></table> <h3 id="信息"><a href="#信息" class="header-anchor">#</a> 信息</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-h</code> <code>i</code></td> <td style="text-align:left;">输入信息文档阅读器</td></tr> <tr><td style="text-align:left;"><code>C-h</code> <code>S</code></td> <td style="text-align:left;">在 Info 中查找指定的函数或变量</td></tr></tbody></table> <h4 id="在节点内移动"><a href="#在节点内移动" class="header-anchor">#</a> 在节点内移动</h4> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>SPC</code></td> <td style="text-align:left;">向前滚动</td></tr> <tr><td style="text-align:left;"><code>DEL</code></td> <td style="text-align:left;">反向滚动</td></tr> <tr><td style="text-align:left;"><code>b</code></td> <td style="text-align:left;">节点的开始</td></tr></tbody></table> <h4 id="在节点之间移动"><a href="#在节点之间移动" class="header-anchor">#</a> 在节点之间移动</h4> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>n</code></td> <td style="text-align:left;">下一个节点</td></tr> <tr><td style="text-align:left;"><code>p</code></td> <td style="text-align:left;">上一个节点</td></tr> <tr><td style="text-align:left;"><code>u</code></td> <td style="text-align:left;">提升</td></tr> <tr><td style="text-align:left;"><code>m</code></td> <td style="text-align:left;">按名称选择菜单项</td></tr> <tr><td style="text-align:left;"><code>n</code></td> <td style="text-align:left;">按编号 (1–9) 选择第 n 个菜单项</td></tr> <tr><td style="text-align:left;"><code>f</code></td> <td style="text-align:left;">遵循交叉引用（用 l 返回）</td></tr> <tr><td style="text-align:left;"><code>l</code></td> <td style="text-align:left;">返回您看到的最后一个节点</td></tr> <tr><td style="text-align:left;"><code>d</code></td> <td style="text-align:left;">返回目录节点</td></tr> <tr><td style="text-align:left;"><code>t</code></td> <td style="text-align:left;">转到信息文件的顶部节点</td></tr> <tr><td style="text-align:left;"><code>g</code></td> <td style="text-align:left;">按名称转到任何节点</td></tr></tbody></table> <h4 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h4> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>h</code></td> <td style="text-align:left;">运行信息教程</td></tr> <tr><td style="text-align:left;"><code>i</code></td> <td style="text-align:left;">在索引中查找主题</td></tr> <tr><td style="text-align:left;"><code>s</code></td> <td style="text-align:left;">搜索节点以查找正则表达式</td></tr> <tr><td style="text-align:left;"><code>q</code></td> <td style="text-align:left;">退出信息</td></tr></tbody></table> <h3 id="小缓冲区"><a href="#小缓冲区" class="header-anchor">#</a> 小缓冲区</h3> <p>以下键在 <code>minibuffer</code> 中定义</p> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>TAB</code></td> <td style="text-align:left;">尽可能完成</td></tr> <tr><td style="text-align:left;"><code>SPC</code></td> <td style="text-align:left;">最多完成一个单词</td></tr> <tr><td style="text-align:left;"><code>RET</code></td> <td style="text-align:left;">完成并执行</td></tr> <tr><td style="text-align:left;"><code>?</code></td> <td style="text-align:left;">显示可能的完成</td></tr> <tr><td style="text-align:left;"><code>M-p</code></td> <td style="text-align:left;">获取先前的 <code>minibuffer</code> 输入</td></tr> <tr><td style="text-align:left;"><code>M-n</code></td> <td style="text-align:left;">获取稍后的 <code>minibuffer</code> 输入或默认值</td></tr> <tr><td style="text-align:left;"><code>M-r</code></td> <td style="text-align:left;">正则表达式向后搜索历史</td></tr> <tr><td style="text-align:left;"><code>M-s</code></td> <td style="text-align:left;">正则表达式向前搜索历史</td></tr> <tr><td style="text-align:left;"><code>C-g</code></td> <td style="text-align:left;">中止命令</td></tr></tbody></table> <p>键入 <code>C-x</code> <code>ESC</code> <code>ESC</code> 以编辑并重复使用 <code>minibuffer</code> 的最后一个命令。键入 <code>F10</code> 以激活文本终端上的菜单栏项</p> <h3 id="标签"><a href="#标签" class="header-anchor">#</a> 标签</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>M-.</code></td> <td style="text-align:left;">查找标签（定义）</td></tr> <tr><td style="text-align:left;"><code>C-u</code> <code>M-.</code></td> <td style="text-align:left;">查找标签的下一个出现</td></tr> <tr><td style="text-align:left;"><code>M-x</code> 访问标签表</td> <td style="text-align:left;">指定一个新的标签文件</td></tr> <tr><td style="text-align:left;"><code>M-x</code> 标签搜索</td> <td style="text-align:left;">正则表达式搜索标签表中的所有文件</td></tr> <tr><td style="text-align:left;"><code>M-x</code> 标签查询替换</td> <td style="text-align:left;">对所有文件运行查询替换</td></tr> <tr><td style="text-align:left;"><code>M-,</code></td> <td style="text-align:left;">继续最后一个标签搜索或查询替换</td></tr></tbody></table> <h3 id="缓冲器"><a href="#缓冲器" class="header-anchor">#</a> 缓冲器</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>b</code></td> <td style="text-align:left;">选择另一个缓冲区</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>C-b</code></td> <td style="text-align:left;">列出所有缓冲区</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>k</code></td> <td style="text-align:left;">杀死一个缓冲区</td></tr></tbody></table> <h3 id="矩形"><a href="#矩形" class="header-anchor">#</a> 矩形</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>r</code></td> <td style="text-align:left;">复制矩形进行注册</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>k</code></td> <td style="text-align:left;">杀死矩形</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>y</code></td> <td style="text-align:left;">拉长矩形</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>o</code></td> <td style="text-align:left;">打开矩形，向右移动文本</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>c</code></td> <td style="text-align:left;">空白矩形</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>t</code></td> <td style="text-align:left;">用字符串为每一行添加前缀</td></tr></tbody></table> <h3 id="键盘宏"><a href="#键盘宏" class="header-anchor">#</a> 键盘宏</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>(</code></td> <td style="text-align:left;">开始定义键盘宏</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>)</code></td> <td style="text-align:left;">结束键盘宏定义</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>e</code></td> <td style="text-align:left;">执行最后定义的键盘宏</td></tr> <tr><td style="text-align:left;"><code>C-u</code> <code>C-x</code> <code>(</code></td> <td style="text-align:left;">附加到最后一个键盘宏</td></tr> <tr><td style="text-align:left;"><code>M-x</code> name-last-kbd-macro</td> <td style="text-align:left;">命名最后一个键盘宏</td></tr> <tr><td style="text-align:left;"><code>M-x</code> insert-kbd-macro</td> <td style="text-align:left;">在缓冲区中插入 Lisp 定义</td></tr></tbody></table> <h2 id="emacs-搜索"><a href="#emacs-搜索" class="header-anchor">#</a> Emacs 搜索</h2> <h3 id="正则表达式-常用"><a href="#正则表达式-常用" class="header-anchor">#</a> 正则表达式（常用）</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>.</code> <code>(dot)</code></td> <td style="text-align:left;">除换行符外的任何单个字符</td></tr> <tr><td style="text-align:left;"><code>*</code></td> <td style="text-align:left;">零次或多次重复</td></tr> <tr><td style="text-align:left;"><code>+</code></td> <td style="text-align:left;">一次或多次重复</td></tr> <tr><td style="text-align:left;"><code>?</code></td> <td style="text-align:left;">零次或一次重复</td></tr> <tr><td style="text-align:left;"><code>\</code></td> <td style="text-align:left;">引用特殊字符</td></tr> <tr><td style="text-align:left;"><code>\c</code></td> <td style="text-align:left;">引用正则表达式特殊字符 c</td></tr> <tr><td style="text-align:left;"><code>\|</code></td> <td style="text-align:left;">替代（“或”）</td></tr> <tr><td style="text-align:left;"><code>\(...\)</code></td> <td style="text-align:left;">分组</td></tr> <tr><td style="text-align:left;"><code>\(:?...\)</code></td> <td style="text-align:left;">害羞的分组</td></tr> <tr><td style="text-align:left;"><code>\(:NUM...\)</code></td> <td style="text-align:left;">显式编号分组</td></tr> <tr><td style="text-align:left;"><code>\n</code></td> <td style="text-align:left;">与第 n 组相同的文本</td></tr> <tr><td style="text-align:left;"><code>\b</code></td> <td style="text-align:left;">在断字时</td></tr> <tr><td style="text-align:left;"><code>\B</code></td> <td style="text-align:left;">不在断字</td></tr></tbody></table> <h3 id="正则表达式-条目"><a href="#正则表达式-条目" class="header-anchor">#</a> 正则表达式（条目）</h3> <table><thead><tr><th style="text-align:left;">开始</th> <th style="text-align:left;">结束</th> <th style="text-align:left;">实体</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>^</code></td> <td style="text-align:left;"><code>$</code></td> <td style="text-align:left;">行</td></tr> <tr><td style="text-align:left;"><code>\&lt;</code></td> <td style="text-align:left;"><code>\&gt;</code></td> <td style="text-align:left;">单词</td></tr> <tr><td style="text-align:left;"><code>\_&lt;</code></td> <td style="text-align:left;"><code>\_&gt;</code></td> <td style="text-align:left;">象征</td></tr> <tr><td style="text-align:left;"><code>\‘</code></td> <td style="text-align:left;"><code>\’</code></td> <td style="text-align:left;">缓冲</td></tr></tbody></table> <h3 id="正则表达式-冲突"><a href="#正则表达式-冲突" class="header-anchor">#</a> 正则表达式（冲突）</h3> <table><thead><tr><th style="text-align:left;">这些</th> <th style="text-align:left;">其他</th> <th style="text-align:left;">class</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>[...]</code></td> <td style="text-align:left;"><code>[^...]</code></td> <td style="text-align:left;">显式集</td></tr> <tr><td style="text-align:left;"><code>\w</code></td> <td style="text-align:left;"><code>\W</code></td> <td style="text-align:left;">单词语法字符</td></tr> <tr><td style="text-align:left;"><code>\sc</code></td> <td style="text-align:left;"><code>\Sc</code></td> <td style="text-align:left;">具有语法 c 的字符</td></tr> <tr><td style="text-align:left;"><code>\cc</code></td> <td style="text-align:left;"><code>\Cc</code></td> <td style="text-align:left;">类别 c 的字符</td></tr></tbody></table> <h3 id="增量搜索"><a href="#增量搜索" class="header-anchor">#</a> 增量搜索</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-s</code></td> <td style="text-align:left;">向前搜索</td></tr> <tr><td style="text-align:left;"><code>C-r</code></td> <td style="text-align:left;">向后搜索</td></tr> <tr><td style="text-align:left;"><code>C-M-s</code></td> <td style="text-align:left;">正则表达式搜索</td></tr> <tr><td style="text-align:left;"><code>C-M-r</code></td> <td style="text-align:left;">反向正则表达式搜索</td></tr> <tr><td style="text-align:left;"><code>M-p</code></td> <td style="text-align:left;">选择上一个搜索字符串</td></tr> <tr><td style="text-align:left;"><code>M-n</code></td> <td style="text-align:left;">选择下一个稍后搜索字符串</td></tr> <tr><td style="text-align:left;"><code>RET</code></td> <td style="text-align:left;">退出增量搜索</td></tr> <tr><td style="text-align:left;"><code>DEL</code></td> <td style="text-align:left;">最后一个字符的撤消效果</td></tr> <tr><td style="text-align:left;"><code>C-g</code></td> <td style="text-align:left;">中止当前搜索</td></tr></tbody></table> <p>再次使用 <code>C-s</code> 或 <code>C-r</code> 在任一方向重复搜索。 如果 Emacs 仍在搜索，<code>C-g</code> 只取消不匹配的部分</p> <h3 id="查询替换"><a href="#查询替换" class="header-anchor">#</a> 查询替换</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>M-%</code></td> <td style="text-align:left;">以交互方式替换文本字符串</td></tr> <tr><td style="text-align:left;"><code>M-x</code> regexp</td> <td style="text-align:left;">使用正则表达式</td></tr> <tr><td style="text-align:left;"><code>SPC</code> / <code>y</code></td> <td style="text-align:left;">替换这个，继续下一个</td></tr> <tr><td style="text-align:left;"><code>,</code></td> <td style="text-align:left;">换这个，别动</td></tr> <tr><td style="text-align:left;"><code>DEL</code> / <code>n</code></td> <td style="text-align:left;">不更换就跳到下一个</td></tr> <tr><td style="text-align:left;"><code>!</code></td> <td style="text-align:left;">替换所有剩余的匹配项</td></tr> <tr><td style="text-align:left;"><code>^</code></td> <td style="text-align:left;">回到上一场比赛</td></tr> <tr><td style="text-align:left;"><code>RET</code></td> <td style="text-align:left;">退出查询替换</td></tr> <tr><td style="text-align:left;"><code>C-r</code></td> <td style="text-align:left;">进入递归编辑（C-M-c 退出）</td></tr></tbody></table> <h2 id="杂项"><a href="#杂项" class="header-anchor">#</a> 杂项</h2> <h3 id="shell"><a href="#shell" class="header-anchor">#</a> Shell</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>M-!</code></td> <td style="text-align:left;">执行一个shell命令</td></tr> <tr><td style="text-align:left;"><code>M-&amp;</code></td> <td style="text-align:left;">异步执行shell命令</td></tr> <tr><td style="text-align:left;"><code>M-</code></td> <td style="text-align:left;">在区域上运行 shell 命令</td></tr> <tr><td style="text-align:left;"><code>C-u</code> <code>M-</code></td> <td style="text-align:left;">通过 shell 命令过滤区域</td></tr> <tr><td style="text-align:left;"><code>M-x</code> shell</td> <td style="text-align:left;">在window shell中启动一个shell</td></tr></tbody></table> <h3 id="国际字符集"><a href="#国际字符集" class="header-anchor">#</a> 国际字符集</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>RET</code> <code>l</code></td> <td style="text-align:left;">指定主要语言</td></tr> <tr><td style="text-align:left;"><code>M-x</code> list-input-methods</td> <td style="text-align:left;">显示所有输入法</td></tr> <tr><td style="text-align:left;"><code>C-\</code></td> <td style="text-align:left;">启用或禁用输入法</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>RET</code> <code>c</code></td> <td style="text-align:left;">为下一个命令设置编码系统</td></tr> <tr><td style="text-align:left;"><code>M-x</code> list-coding-systems</td> <td style="text-align:left;">显示所有编码系统</td></tr> <tr><td style="text-align:left;"><code>M-x</code> prefer-coding-system</td> <td style="text-align:left;">选择首选的编码系统</td></tr></tbody></table> <h3 id="寄存器"><a href="#寄存器" class="header-anchor">#</a> 寄存器</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>s</code></td> <td style="text-align:left;">在寄存器中保存区域</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>i</code></td> <td style="text-align:left;">将寄存器内容插入缓冲区</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>SPC</code></td> <td style="text-align:left;">将点的值保存在寄存器中</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>r</code> <code>j</code></td> <td style="text-align:left;">跳转到保存在寄存器中的点</td></tr></tbody></table> <h3 id="各种各样的"><a href="#各种各样的" class="header-anchor">#</a> 各种各样的</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-u</code> num</td> <td style="text-align:left;">数值参数</td></tr> <tr><td style="text-align:left;"><code>M--</code></td> <td style="text-align:left;">否定论点</td></tr> <tr><td style="text-align:left;"><code>C-q</code> char</td> <td style="text-align:left;">带引号的插页</td></tr></tbody></table> <h3 id="处理-emacs-lisp-的命令"><a href="#处理-emacs-lisp-的命令" class="header-anchor">#</a> 处理 Emacs Lisp 的命令</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>C-e</code></td> <td style="text-align:left;">评估点前的性</td></tr> <tr><td style="text-align:left;"><code>C-M-x</code></td> <td style="text-align:left;">评估电流定义</td></tr> <tr><td style="text-align:left;"><code>M-x</code> eval-region</td> <td style="text-align:left;">评估区</td></tr> <tr><td style="text-align:left;"><code>M-:</code></td> <td style="text-align:left;">读取和评估 minibuffer</td></tr> <tr><td style="text-align:left;"><code>M-x</code> load-library</td> <td style="text-align:left;">从加载路径加载 Lisp 库</td></tr></tbody></table> <h3 id="简单的定制"><a href="#简单的定制" class="header-anchor">#</a> 简单的定制</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>M-x</code> <code>customize</code></td> <td style="text-align:left;">自定义变量和面</td></tr></tbody></table> <p>在 Emacs Lisp 中进行全局键绑定：</p> <div class="language-emacs line-numbers-mode"><pre class="language-emacs"><code><span class="token punctuation">(</span><span class="token car">global-set-key</span> <span class="token punctuation">(</span><span class="token car">kbd</span> <span class="token string">&quot;C-c g&quot;</span><span class="token punctuation">)</span> ’search-forward<span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token car">global-set-key</span> <span class="token punctuation">(</span><span class="token car">kbd</span> <span class="token string">&quot;M-#&quot;</span><span class="token punctuation">)</span> ’query-replace-regexp<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div> <h3 id="缩写"><a href="#缩写" class="header-anchor">#</a> 缩写</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>C-x</code> <code>a</code> <code>g</code></td> <td style="text-align:left;">添加全局缩写</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>a</code> <code>l</code></td> <td style="text-align:left;">添加模式本地缩写</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>a</code> <code>i</code> <code>g</code></td> <td style="text-align:left;">为这个缩写添加全局扩展</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>a</code> <code>i</code> <code>l</code></td> <td style="text-align:left;">为这个缩写添加模式本地扩展</td></tr> <tr><td style="text-align:left;"><code>C-x</code> <code>a</code> <code>e</code></td> <td style="text-align:left;">显式扩展缩写</td></tr> <tr><td style="text-align:left;"><code>M-/</code></td> <td style="text-align:left;">动态扩展前一个单词</td></tr></tbody></table> <h3 id="拼写检查"><a href="#拼写检查" class="header-anchor">#</a> 拼写检查</h3> <table><thead><tr><th style="text-align:left;">:-</th> <th style="text-align:left;">:-</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>M-$</code></td> <td style="text-align:left;">检查当前单词的拼写</td></tr> <tr><td style="text-align:left;"><code>M-x</code> ispell 地区</td> <td style="text-align:left;">检查区域内所有单词的拼写</td></tr> <tr><td style="text-align:left;"><code>M-x</code> ispell 缓冲区</td> <td style="text-align:left;">检查整个缓冲区的拼写</td></tr> <tr><td style="text-align:left;"><code>M-x</code> flyspell 模式</td> <td style="text-align:left;">切换即时拼写检查</td></tr></tbody></table> <h3 id="编写命令"><a href="#编写命令" class="header-anchor">#</a> 编写命令</h3> <h4 id="语法"><a href="#语法" class="header-anchor">#</a> 语法</h4> <div class="language-emacs line-numbers-mode"><pre class="language-emacs"><code><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">command-name</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">args</span></span><span class="token punctuation">)</span></span>
+<span class="token string">&quot;documentation&quot;</span> <span class="token punctuation">(</span><span class="token interactive keyword">interactive</span> <span class="token string">&quot;template&quot;</span><span class="token punctuation">)</span>
+body<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div> <h4 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h4> <div class="language-emacs line-numbers-mode"><pre class="language-emacs"><code><span class="token punctuation">(</span><span class="token defun"><span class="token keyword">defun</span> <span class="token function">this-line-to-top-of-window</span> <span class="token punctuation">(</span><span class="token arguments"><span class="token argument variable">line</span></span><span class="token punctuation">)</span></span>
+    <span class="token string">&quot;Reposition current line to top of window.
+With prefix argument <span class="token argument">LINE</span>, put point on <span class="token argument">LINE</span>.&quot;</span>
+    <span class="token punctuation">(</span><span class="token interactive keyword">interactive</span> <span class="token string">&quot;P&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">(</span><span class="token car">recenter</span> <span class="token punctuation">(</span><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">null</span> line<span class="token punctuation">)</span>
+                  <span class="token number">0</span>
+              <span class="token punctuation">(</span><span class="token car">prefix-numeric-value</span> line<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/13/2023, 5:25:30 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/web/assets/js/app.4914d2c8.js" defer></script><script src="/web/assets/js/2.f44a4f26.js" defer></script><script src="/web/assets/js/126.56ee5e62.js" defer></script>
+  </body>
+</html>

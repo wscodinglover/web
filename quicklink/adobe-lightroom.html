@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文档搬运工</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/webfavicon.ico">
+    <meta name="description" content="学习笔记，包含前端开发、后端开发、服务器运维等">
+    
+    <link rel="preload" href="/web/assets/css/0.styles.6a124c9c.css" as="style"><link rel="preload" href="/web/assets/js/app.4914d2c8.js" as="script"><link rel="preload" href="/web/assets/js/2.f44a4f26.js" as="script"><link rel="preload" href="/web/assets/js/110.2cccc8fa.js" as="script"><link rel="prefetch" href="/web/assets/js/10.68d16472.js"><link rel="prefetch" href="/web/assets/js/100.c1165d99.js"><link rel="prefetch" href="/web/assets/js/101.7685a749.js"><link rel="prefetch" href="/web/assets/js/102.1dae5789.js"><link rel="prefetch" href="/web/assets/js/103.31c8c6f7.js"><link rel="prefetch" href="/web/assets/js/104.1aabc831.js"><link rel="prefetch" href="/web/assets/js/105.f188b2cc.js"><link rel="prefetch" href="/web/assets/js/106.7706f598.js"><link rel="prefetch" href="/web/assets/js/107.98bf6cba.js"><link rel="prefetch" href="/web/assets/js/108.78c41dbf.js"><link rel="prefetch" href="/web/assets/js/109.a8c6ac5f.js"><link rel="prefetch" href="/web/assets/js/11.e0ba19d3.js"><link rel="prefetch" href="/web/assets/js/111.19a4e086.js"><link rel="prefetch" href="/web/assets/js/112.d940b1c0.js"><link rel="prefetch" href="/web/assets/js/113.58a5e756.js"><link rel="prefetch" href="/web/assets/js/114.950b8113.js"><link rel="prefetch" href="/web/assets/js/115.9712a524.js"><link rel="prefetch" href="/web/assets/js/116.dacaa4fa.js"><link rel="prefetch" href="/web/assets/js/117.a91f9e15.js"><link rel="prefetch" href="/web/assets/js/118.84772b6e.js"><link rel="prefetch" href="/web/assets/js/119.6e3567ca.js"><link rel="prefetch" href="/web/assets/js/12.67495675.js"><link rel="prefetch" href="/web/assets/js/120.9eb24a02.js"><link rel="prefetch" href="/web/assets/js/121.4f0440a2.js"><link rel="prefetch" href="/web/assets/js/122.a946a176.js"><link rel="prefetch" href="/web/assets/js/123.d3c64c4e.js"><link rel="prefetch" href="/web/assets/js/124.4764bbe8.js"><link rel="prefetch" href="/web/assets/js/125.87d74ae9.js"><link rel="prefetch" href="/web/assets/js/126.56ee5e62.js"><link rel="prefetch" href="/web/assets/js/127.948345dc.js"><link rel="prefetch" href="/web/assets/js/128.029c8965.js"><link rel="prefetch" href="/web/assets/js/129.f0356601.js"><link rel="prefetch" href="/web/assets/js/13.6727ab98.js"><link rel="prefetch" href="/web/assets/js/130.e6cc4cb8.js"><link rel="prefetch" href="/web/assets/js/131.2297c3b6.js"><link rel="prefetch" href="/web/assets/js/14.70b0cf01.js"><link rel="prefetch" href="/web/assets/js/15.ba9580a7.js"><link rel="prefetch" href="/web/assets/js/16.1a8c733f.js"><link rel="prefetch" href="/web/assets/js/17.6657a227.js"><link rel="prefetch" href="/web/assets/js/18.65942dbb.js"><link rel="prefetch" href="/web/assets/js/19.7d801cca.js"><link rel="prefetch" href="/web/assets/js/20.34077e32.js"><link rel="prefetch" href="/web/assets/js/21.a30264d9.js"><link rel="prefetch" href="/web/assets/js/22.813d2339.js"><link rel="prefetch" href="/web/assets/js/23.1a059155.js"><link rel="prefetch" href="/web/assets/js/24.d9971ac4.js"><link rel="prefetch" href="/web/assets/js/25.6c1d4926.js"><link rel="prefetch" href="/web/assets/js/26.21e8c7b4.js"><link rel="prefetch" href="/web/assets/js/27.cfff7ef0.js"><link rel="prefetch" href="/web/assets/js/28.405bf1b8.js"><link rel="prefetch" href="/web/assets/js/29.3872d2cb.js"><link rel="prefetch" href="/web/assets/js/3.d00959e5.js"><link rel="prefetch" href="/web/assets/js/30.fea18838.js"><link rel="prefetch" href="/web/assets/js/31.364afb36.js"><link rel="prefetch" href="/web/assets/js/32.3a14b962.js"><link rel="prefetch" href="/web/assets/js/33.ebb8c231.js"><link rel="prefetch" href="/web/assets/js/34.bbba3f86.js"><link rel="prefetch" href="/web/assets/js/35.ebc83e54.js"><link rel="prefetch" href="/web/assets/js/36.949b4b98.js"><link rel="prefetch" href="/web/assets/js/37.63a219a5.js"><link rel="prefetch" href="/web/assets/js/38.2abdd62c.js"><link rel="prefetch" href="/web/assets/js/39.f31baba8.js"><link rel="prefetch" href="/web/assets/js/4.7ac2b204.js"><link rel="prefetch" href="/web/assets/js/40.f1973b4d.js"><link rel="prefetch" href="/web/assets/js/41.b2b7deaa.js"><link rel="prefetch" href="/web/assets/js/42.d94268bc.js"><link rel="prefetch" href="/web/assets/js/43.a747dc86.js"><link rel="prefetch" href="/web/assets/js/44.d3cdaea4.js"><link rel="prefetch" href="/web/assets/js/45.6cedb636.js"><link rel="prefetch" href="/web/assets/js/46.d7f3520c.js"><link rel="prefetch" href="/web/assets/js/47.07c50e1c.js"><link rel="prefetch" href="/web/assets/js/48.9d8d71f9.js"><link rel="prefetch" href="/web/assets/js/49.a8a8fe51.js"><link rel="prefetch" href="/web/assets/js/5.f702624b.js"><link rel="prefetch" href="/web/assets/js/50.d67120fa.js"><link rel="prefetch" href="/web/assets/js/51.c0e05f5e.js"><link rel="prefetch" href="/web/assets/js/52.a09e7b67.js"><link rel="prefetch" href="/web/assets/js/53.3fa73368.js"><link rel="prefetch" href="/web/assets/js/54.56dd39fd.js"><link rel="prefetch" href="/web/assets/js/55.59d3c972.js"><link rel="prefetch" href="/web/assets/js/56.e8d448dc.js"><link rel="prefetch" href="/web/assets/js/57.b25a333a.js"><link rel="prefetch" href="/web/assets/js/58.3a58c623.js"><link rel="prefetch" href="/web/assets/js/59.a0748746.js"><link rel="prefetch" href="/web/assets/js/6.c76c0e1e.js"><link rel="prefetch" href="/web/assets/js/60.69e1f526.js"><link rel="prefetch" href="/web/assets/js/61.39efc969.js"><link rel="prefetch" href="/web/assets/js/62.492b7cb3.js"><link rel="prefetch" href="/web/assets/js/63.c955736f.js"><link rel="prefetch" href="/web/assets/js/64.7249d228.js"><link rel="prefetch" href="/web/assets/js/65.df7d1f53.js"><link rel="prefetch" href="/web/assets/js/66.0993568b.js"><link rel="prefetch" href="/web/assets/js/67.ef9dd414.js"><link rel="prefetch" href="/web/assets/js/68.2ec4de2e.js"><link rel="prefetch" href="/web/assets/js/69.95259dde.js"><link rel="prefetch" href="/web/assets/js/7.96bc15e3.js"><link rel="prefetch" href="/web/assets/js/70.f563832a.js"><link rel="prefetch" href="/web/assets/js/71.f9db52a9.js"><link rel="prefetch" href="/web/assets/js/72.704dde50.js"><link rel="prefetch" href="/web/assets/js/73.f196359d.js"><link rel="prefetch" href="/web/assets/js/74.616d3b86.js"><link rel="prefetch" href="/web/assets/js/75.8a040688.js"><link rel="prefetch" href="/web/assets/js/76.662690e0.js"><link rel="prefetch" href="/web/assets/js/77.2d0b3669.js"><link rel="prefetch" href="/web/assets/js/78.7a1fb4f4.js"><link rel="prefetch" href="/web/assets/js/79.dd0c8373.js"><link rel="prefetch" href="/web/assets/js/8.f652ff79.js"><link rel="prefetch" href="/web/assets/js/80.cc683017.js"><link rel="prefetch" href="/web/assets/js/81.3aa6d63c.js"><link rel="prefetch" href="/web/assets/js/82.e9dea0fc.js"><link rel="prefetch" href="/web/assets/js/83.04ad2625.js"><link rel="prefetch" href="/web/assets/js/84.c2c2bb57.js"><link rel="prefetch" href="/web/assets/js/85.529d11ae.js"><link rel="prefetch" href="/web/assets/js/86.4c1e0495.js"><link rel="prefetch" href="/web/assets/js/87.22881441.js"><link rel="prefetch" href="/web/assets/js/88.d1a28c80.js"><link rel="prefetch" href="/web/assets/js/89.adb017da.js"><link rel="prefetch" href="/web/assets/js/9.6b06aa53.js"><link rel="prefetch" href="/web/assets/js/90.a8757e00.js"><link rel="prefetch" href="/web/assets/js/91.a492ff4f.js"><link rel="prefetch" href="/web/assets/js/92.c6410bf2.js"><link rel="prefetch" href="/web/assets/js/93.5ec8e566.js"><link rel="prefetch" href="/web/assets/js/94.a0e9ad4f.js"><link rel="prefetch" href="/web/assets/js/95.3010b85f.js"><link rel="prefetch" href="/web/assets/js/96.99ce2ecd.js"><link rel="prefetch" href="/web/assets/js/97.91811599.js"><link rel="prefetch" href="/web/assets/js/98.3becd40f.js"><link rel="prefetch" href="/web/assets/js/99.ff73e7fc.js">
+    <link rel="stylesheet" href="/web/assets/css/0.styles.6a124c9c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/web/" class="home-link router-link-active"><!----> <span class="site-name">文档搬运工</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-lightroom.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/openssl.html" class="nav-link">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-lightroom.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/quicklink/adobe-lightroom.html#键盘快捷键" class="sidebar-link">键盘快捷键</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#使用面板" class="sidebar-link">使用面板</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#导航模块" class="sidebar-link">导航模块</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#使用辅助窗口" class="sidebar-link">使用辅助窗口</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#在开发模块中工作" class="sidebar-link">在开发模块中工作</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#更改视图和屏幕模式" class="sidebar-link">更改视图和屏幕模式</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#管理照片和目录" class="sidebar-link">管理照片和目录</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#比较图库模块中的照片" class="sidebar-link">比较图库模块中的照片</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#评级和过滤照片" class="sidebar-link">评级和过滤照片</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#使用集合" class="sidebar-link">使用集合</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#在库模块中使用元数据和关键字" class="sidebar-link">在库模块中使用元数据和关键字</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#在幻灯片模块中工作" class="sidebar-link">在幻灯片模块中工作</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#在打印模块中工作" class="sidebar-link">在打印模块中工作</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#在-web-模块中工作" class="sidebar-link">在 Web 模块中工作</a></li><li class="sidebar-sub-header"><a href="/web/quicklink/adobe-lightroom.html#使用帮助" class="sidebar-link">使用帮助</a></li></ul></li><li><a href="/web/quicklink/adobe-lightroom.html#另见" class="sidebar-link">另见</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="adobe-lightroom-键盘快捷键"><a href="#adobe-lightroom-键盘快捷键" class="header-anchor">#</a> Adobe Lightroom 键盘快捷键</h1> <p>Adobe Lightroom CC 中 251 个键盘快捷键的可视化备忘单</p> <h2 id="键盘快捷键"><a href="#键盘快捷键" class="header-anchor">#</a> 键盘快捷键</h2> <h3 id="使用面板"><a href="#使用面板" class="header-anchor">#</a> 使用面板</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>Tab</code></td> <td>显示/隐藏侧面板</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>Tab</code></td> <td>显示/隐藏所有面板</td></tr> <tr><td style="text-align:left;"><code>T</code></td> <td>显示/隐藏工具栏</td></tr> <tr><td style="text-align:left;"><code>F5</code></td> <td>显示/隐藏模块选择器</td></tr> <tr><td style="text-align:left;"><code>F6</code></td> <td>显示/隐藏胶片</td></tr> <tr><td style="text-align:left;"><code>F7</code></td> <td>显示/隐藏左侧面板</td></tr> <tr><td style="text-align:left;"><code>F8</code></td> <td>显示/隐藏右侧面板</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>(click a panel)</code></td> <td>切换独奏模式</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>(click a panel)</code></td> <td>在不关闭单独面板的情况下打开一个新面板</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>(click a panel)</code></td> <td>打开/关闭所有面板</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>0-5</code></td> <td>打开/关闭左侧面板，从上到下</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>0-9</code></td> <td>打开/关闭右侧面板、库和开发模块，从上到下</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>1-7</code></td> <td>从上到下打开/关闭右面板、幻灯片、打印和 Web 模块</td></tr></tbody></table> <h3 id="导航模块"><a href="#导航模块" class="header-anchor">#</a> 导航模块</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>1</code></td> <td>转到库模块</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>2</code></td> <td>转到开发模块</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>3</code></td> <td>转到幻灯片模块</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>4</code></td> <td>转到打印模块</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>5</code></td> <td>转到网络模块</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Left/Right</code></td> <td>返回/前进</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Up</code></td> <td>返回上一个模块</td></tr></tbody></table> <h3 id="使用辅助窗口"><a href="#使用辅助窗口" class="header-anchor">#</a> 使用辅助窗口</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>F11</code></td> <td>打开辅助窗口</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>G</code></td> <td>进入网格视图</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>E</code></td> <td>进入正常的放大镜视图</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>Enter</code></td> <td>进入锁定的放大镜视图</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>C</code></td> <td>进入比较视图</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>N</code></td> <td>进入调查视图</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>Enter</code></td> <td>进入幻灯片视图</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>F11</code></td> <td>进入全屏模式（需要第二台显示器）</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>\</code></td> <td>显示/隐藏过滤栏</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>+/-</code></td> <td>放大/缩小</td></tr></tbody></table> <h3 id="在开发模块中工作"><a href="#在开发模块中工作" class="header-anchor">#</a> 在开发模块中工作</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>V</code></td> <td>转换为灰度</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>U</code></td> <td>自动音调</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>U</code></td> <td>自动白平衡</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>E</code></td> <td>在 Photoshop 中编辑</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>C/V</code></td> <td>复制/粘贴开发设置</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>V</code></td> <td>粘贴上一张照片的设置</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>Left</code></td> <td>将之后的设置复制到之前</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>Right</code></td> <td>将之前的设置复制到之后</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>Up</code></td> <td>交换前后设置</td></tr> <tr><td style="text-align:left;"><code>Up/Down</code></td> <td>以小增量增加/减少选定的滑块</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>Up/Down</code></td> <td>以较大的增量增加/减少选定的滑块</td></tr> <tr><td style="text-align:left;"><code>./,</code></td> <td>循环浏览基本面板设置（向前/向后）</td></tr> <tr><td style="text-align:left;"><code>(double-click slider name)</code></td> <td>重置滑块</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>(click group name)</code></td> <td>重置一组滑块</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>R</code></td> <td>重置所有设置</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>S</code></td> <td>同步设置</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>S</code></td> <td>绕过同步设置对话框同步设置</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>(click Sync button)</code></td> <td>切换自动同步</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>A</code></td> <td>启用自动同步</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>M</code></td> <td>匹配总曝光量</td></tr> <tr><td style="text-align:left;"><code>W</code></td> <td>选择白平衡工具（来自任何模块）</td></tr> <tr><td style="text-align:left;"><code>R</code></td> <td>选择裁剪工具（来自任何模块）</td></tr> <tr><td style="text-align:left;"><code>A</code></td> <td>选择裁剪工具时限制纵横比</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>A</code></td> <td>裁剪为与上一次裁剪相同的纵横比</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>(drag)</code></td> <td>从照片中心裁剪</td></tr> <tr><td style="text-align:left;"><code>O</code></td> <td>循环作物网格覆盖</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>O</code></td> <td>循环裁剪网格叠加方向</td></tr> <tr><td style="text-align:left;"><code>X</code></td> <td>在纵向和横向之间切换裁剪</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>R</code></td> <td>重置作物</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>T</code></td> <td>选择 Guided Upright 工具</td></tr> <tr><td style="text-align:left;"><code>Q</code></td> <td>选择 Sopt 删除工具</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>T</code></td> <td>选择污点去除工具时在克隆和修复模式之间切换笔刷</td></tr> <tr><td style="text-align:left;"><code>K</code></td> <td>选择调整画笔工具（来自任何模块）</td></tr> <tr><td style="text-align:left;"><code>M</code></td> <td>选择渐变滤镜工具</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>T</code></td> <td>选择渐变/径向滤镜时在编辑和画笔模式之间切换蒙版</td></tr> <tr><td style="text-align:left;"><code>]/[</code></td> <td>增大/减小画笔大小</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>]/[</code></td> <td>增加/减少笔刷羽化</td></tr> <tr><td style="text-align:left;"><code>/</code></td> <td>在局部调整刷A和B之间切换</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>(drag)</code></td> <td>暂时从画笔 A 或 B 切换到橡皮擦</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>(drag)</code></td> <td>绘制水平线或垂直线</td></tr> <tr><td style="text-align:left;"><code>H</code></td> <td>显示/隐藏局部调整引脚</td></tr> <tr><td style="text-align:left;"><code>O</code></td> <td>显示/隐藏局部调整蒙版覆盖</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>O</code></td> <td>循环局部调整蒙版叠加颜色</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>T</code></td> <td>选择目标调整工具以应用色调曲线调整</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>H</code></td> <td>选择目标调整工具以应用色相调整</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>S</code></td> <td>选择目标调整工具以应用饱和度调整</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>L</code></td> <td>选择目标调整工具以应用亮度调整</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>G</code></td> <td>选择目标调整工具以应用灰度混合调整</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>N</code></td> <td>取消选择目标调整工具</td></tr> <tr><td style="text-align:left;"><code>J</code></td> <td>显示剪辑</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>]</code></td> <td>向右旋转照片（顺时针）</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>[</code></td> <td>向左旋转照片（逆时针）</td></tr> <tr><td style="text-align:left;"><code>Space/Z</code></td> <td>在放大镜和 1:1 缩放预览之间切换</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>+/-</code></td> <td>放大/缩小</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Enter</code></td> <td>播放即兴幻灯片</td></tr> <tr><td style="text-align:left;"><code>Y</code></td> <td>查看左/右之前和之后</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>Y</code></td> <td>查看顶部/底部之前和之后</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>Y</code></td> <td>在分屏中查看之前和之后</td></tr> <tr><td style="text-align:left;"><code>\</code></td> <td>仅查看之前</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>N</code></td> <td>创建新快照</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>N</code></td> <td>创建新预设</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>N</code></td> <td>创建一个新的预设文件夹</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>J</code></td> <td>打开开发视图选项</td></tr></tbody></table> <h3 id="更改视图和屏幕模式"><a href="#更改视图和屏幕模式" class="header-anchor">#</a> 更改视图和屏幕模式</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>E</code></td> <td>进入图书馆放大镜视图</td></tr> <tr><td style="text-align:left;"><code>G</code></td> <td>进入库网格视图</td></tr> <tr><td style="text-align:left;"><code>C</code></td> <td>进入图书馆比较视图</td></tr> <tr><td style="text-align:left;"><code>N</code></td> <td>进入图书馆调查视图</td></tr> <tr><td style="text-align:left;"><code>D</code></td> <td>在修改照片模块中打开选定的照片</td></tr> <tr><td style="text-align:left;"><code>L</code></td> <td>通过 Lights Out 模式向前循环</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>L</code></td> <td>通过 Lights Out 模式向后循环</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>L</code></td> <td>切换灯光昏暗模式</td></tr> <tr><td style="text-align:left;"><code>F</code></td> <td>循环屏幕模式</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>F</code></td> <td>在普通和全屏之间切换，隐藏面板</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>F</code></td> <td>进入普通屏幕模式</td></tr> <tr><td style="text-align:left;"><code>I</code></td> <td>循环信息叠加</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>I</code></td> <td>显示/隐藏信息覆盖</td></tr></tbody></table> <h3 id="管理照片和目录"><a href="#管理照片和目录" class="header-anchor">#</a> 管理照片和目录</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>I</code></td> <td>从磁盘导入照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>O</code></td> <td>打开目录</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>,</code></td> <td>打开首选项</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>,</code></td> <td>打开目录设置</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>T</code></td> <td>创建新的子文件夹（分段联机捕获）</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>T</code></td> <td>隐藏/显示系绳捕获栏</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>N</code></td> <td>在库模块中创建一个新文件夹</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>'</code></td> <td>创建虚拟副本（仅限库和开发模块）</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>R</code></td> <td>在资源管理器/Finder 中显示（仅限库和开发模块）</td></tr> <tr><td style="text-align:left;"><code>Right/Left</code></td> <td>转到胶片中的下一张/上一张照片</td></tr> <tr><td style="text-align:left;"><code>Shift/Ctrl</code> <code>Click</code></td> <td>选择多个文件夹或集合（在库、幻灯片、打印和 Web 模块中）</td></tr> <tr><td style="text-align:left;"><code>F2</code></td> <td>重命名照片（在图库模块中）</td></tr> <tr><td style="text-align:left;"><code>Delete</code></td> <td>删除所选照片</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>Backspace</code></td> <td>从目录中删除所选照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>Backspace</code></td> <td>删除所选照片并移至废纸篓</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Backspace</code></td> <td>删除被拒绝的照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>E</code></td> <td>在 Photoshop 中编辑</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>E</code></td> <td>在其他编辑器中打开</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>E</code></td> <td>导出所选照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>E</code></td> <td>使用以前的设置导出</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>,</code></td> <td>打开插件管理器</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>P</code></td> <td>打印所选照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>P</code></td> <td>打开页面设置对话框</td></tr></tbody></table> <h3 id="比较图库模块中的照片"><a href="#比较图库模块中的照片" class="header-anchor">#</a> 比较图库模块中的照片</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>E/Enter</code></td> <td>切换到放大视图</td></tr> <tr><td style="text-align:left;"><code>G/Esc</code></td> <td>切换到网格视图</td></tr> <tr><td style="text-align:left;"><code>C</code></td> <td>切换到比较视图</td></tr> <tr><td style="text-align:left;"><code>N</code></td> <td>切换到调查视图</td></tr> <tr><td style="text-align:left;"><code>Space/E</code></td> <td>从网格切换到放大视图</td></tr> <tr><td style="text-align:left;"><code>Down</code></td> <td>在比较视图中交换选择和候选照片</td></tr> <tr><td style="text-align:left;"><code>Up</code></td> <td>在比较视图中选择下一张照片和候选照片</td></tr> <tr><td style="text-align:left;"><code>Z</code></td> <td>切换缩放视图</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>+/-</code></td> <td>在放大镜视图中放大/缩小</td></tr> <tr><td style="text-align:left;"><code>PgUp/PgDown</code></td> <td>在放大视图中向上/向下滚动放大的照片</td></tr> <tr><td style="text-align:left;"><code>Home/End</code></td> <td>转到网格视图的开头/结尾</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Enter</code></td> <td>播放即兴幻灯片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>]</code></td> <td>向右旋转照片（顺时针）</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>[</code></td> <td>向左旋转照片（逆时针）</td></tr> <tr><td style="text-align:left;"><code>=/-</code></td> <td>增加/减少网格缩略图大小</td></tr> <tr><td style="text-align:left;"><code>PgUp/PgDown</code></td> <td>向上/向下滚动网格缩略图</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>H</code></td> <td>切换单元格附加功能</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>H</code></td> <td>显示/隐藏徽章</td></tr> <tr><td style="text-align:left;"><code>J</code></td> <td>循环网格视图</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>J</code></td> <td>打开库视图选项</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>(click)</code></td> <td>选择多张离散照片</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>(click)</code></td> <td>选择多张连续照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>A</code></td> <td>选择所有照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>D</code></td> <td>取消选择所有照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>D</code></td> <td>仅选择活动照片</td></tr> <tr><td style="text-align:left;"><code>/</code></td> <td>取消选择现用照片</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>Left/Right</code></td> <td>将上一张/下一张照片添加到选择</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>A</code></td> <td>选择标记的照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>D</code></td> <td>取消选择未标记的照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>G</code></td> <td>分组入栈</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>G</code></td> <td>拆叠</td></tr> <tr><td style="text-align:left;"><code>S</code></td> <td>切换堆栈</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>S</code></td> <td>移动到堆栈顶部</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>[</code></td> <td>在堆栈中向上移动</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>]</code></td> <td>在堆栈中向下移动</td></tr></tbody></table> <h3 id="评级和过滤照片"><a href="#评级和过滤照片" class="header-anchor">#</a> 评级和过滤照片</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>1-5</code></td> <td>设置星级</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>1-5</code></td> <td>设置星级并转到下一张照片</td></tr> <tr><td style="text-align:left;"><code>0</code></td> <td>删除星级</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>0</code></td> <td>删除星级并转到下一张照片</td></tr> <tr><td style="text-align:left;"><code>]/[</code></td> <td>将评分提高/降低一颗星</td></tr> <tr><td style="text-align:left;"><code>6</code></td> <td>分配一个红色标签</td></tr> <tr><td style="text-align:left;"><code>7</code></td> <td>分配黄色标签</td></tr> <tr><td style="text-align:left;"><code>8</code></td> <td>分配一个绿色标签</td></tr> <tr><td style="text-align:left;"><code>9</code></td> <td>分配一个蓝色标签</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>6-9</code></td> <td>分配颜色标签并转到下一张照片</td></tr> <tr><td style="text-align:left;"><code>P</code></td> <td>将照片标记为精选</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>P</code></td> <td>将照片标记为精选并转到下一张照片</td></tr> <tr><td style="text-align:left;"><code>X</code></td> <td>将照片标记为拒绝</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>X</code></td> <td>将照片标记为拒绝并转到下一张照片</td></tr> <tr><td style="text-align:left;"><code>U</code></td> <td>取消标记照片</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>U</code></td> <td>取消标记照片并转到下一张照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Up/Down</code></td> <td>增加/减少标志状态</td></tr> <tr><td style="text-align:left;"><code>`</code></td> <td>循环标志设置</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>R</code></td> <td>优化照片</td></tr> <tr><td style="text-align:left;"><code>\</code></td> <td>显示/隐藏库过滤器栏</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>(click filter labels)</code></td> <td>在过滤器栏中打开多个过滤器</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>L</code></td> <td>打开/关闭过滤器</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>F</code></td> <td>在图库模块中查找照片</td></tr></tbody></table> <h3 id="使用集合"><a href="#使用集合" class="header-anchor">#</a> 使用集合</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>Ctrl</code> <code>N</code></td> <td>在 Library 模块中创建一个新的集合</td></tr> <tr><td style="text-align:left;"><code>B</code></td> <td>添加到快速收藏</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>B</code></td> <td>添加到快速收藏并转到下一张照片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>B</code></td> <td>显示快速收藏</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>B</code></td> <td>保存快速收藏</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>B</code></td> <td>清除快速收藏</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>B</code></td> <td>设为目标集合</td></tr></tbody></table> <h3 id="在库模块中使用元数据和关键字"><a href="#在库模块中使用元数据和关键字" class="header-anchor">#</a> 在库模块中使用元数据和关键字</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>Ctrl</code> <code>K</code></td> <td>添加关键字</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>K</code></td> <td>修改关键字</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>K</code></td> <td>设置关键字快捷方式</td></tr> <tr><td style="text-align:left;"><code>Shift</code> <code>K</code></td> <td>从所选照片中添加/删除关键字快捷方式</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>K</code></td> <td>启用绘画</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>1-9</code></td> <td>将关键字集中的关键字添加到所选照片</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>0</code></td> <td>通过关键字集向前循环</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>Shift</code> <code>0</code></td> <td>通过关键字集循环反向词</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>C/V</code></td> <td>复制/粘贴元数据</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>S</code></td> <td>将元数据保存到文件</td></tr></tbody></table> <h3 id="在幻灯片模块中工作"><a href="#在幻灯片模块中工作" class="header-anchor">#</a> 在幻灯片模块中工作</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>Enter</code></td> <td>播放幻灯片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Enter</code></td> <td>播放即兴幻灯片</td></tr> <tr><td style="text-align:left;"><code>Space</code></td> <td>暂停幻灯片放映</td></tr> <tr><td style="text-align:left;"><code>Alt</code> <code>Enter</code></td> <td>预览幻灯片</td></tr> <tr><td style="text-align:left;"><code>Esc</code></td> <td>结束幻灯片放映</td></tr> <tr><td style="text-align:left;"><code>Right</code></td> <td>转到下一张幻灯片</td></tr> <tr><td style="text-align:left;"><code>Left</code></td> <td>转到上一张幻灯片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>]</code></td> <td>向右旋转照片（顺时针）</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>[</code></td> <td>向左旋转照片（逆时针）</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>H</code></td> <td>显示/隐藏指南</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>J</code></td> <td>导出 PDF 幻灯片放映</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>J</code></td> <td>导出 JPEG 幻灯片放映</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>J</code></td> <td>导出视频幻灯片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>N</code></td> <td>创建新的幻灯片放映模板</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>N</code></td> <td>创建新的幻灯片放映模板文件夹</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>S</code></td> <td>保存幻灯片放映设置</td></tr></tbody></table> <h3 id="在打印模块中工作"><a href="#在打印模块中工作" class="header-anchor">#</a> 在打印模块中工作</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>Ctrl</code> <code>P</code></td> <td>打印</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>P</code></td> <td>打印一份</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>P</code></td> <td>打开页面设置对话框</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>Shift</code> <code>P</code></td> <td>打开打印设置对话框</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>Left</code></td> <td>转到第一页</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>Right</code></td> <td>转到最后一页</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Left</code></td> <td>转到上一页</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Right</code></td> <td>转到下一页</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>H</code></td> <td>显示/隐藏指南</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>R</code></td> <td>显示/隐藏标尺</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>J</code></td> <td>显示/隐藏页面出血</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>M</code></td> <td>显示/隐藏边距和装订线</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>K</code></td> <td>显示/隐藏图像单元格</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>U</code></td> <td>显示/隐藏尺寸</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Enter</code></td> <td>播放即兴幻灯片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>]</code></td> <td>向右旋转照片（顺时针）</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>[</code></td> <td>向左旋转照片（逆时针）</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>N</code></td> <td>创建一个新的打印模板</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>N</code></td> <td>创建一个新的打印模板文件夹</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>S</code></td> <td>保存打印设置</td></tr></tbody></table> <h3 id="在-web-模块中工作"><a href="#在-web-模块中工作" class="header-anchor">#</a> 在 Web 模块中工作</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>Ctrl</code> <code>R</code></td> <td>重新加载网络画廊</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>P</code></td> <td>在浏览器中预览</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Enter</code></td> <td>播放即兴幻灯片</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>J</code></td> <td>导出网络画廊</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>N</code></td> <td>创建新的 Web 画廊模板</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Shift</code> <code>N</code></td> <td>创建新的 Web 画廊模板文件夹</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>S</code></td> <td>保存 Web 画廊设置</td></tr></tbody></table> <h3 id="使用帮助"><a href="#使用帮助" class="header-anchor">#</a> 使用帮助</h3> <table><thead><tr><th style="text-align:left;">快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>Ctrl</code> <code>/</code></td> <td>显示当前模块快捷方式</td></tr> <tr><td style="text-align:left;"><code>(click)</code></td> <td>隐藏当前模块快捷方式</td></tr> <tr><td style="text-align:left;"><code>Ctrl</code> <code>Alt</code> <code>/</code></td> <td>转到当前模块帮助</td></tr> <tr><td style="text-align:left;"><code>F1</code></td> <td>打开社区帮助</td></tr></tbody></table> <h2 id="另见"><a href="#另见" class="header-anchor">#</a> 另见</h2> <ul><li><a href="https://helpx.adobe.com/lightroom/help/keyboard-shortcuts.html" target="_blank" rel="noopener noreferrer">Keyboard shortcuts for Adobe Lightroom CC<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(helpx.adobe.com)</em></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/13/2023, 5:25:30 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/web/assets/js/app.4914d2c8.js" defer></script><script src="/web/assets/js/2.f44a4f26.js" defer></script><script src="/web/assets/js/110.2cccc8fa.js" defer></script>
+  </body>
+</html>

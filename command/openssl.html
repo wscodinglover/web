@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文档搬运工</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/webfavicon.ico">
+    <meta name="description" content="学习笔记，包含前端开发、后端开发、服务器运维等">
+    
+    <link rel="preload" href="/web/assets/css/0.styles.6a124c9c.css" as="style"><link rel="preload" href="/web/assets/js/app.4914d2c8.js" as="script"><link rel="preload" href="/web/assets/js/2.f44a4f26.js" as="script"><link rel="preload" href="/web/assets/js/34.bbba3f86.js" as="script"><link rel="prefetch" href="/web/assets/js/10.68d16472.js"><link rel="prefetch" href="/web/assets/js/100.c1165d99.js"><link rel="prefetch" href="/web/assets/js/101.7685a749.js"><link rel="prefetch" href="/web/assets/js/102.1dae5789.js"><link rel="prefetch" href="/web/assets/js/103.31c8c6f7.js"><link rel="prefetch" href="/web/assets/js/104.1aabc831.js"><link rel="prefetch" href="/web/assets/js/105.f188b2cc.js"><link rel="prefetch" href="/web/assets/js/106.7706f598.js"><link rel="prefetch" href="/web/assets/js/107.98bf6cba.js"><link rel="prefetch" href="/web/assets/js/108.78c41dbf.js"><link rel="prefetch" href="/web/assets/js/109.a8c6ac5f.js"><link rel="prefetch" href="/web/assets/js/11.e0ba19d3.js"><link rel="prefetch" href="/web/assets/js/110.2cccc8fa.js"><link rel="prefetch" href="/web/assets/js/111.19a4e086.js"><link rel="prefetch" href="/web/assets/js/112.d940b1c0.js"><link rel="prefetch" href="/web/assets/js/113.58a5e756.js"><link rel="prefetch" href="/web/assets/js/114.950b8113.js"><link rel="prefetch" href="/web/assets/js/115.9712a524.js"><link rel="prefetch" href="/web/assets/js/116.dacaa4fa.js"><link rel="prefetch" href="/web/assets/js/117.a91f9e15.js"><link rel="prefetch" href="/web/assets/js/118.84772b6e.js"><link rel="prefetch" href="/web/assets/js/119.6e3567ca.js"><link rel="prefetch" href="/web/assets/js/12.67495675.js"><link rel="prefetch" href="/web/assets/js/120.9eb24a02.js"><link rel="prefetch" href="/web/assets/js/121.4f0440a2.js"><link rel="prefetch" href="/web/assets/js/122.a946a176.js"><link rel="prefetch" href="/web/assets/js/123.d3c64c4e.js"><link rel="prefetch" href="/web/assets/js/124.4764bbe8.js"><link rel="prefetch" href="/web/assets/js/125.87d74ae9.js"><link rel="prefetch" href="/web/assets/js/126.56ee5e62.js"><link rel="prefetch" href="/web/assets/js/127.948345dc.js"><link rel="prefetch" href="/web/assets/js/128.029c8965.js"><link rel="prefetch" href="/web/assets/js/129.f0356601.js"><link rel="prefetch" href="/web/assets/js/13.6727ab98.js"><link rel="prefetch" href="/web/assets/js/130.e6cc4cb8.js"><link rel="prefetch" href="/web/assets/js/131.2297c3b6.js"><link rel="prefetch" href="/web/assets/js/14.70b0cf01.js"><link rel="prefetch" href="/web/assets/js/15.ba9580a7.js"><link rel="prefetch" href="/web/assets/js/16.1a8c733f.js"><link rel="prefetch" href="/web/assets/js/17.6657a227.js"><link rel="prefetch" href="/web/assets/js/18.65942dbb.js"><link rel="prefetch" href="/web/assets/js/19.7d801cca.js"><link rel="prefetch" href="/web/assets/js/20.34077e32.js"><link rel="prefetch" href="/web/assets/js/21.a30264d9.js"><link rel="prefetch" href="/web/assets/js/22.813d2339.js"><link rel="prefetch" href="/web/assets/js/23.1a059155.js"><link rel="prefetch" href="/web/assets/js/24.d9971ac4.js"><link rel="prefetch" href="/web/assets/js/25.6c1d4926.js"><link rel="prefetch" href="/web/assets/js/26.21e8c7b4.js"><link rel="prefetch" href="/web/assets/js/27.cfff7ef0.js"><link rel="prefetch" href="/web/assets/js/28.405bf1b8.js"><link rel="prefetch" href="/web/assets/js/29.3872d2cb.js"><link rel="prefetch" href="/web/assets/js/3.d00959e5.js"><link rel="prefetch" href="/web/assets/js/30.fea18838.js"><link rel="prefetch" href="/web/assets/js/31.364afb36.js"><link rel="prefetch" href="/web/assets/js/32.3a14b962.js"><link rel="prefetch" href="/web/assets/js/33.ebb8c231.js"><link rel="prefetch" href="/web/assets/js/35.ebc83e54.js"><link rel="prefetch" href="/web/assets/js/36.949b4b98.js"><link rel="prefetch" href="/web/assets/js/37.63a219a5.js"><link rel="prefetch" href="/web/assets/js/38.2abdd62c.js"><link rel="prefetch" href="/web/assets/js/39.f31baba8.js"><link rel="prefetch" href="/web/assets/js/4.7ac2b204.js"><link rel="prefetch" href="/web/assets/js/40.f1973b4d.js"><link rel="prefetch" href="/web/assets/js/41.b2b7deaa.js"><link rel="prefetch" href="/web/assets/js/42.d94268bc.js"><link rel="prefetch" href="/web/assets/js/43.a747dc86.js"><link rel="prefetch" href="/web/assets/js/44.d3cdaea4.js"><link rel="prefetch" href="/web/assets/js/45.6cedb636.js"><link rel="prefetch" href="/web/assets/js/46.d7f3520c.js"><link rel="prefetch" href="/web/assets/js/47.07c50e1c.js"><link rel="prefetch" href="/web/assets/js/48.9d8d71f9.js"><link rel="prefetch" href="/web/assets/js/49.a8a8fe51.js"><link rel="prefetch" href="/web/assets/js/5.f702624b.js"><link rel="prefetch" href="/web/assets/js/50.d67120fa.js"><link rel="prefetch" href="/web/assets/js/51.c0e05f5e.js"><link rel="prefetch" href="/web/assets/js/52.a09e7b67.js"><link rel="prefetch" href="/web/assets/js/53.3fa73368.js"><link rel="prefetch" href="/web/assets/js/54.56dd39fd.js"><link rel="prefetch" href="/web/assets/js/55.59d3c972.js"><link rel="prefetch" href="/web/assets/js/56.e8d448dc.js"><link rel="prefetch" href="/web/assets/js/57.b25a333a.js"><link rel="prefetch" href="/web/assets/js/58.3a58c623.js"><link rel="prefetch" href="/web/assets/js/59.a0748746.js"><link rel="prefetch" href="/web/assets/js/6.c76c0e1e.js"><link rel="prefetch" href="/web/assets/js/60.69e1f526.js"><link rel="prefetch" href="/web/assets/js/61.39efc969.js"><link rel="prefetch" href="/web/assets/js/62.492b7cb3.js"><link rel="prefetch" href="/web/assets/js/63.c955736f.js"><link rel="prefetch" href="/web/assets/js/64.7249d228.js"><link rel="prefetch" href="/web/assets/js/65.df7d1f53.js"><link rel="prefetch" href="/web/assets/js/66.0993568b.js"><link rel="prefetch" href="/web/assets/js/67.ef9dd414.js"><link rel="prefetch" href="/web/assets/js/68.2ec4de2e.js"><link rel="prefetch" href="/web/assets/js/69.95259dde.js"><link rel="prefetch" href="/web/assets/js/7.96bc15e3.js"><link rel="prefetch" href="/web/assets/js/70.f563832a.js"><link rel="prefetch" href="/web/assets/js/71.f9db52a9.js"><link rel="prefetch" href="/web/assets/js/72.704dde50.js"><link rel="prefetch" href="/web/assets/js/73.f196359d.js"><link rel="prefetch" href="/web/assets/js/74.616d3b86.js"><link rel="prefetch" href="/web/assets/js/75.8a040688.js"><link rel="prefetch" href="/web/assets/js/76.662690e0.js"><link rel="prefetch" href="/web/assets/js/77.2d0b3669.js"><link rel="prefetch" href="/web/assets/js/78.7a1fb4f4.js"><link rel="prefetch" href="/web/assets/js/79.dd0c8373.js"><link rel="prefetch" href="/web/assets/js/8.f652ff79.js"><link rel="prefetch" href="/web/assets/js/80.cc683017.js"><link rel="prefetch" href="/web/assets/js/81.3aa6d63c.js"><link rel="prefetch" href="/web/assets/js/82.e9dea0fc.js"><link rel="prefetch" href="/web/assets/js/83.04ad2625.js"><link rel="prefetch" href="/web/assets/js/84.c2c2bb57.js"><link rel="prefetch" href="/web/assets/js/85.529d11ae.js"><link rel="prefetch" href="/web/assets/js/86.4c1e0495.js"><link rel="prefetch" href="/web/assets/js/87.22881441.js"><link rel="prefetch" href="/web/assets/js/88.d1a28c80.js"><link rel="prefetch" href="/web/assets/js/89.adb017da.js"><link rel="prefetch" href="/web/assets/js/9.6b06aa53.js"><link rel="prefetch" href="/web/assets/js/90.a8757e00.js"><link rel="prefetch" href="/web/assets/js/91.a492ff4f.js"><link rel="prefetch" href="/web/assets/js/92.c6410bf2.js"><link rel="prefetch" href="/web/assets/js/93.5ec8e566.js"><link rel="prefetch" href="/web/assets/js/94.a0e9ad4f.js"><link rel="prefetch" href="/web/assets/js/95.3010b85f.js"><link rel="prefetch" href="/web/assets/js/96.99ce2ecd.js"><link rel="prefetch" href="/web/assets/js/97.91811599.js"><link rel="prefetch" href="/web/assets/js/98.3becd40f.js"><link rel="prefetch" href="/web/assets/js/99.ff73e7fc.js">
+    <link rel="stylesheet" href="/web/assets/css/0.styles.6a124c9c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/web/" class="home-link router-link-active"><!----> <span class="site-name">文档搬运工</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/openssl.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/frontend/feds.html" class="nav-link">
+  前端导航
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/css.html" class="nav-link">
+  CSS3
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/electron.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/styled-components.html" class="nav-link">
+  Styled Components
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/stylus.html" class="nav-link">
+  Stylus
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/sass.html" class="nav-link">
+  Sass
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/lessjs.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/nextjs.html" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/reactrouter.html" class="nav-link">
+  React Router
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/react-native.html" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/regex.html" class="nav-link">
+  Regex 正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/typescript.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/tailwindcss.html" class="nav-link">
+  Tailwind CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue2.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/web/frontend/vue.html" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/program/bash.html" class="nav-link">
+  Bash
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/c.html" class="nav-link">
+  C
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/cpp.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/dart.html" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/flutter.html" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/golang.html" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/graphql.html" class="nav-link">
+  GraphQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/java.html" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/json.html" class="nav-link">
+  JSON
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/kubernetes.html" class="nav-link">
+  Kubernetes
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/matlab.html" class="nav-link">
+  MATLAB
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/python.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/ruby.html" class="nav-link">
+  Ruby
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/rust.html" class="nav-link">
+  Rust
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swift.html" class="nav-link">
+  Swift
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/swiftui.html" class="nav-link">
+  SwiftUI
+</a></li><li class="dropdown-item"><!----> <a href="/web/program/yaml.html" class="nav-link">
+  YAML
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/nodejs/expressjs.html" class="nav-link">
+  Express.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/jest.html" class="nav-link">
+  Jest
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/koajs.html" class="nav-link">
+  Koa.js
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/lerna.html" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/nestjs.html" class="nav-link">
+  NestJS
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/pm2.html" class="nav-link">
+  PM2
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/package.json.html" class="nav-link">
+  Package.json
+</a></li><li class="dropdown-item"><!----> <a href="/web/nodejs/yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/tool/emacs.html" class="nav-link">
+  Emacs
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/github.html" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/nginx.html" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/semver.html" class="nav-link">
+  Semver
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/vim.html" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/web/tool/xpath.html" class="nav-link">
+  XPath
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令" class="dropdown-title"><span class="title">命令</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令" class="mobile-dropdown-title"><span class="title">命令</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/command/adb.html" class="nav-link">
+  ADB, Android Debug Bridge
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conan.html" class="nav-link">
+  Conan
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/conda.html" class="nav-link">
+  Conda
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cocoapods.html" class="nav-link">
+  CocoaPods
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cargo.html" class="nav-link">
+  Cargo
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/curl.html" class="nav-link">
+  Curl
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/chmod.html" class="nav-link">
+  Chmod
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cron.html" class="nav-link">
+  Cron
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmake.html" class="nav-link">
+  CMake
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/make.html" class="nav-link">
+  Make
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/grep.html" class="nav-link">
+  Grep
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/find.html" class="nav-link">
+  Find
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ffmpeg.html" class="nav-link">
+  FFmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/htop.html" class="nav-link">
+  Htop
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/homebrew.html" class="nav-link">
+  Homebrew
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netstat.html" class="nav-link">
+  Netstat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/iptables.html" class="nav-link">
+  iptables
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/jq.html" class="nav-link">
+  jq
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/justfile.html" class="nav-link">
+  Justfile
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/lsof.html" class="nav-link">
+  Lsof
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/mitmproxy.html" class="nav-link">
+  Mitmproxy
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/netcat.html" class="nav-link">
+  Netcat
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/sed.html" class="nav-link">
+  Sed
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/openssl.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  OpenSSL
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ps.html" class="nav-link">
+  ps
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/systemd.html" class="nav-link">
+  Systemd
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/ssh.html" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/screen.html" class="nav-link">
+  Screen
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/yum.html" class="nav-link">
+  YUM
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/cmd.html" class="nav-link">
+  CMD
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/zip.html" class="nav-link">
+  Zip
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/apt.html" class="nav-link">
+  APT
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/tar.html" class="nav-link">
+  tar
+</a></li><li class="dropdown-item"><!----> <a href="/web/command/linux-command.html" class="nav-link">
+  Linux Command
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/database/mysql.html" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/mongodb.html" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/postgres.html" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/web/database/redis.html" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="快捷键" class="dropdown-title"><span class="title">快捷键</span> <span class="arrow down"></span></button> <button type="button" aria-label="快捷键" class="mobile-dropdown-title"><span class="title">快捷键</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-lightroom.html" class="nav-link">
+  Adobe Lightroom
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-photoshop.html" class="nav-link">
+  Adobe Photoshop
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/adobe-xd.html" class="nav-link">
+  Adobe XD
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/android-studio.html" class="nav-link">
+  Android Studio
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/firefox.html" class="nav-link">
+  Firefox
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gmail.html" class="nav-link">
+  Gmail
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/gitlab.html" class="nav-link">
+  Gitlab
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/google-chrome.html" class="nav-link">
+  Google Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/intelli-j-idea.html" class="nav-link">
+  IntelliJ IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/pycharm.html" class="nav-link">
+  PyCharm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sketch.html" class="nav-link">
+  Sketch
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/sublime-text.html" class="nav-link">
+  Sublime Text
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/webstorm.html" class="nav-link">
+  WebStorm
+</a></li><li class="dropdown-item"><!----> <a href="/web/quicklink/xcode.html" class="nav-link">
+  Xcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/other/aspect-ratio.html" class="nav-link">
+  Aspect Ratio
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/github-actions.html" class="nav-link">
+  Github Actions
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/gitlab-ci.html" class="nav-link">
+  Gitlab CI/CD
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/colors-named.html" class="nav-link">
+  Colors Named
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/http-status-code.html" class="nav-link">
+  HTTP 状态码
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/html-char.html" class="nav-link">
+  HTML 字符实体
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/iso-639-1.html" class="nav-link">
+  ISO 639-1 Language Code
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/emoji.html" class="nav-link">
+  Emoji
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/mime.html" class="nav-link">
+  MIME types
+</a></li><li class="dropdown-item"><!----> <a href="/web/other/resolutions.html" class="nav-link">
+  Resolutions
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/command/openssl.html#入门" class="sidebar-link">入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/command/openssl.html#基础" class="sidebar-link">基础</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#编码-解码" class="sidebar-link">编码/解码</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#使用哈希" class="sidebar-link">使用哈希</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#非对称加密" class="sidebar-link">非对称加密</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#对称加密" class="sidebar-link">对称加密</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#数字签名" class="sidebar-link">数字签名</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#数字证书" class="sidebar-link">数字证书</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#使用-tls-协议" class="sidebar-link">使用 TLS 协议</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#个人安全环境-pse" class="sidebar-link">个人安全环境 (PSE)</a></li></ul></li><li><a href="/web/command/openssl.html#查看" class="sidebar-link">查看</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/command/openssl.html#查看-pem-编码证书" class="sidebar-link">查看 PEM 编码证书</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#查看-der-编码证书" class="sidebar-link">查看 DER 编码证书</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#查看证书链中的所有证书" class="sidebar-link">查看证书链中的所有证书</a></li></ul></li><li><a href="/web/command/openssl.html#转换" class="sidebar-link">转换</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/command/openssl.html#转换示例" class="sidebar-link">转换示例</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#openssl-转换-pem" class="sidebar-link">OpenSSL 转换 PEM</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#openssl-转换-der" class="sidebar-link">OpenSSL 转换 DER</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#openssl-转换-pfx" class="sidebar-link">OpenSSL 转换 PFX</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#openssl-转换-p7b" class="sidebar-link">OpenSSL 转换 P7B</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#通过-openssl-生成-rsa-密钥" class="sidebar-link">通过 OpenSSL 生成 rsa 密钥</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#openssl-中的-rsa-工具选项" class="sidebar-link">OpenSSL 中的 RSA 工具选项</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#支持以下加密算法" class="sidebar-link">支持以下加密算法</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#示例" class="sidebar-link">示例</a></li></ul></li><li><a href="/web/command/openssl.html#格式" class="sidebar-link">格式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/command/openssl.html#rsa-公钥" class="sidebar-link">RSA 公钥</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#加密的-pem-私钥" class="sidebar-link">加密的 PEM 私钥</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#识别为-pem-格式" class="sidebar-link">识别为 PEM 格式</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#crl" class="sidebar-link">CRL</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#crt" class="sidebar-link">CRT</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#csr" class="sidebar-link">CSR</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#new-csr" class="sidebar-link">NEW CSR</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#pem" class="sidebar-link">PEM</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#pkcs7" class="sidebar-link">PKCS7</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#私钥" class="sidebar-link">私钥</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#dsa密钥" class="sidebar-link">DSA密钥</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#椭圆曲线" class="sidebar-link">椭圆曲线</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#pgp-私钥" class="sidebar-link">PGP 私钥</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#pgp-公钥" class="sidebar-link">PGP 公钥</a></li></ul></li><li><a href="/web/command/openssl.html#校验" class="sidebar-link">校验</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/command/openssl.html#介绍" class="sidebar-link">介绍</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#验证信任链" class="sidebar-link">验证信任链</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#截止日期" class="sidebar-link">截止日期</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#验证-curl" class="sidebar-link">验证 curl</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#验证-openssl-s-client" class="sidebar-link">验证 openssl s_client</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#使用私钥验证-tls-证书" class="sidebar-link">使用私钥验证 TLS 证书</a></li></ul></li><li><a href="/web/command/openssl.html#java-key-store" class="sidebar-link">Java Key store</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/command/openssl.html#java-密钥库" class="sidebar-link">Java 密钥库</a></li></ul></li><li><a href="/web/command/openssl.html#创建" class="sidebar-link">创建</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/command/openssl.html#使用-certstrap-创建开发证书" class="sidebar-link">使用 certstrap 创建开发证书</a></li><li class="sidebar-sub-header"><a href="/web/command/openssl.html#使用-mkcert-创建开发证书" class="sidebar-link">使用 mkcert 创建开发证书</a></li></ul></li><li><a href="/web/command/openssl.html#另见" class="sidebar-link">另见</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="openssl-备忘清单"><a href="#openssl-备忘清单" class="header-anchor">#</a> OpenSSL 备忘清单</h1> <p>这个 <a href="https://www.openssl.org/" target="_blank" rel="noopener noreferrer">OpenSSL<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 快速参考备忘单展示了它的常用命令使用清单</p> <h2 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h2> <h3 id="基础"><a href="#基础" class="header-anchor">#</a> 基础</h3> <p>检查版本</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl version <span class="token parameter variable">-a</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>它在使用四个 CPU 内核并测试 RSA 算法的系统上运行速度有多快</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl speed <span class="token parameter variable">-multi</span> <span class="token number">4</span> rsa
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>获得基本帮助</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl <span class="token builtin class-name">help</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>生成 20 个随机字节并将它们显示在屏幕上</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rand <span class="token parameter variable">-hex</span> <span class="token number">20</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="编码-解码"><a href="#编码-解码" class="header-anchor">#</a> 编码/解码</h3> <p>使用 Base64 编码文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl base64 <span class="token parameter variable">-in</span> file.data
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 Base64 编码一些文本</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">&quot;some text&quot;</span> <span class="token operator">|</span> openssl base64
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Base64 解码一个文件并输出到另一个文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl base64 <span class="token parameter variable">-d</span> <span class="token parameter variable">-in</span> encode­d.data <span class="token parameter variable">-out</span> decode­d.data
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h3 id="使用哈希"><a href="#使用哈希" class="header-anchor">#</a> 使用哈希</h3> <p>列出可用的摘要算法</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl list -diges­t-a­lgo­rithms
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 SHA256 散列文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl dgst <span class="token parameter variable">-sha256</span> file.data
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 SHA256 散列文件及其二进制形式的输出（无输出十六进制编码） 没有 ASCII 或编码字符将打印到控制台，只有纯字节。 您可以附加 ' | xxd'</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl dgst <span class="token parameter variable">-binary</span> <span class="token parameter variable">-sha256</span> file.data
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 SHA3-512 的哈希文本</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">&quot;some text&quot;</span> <span class="token operator">|</span> openssl dgst -sha3-512
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>创建 HMAC - 使用特定密钥（以字节为单位）的文件的 SHA384</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl dgst <span class="token parameter variable">-SHA384</span> <span class="token parameter variable">-mac</span> HMAC <span class="token parameter variable">-macopt</span> hexkey:369bd7d655 file.data
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>创建 HMAC - 一些文本的 SHA512</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">&quot;some text&quot;</span> <span class="token operator">|</span> openssl dgst <span class="token parameter variable">-mac</span> HMAC <span class="token parameter variable">-macopt</span> hexkey­:36­9bd­7d655 <span class="token parameter variable">-sha512</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h3 id="非对称加密"><a href="#非对称加密" class="header-anchor">#</a> 非对称加密</h3> <p>列出可用的椭圆曲线</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl ecparam -list_­curves
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>创建 4096 位 RSA 公私密钥对</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl genrsa <span class="token parameter variable">-out</span> pub_pr­iv.key <span class="token number">4096</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>显示详细的私钥信息</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-text</span> <span class="token parameter variable">-in</span> pub_priv.key <span class="token parameter variable">-noout</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 AES-256 算法加密公私钥对</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> pub_priv.key <span class="token parameter variable">-out</span> encrypted.key <span class="token parameter variable">-aes256</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>删除密钥文件加密并将它们保存到另一个文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> encrypted.key <span class="token parameter variable">-out</span> cleartext.key
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>将公私钥对文件的公钥复制到另一个文件中</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> pub_priv.key <span class="token parameter variable">-pubout</span> <span class="token parameter variable">-out</span> pubkey.key
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 RSA 公钥加密文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsautl <span class="token parameter variable">-encrypt</span> <span class="token parameter variable">-inkey</span> pubkey.key <span class="token parameter variable">-pubin</span> <span class="token parameter variable">-in</span> cleartext.file <span class="token parameter variable">-out</span> ciphertext.file
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 RSA 私钥解密文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsautl <span class="token parameter variable">-decrypt</span> <span class="token parameter variable">-inkey</span> pub_priv.key <span class="token parameter variable">-in</span> ciphertext.file <span class="token parameter variable">-out</span> decrypted.file
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 P-224 椭圆曲线创建私钥</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl ecparam <span class="token parameter variable">-name</span> secp224k1 <span class="token parameter variable">-genkey</span> <span class="token parameter variable">-out</span> ecpriv.key
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 3DES 算法加密私钥</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl ec <span class="token parameter variable">-in</span> ecP384priv.key <span class="token parameter variable">-des3</span> <span class="token parameter variable">-out</span> ecP384priv_enc.key
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="对称加密"><a href="#对称加密" class="header-anchor">#</a> 对称加密</h3> <p>列出所有支持的对称加密密码</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl enc <span class="token parameter variable">-list</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用提供的 ASCII 编码密码和 AES-128-ECB 算法加密文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl enc -aes-128-ecb <span class="token parameter variable">-in</span> cleartext.file <span class="token parameter variable">-out</span> ciphertext.file <span class="token parameter variable">-pass</span> pass:thisisthepassword
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>使用 AES-256-CBC 和密钥文件解密文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl enc <span class="token parameter variable">-d</span> -aes-256-cbc <span class="token parameter variable">-in</span> ciphertext.file <span class="token parameter variable">-out</span> cleartext.file <span class="token parameter variable">-pass</span> file:./key.file
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>使用以十六进制数字形式提供的特定加密密钥 (K) 加密文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl enc -aes-128-ecb <span class="token parameter variable">-in</span> cleartext.file <span class="token parameter variable">-out</span> ciphertext.file <span class="token parameter variable">-K</span> 1881807b2d1b3d22f14e9ec52563d981 <span class="token parameter variable">-nosalt</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>使用指定的加密密钥（K：256 位）和初始化向量（iv：128 位）在 CBC 块密码模式下使用 ARIA 256 加密文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl enc -aria-256-cbc <span class="token parameter variable">-in</span> cleartext.file <span class="token parameter variable">-out</span> ciphertext.file <span class="token parameter variable">-K</span> f92d2e986b7a2a01683b4c40d0cbcf6feaa669ef2bb5ec3a25ce85d9548291c1 <span class="token parameter variable">-iv</span> 470bc29762496046882b61ecee68e07c <span class="token parameter variable">-nosalt</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>使用提供的密钥和 iv 在 COUNTER 块密码模式下使用 Camellia 192 算法加密文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl enc -camellia-192-ctr <span class="token parameter variable">-in</span> cleartext.file <span class="token parameter variable">-out</span> ciphertext.file <span class="token parameter variable">-K</span> 6c7a1b3487d28d3bf444186d7c529b48d67dd6206c7a1b34 <span class="token parameter variable">-iv</span> 470bc29762496046882b61ecee68e07c
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h3 id="数字签名"><a href="#数字签名" class="header-anchor">#</a> 数字签名</h3> <p>为私钥生成 DSA 参数。 2048 位长度</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl dsaparam <span class="token parameter variable">-out</span> dsaparam.pem <span class="token number">2048</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>生成用于签署文档的 DSA 公私密钥并使用 AES128 算法对其进行保护</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl gendsa <span class="token parameter variable">-out</span> dsaprivatekey.pem -aes-128-cbc dsaparam.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将DSA公私钥文件的公钥复制到另一个文件中</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl dsa <span class="token parameter variable">-in</span> dsaprivatekey.pem <span class="token parameter variable">-pubout</span> <span class="token parameter variable">-out</span> dsapublickey.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>打印出 DSA 密钥对文件的内容</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl dsa <span class="token parameter variable">-in</span> dsaprivatekey.pem <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 RSA 私钥对文件的 sha-256 哈希进行签名</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl dgst <span class="token parameter variable">-sha256</span> <span class="token parameter variable">-sign</span> rsakey.key <span class="token parameter variable">-out</span> signature.data document.pdf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>使用公钥验证 SHA-256 文件签名</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl dgst <span class="token parameter variable">-sha256</span> <span class="token parameter variable">-verify</span> publickey.pem <span class="token parameter variable">-signature</span> signature.data original.file
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 DSA 私钥对文件的 sha3-512 哈希进行签名</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkeyutl <span class="token parameter variable">-sign</span> <span class="token parameter variable">-pkeyopt</span> digest:sha3-512 <span class="token parameter variable">-in</span> document.docx <span class="token parameter variable">-inkey</span> dsaprivatekey.pem <span class="token parameter variable">-out</span> signature.data
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>验证 DSA 签名</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkeyutl <span class="token parameter variable">-verify</span> <span class="token parameter variable">-sigfile</span> dsasignature.data <span class="token parameter variable">-inkey</span> dsakey.pem <span class="token parameter variable">-in</span> document.docx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 P-384 椭圆曲线创建私钥</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl ecparam <span class="token parameter variable">-name</span> secp384r1 <span class="token parameter variable">-genkey</span> <span class="token parameter variable">-out</span> ecP384priv.key
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用3DES算法加密私钥</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl ec <span class="token parameter variable">-in</span> ecP384priv.key <span class="token parameter variable">-des3</span> <span class="token parameter variable">-out</span> ecP384priv_enc.key
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用带有生成密钥的椭圆曲线对 PDF 文件进行签名</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkeyutl <span class="token parameter variable">-sign</span> <span class="token parameter variable">-inkey</span> ecP384priv_enc.key <span class="token parameter variable">-pkeyopt</span> digest:sha3-512 <span class="token parameter variable">-in</span> document.pdf <span class="token parameter variable">-out</span> signature.data
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>验证文件的签名。 如果没问题，您必须收到“签名验证成功”</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkeyutl <span class="token parameter variable">-verify</span> <span class="token parameter variable">-in</span> document.pdf <span class="token parameter variable">-sigfile</span> signature.data <span class="token parameter variable">-inkey</span> ecP384priv_enc.key
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="数字证书"><a href="#数字证书" class="header-anchor">#</a> 数字证书</h3> <p>生成 CSR 文件和 4096 位 RSA 密钥对</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl req <span class="token parameter variable">-newkey</span> rsa:4096 <span class="token parameter variable">-keyout</span> private.key <span class="token parameter variable">-out</span> request.csr
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>显示证书签名请求 ( CSR ) 内容</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl req <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span> <span class="token parameter variable">-in</span> request.csr
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>显示 CSR 文件中包含的公钥</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl req <span class="token parameter variable">-pubkey</span> <span class="token parameter variable">-noout</span> <span class="token parameter variable">-in</span> request.csr
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>使用现有私钥创建证书签名请求 ( CSR )。 当您需要在不更改私钥的情况下更新公共数字证书时，这会很有用</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl req <span class="token parameter variable">-new</span> <span class="token parameter variable">-key</span> private.key <span class="token parameter variable">-out</span> request.csr
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>创建 EC P384 曲线参数文件以在下一步中使用椭圆曲线生成 CSR</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl genpkey <span class="token parameter variable">-genparam</span> <span class="token parameter variable">-algorithm</span> EC <span class="token parameter variable">-out</span> EC_params.pem <span class="token parameter variable">-pkeyopt</span> ec_paramgen_curve:secp384r1 <span class="token parameter variable">-pkeyopt</span> ec_param_enc:named_curve
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>使用在上一步中创建的椭圆曲线 P384 参数文件创建 CSR 文件。 而不是使用 RSA 密钥。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl req <span class="token parameter variable">-newkey</span> ec:EC_params.pem <span class="token parameter variable">-keyout</span> EC_P384_priv.key <span class="token parameter variable">-out</span> EC_request.csr
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>创建自签名证书，新的 2048 位 RSA 密钥对，有效期为一年</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl req <span class="token parameter variable">-newkey</span> rsa:2048 <span class="token parameter variable">-nodes</span> <span class="token parameter variable">-keyout</span> priv.key <span class="token parameter variable">-x509</span> <span class="token parameter variable">-days</span> <span class="token number">365</span> <span class="token parameter variable">-out</span> cert.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>使用 CSR 文件和用于签名的私钥创建并签署新证书（您必须准备好 openssl.cnf 文件）</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl ca <span class="token parameter variable">-in</span> request.csr <span class="token parameter variable">-out</span> certificate.crt <span class="token parameter variable">-config</span> ./CA/config/openssl.cnf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>显示PEM格式证书信息</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span> <span class="token parameter variable">-in</span> cert.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>以 Abstract Sintax Notation One (ASN.1) 显示证书信息</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl asn1parse <span class="token parameter variable">-in</span> cert.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>提取证书的公钥</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-pubkey</span> <span class="token parameter variable">-noout</span> <span class="token parameter variable">-in</span> cert.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在证书中提取公钥的模数</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-modulus</span> <span class="token parameter variable">-noout</span> <span class="token parameter variable">-in</span> cert.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>从 HTTPS/TLS 连接中提取域证书</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-connect</span> domain.com:443 <span class="token operator">|</span> openssl x509 <span class="token parameter variable">-out</span> certificate.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将证书从 PEM 格式转换为 DER 格式</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-inform</span> PEM <span class="token parameter variable">-outform</span> DER <span class="token parameter variable">-in</span> cert.crt <span class="token parameter variable">-out</span> cert.der
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>检查证书公钥是否与私钥和请求文件匹配。 每个文件一步。 必须在输出哈希中匹配</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-modulus</span> <span class="token parameter variable">-in</span> certificate.crt <span class="token parameter variable">-noout</span> <span class="token operator">|</span> openssl dgst <span class="token parameter variable">-sha256</span>
+$ openssl rsa <span class="token parameter variable">-modulus</span> <span class="token parameter variable">-in</span> private.key <span class="token parameter variable">-noout</span> <span class="token operator">|</span> openssl dgst <span class="token parameter variable">-sha256</span>
+$ openssl req <span class="token parameter variable">-modulus</span> <span class="token parameter variable">-in</span> request.csr <span class="token parameter variable">-noout</span> <span class="token operator">|</span> openssl dgst <span class="token parameter variable">-sha256</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div> <h3 id="使用-tls-协议"><a href="#使用-tls-协议" class="header-anchor">#</a> 使用 TLS 协议</h3> <p>列出所有支持的密码套件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl ciphers <span class="token parameter variable">-V</span> <span class="token string">'ALL'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>列出 AES 支持的所有密码套件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl ciphers <span class="token parameter variable">-V</span> <span class="token string">'AES'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>列出所有支持 CAMELLIA 和 SHA256 算法的密码套件。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl ciphers <span class="token parameter variable">-V</span> <span class="token string">'CAMELLIA+SHA256'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用端口 443 (HTTPS) 与服务器的 TLS 连接</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-connect</span> domain.com:443
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用 v1.2 与服务器的 TLS 连接</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-tls1_2</span> <span class="token parameter variable">-connect</span> domain.com:443
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>TLS 连接和禁用 v1.0</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-no_tls1</span> domain.com:443
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用特定密码套件的 TLS 连接</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-cipher</span> DHE-RSA-AES256-GCM-SHA384 domain.com:443
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>显示服务器提供的所有证书的 TLS 连接</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-showcerts</span> domain.com:443
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用证书、私钥和仅支持 TLS 1.2 设置监听端口以接收 TLS 连接</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_server <span class="token parameter variable">-port</span> <span class="token number">443</span> <span class="token parameter variable">-cert</span> cert.crt <span class="token parameter variable">-key</span> priv.key <span class="token parameter variable">-tls1_2</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>从 HTTPS/TLS 连接中提取域证书</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-connect</span> domain.com:443 <span class="token operator">|</span> openssl x509 <span class="token parameter variable">-out</span> certificate.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>nmap 命令：通过 HTTPS/TLS 连接显示启用的密码套件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ nmap <span class="token parameter variable">--script</span> ssl-enum-ciphers <span class="token parameter variable">-p</span> <span class="token number">443</span> domain.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>nmap 命令：使用 SNI 通过 TLS (HTTPS) 连接显示启用的密码套件。 （将其更改为所需的 IP 和域名）</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ nmap <span class="token parameter variable">--script</span> ssl-enum-ciphers --script-args<span class="token operator">=</span>tls.servername<span class="token operator">=</span>domain.com <span class="token number">172.67</span>.129.11
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="个人安全环境-pse"><a href="#个人安全环境-pse" class="header-anchor">#</a> 个人安全环境 (PSE)</h3> <p>将证书从 PEM (base64) 格式转换为 DER（二进制）格式</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-in</span> certif­ica­te.pem <span class="token parameter variable">-outform</span> DER <span class="token parameter variable">-out</span> certif­ica­te.der
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将证书和私钥插入 PKCS #12 格式文件。 这些文件可以导入到 Windows 证书管理器或 Java Key Store (jks) 文件中</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkcs12 <span class="token parameter variable">-export</span> <span class="token parameter variable">-out</span> cert_key.p12 <span class="token parameter variable">-inkey</span> private.key <span class="token parameter variable">-in</span> certificate.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>显示 PKCS #12 文件的内容</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkcs12 <span class="token parameter variable">-in</span> cert_k­ey.p12
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>将 .p12 文件转换为 Java Key Store。 此命令使用 java keytool 而不是 openssl。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>keytool <span class="token parameter variable">-importkeystore</span> <span class="token parameter variable">-destkeystore</span> javakeystore.jks <span class="token parameter variable">-srckeystore</span> cert_key.p12 <span class="token parameter variable">-srcstoretype</span> pkcs12
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将 PEM 证书转换为 PKCS #7 格式</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl crl2pkcs7 <span class="token parameter variable">-nocrl</span> <span class="token parameter variable">-certfile</span> certificate.crt <span class="token parameter variable">-out</span> cert.p7b
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将 PKCS #7 文件从 PEM 转换为 DER</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkcs7 <span class="token parameter variable">-in</span> cert.p7b <span class="token parameter variable">-outform</span> DER <span class="token parameter variable">-out</span> p7.der
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h2 id="查看"><a href="#查看" class="header-anchor">#</a> 查看</h2> <h3 id="查看-pem-编码证书"><a href="#查看-pem-编码证书" class="header-anchor">#</a> 查看 PEM 编码证书</h3> <p>使用具有证书扩展名的命令将 cert.xxx 替换为证书名称</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-in</span> cert.pem <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span>
+$ openssl x509 <span class="token parameter variable">-in</span> cert.cer <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span>
+$ openssl x509 <span class="token parameter variable">-in</span> cert.crt <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>如果您收到以下错误，则表示您正在尝试查看 DER 编码的证书，并且需要使用下面“查看 DER 编码的证书”部分中的命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>unable to load certificate
+<span class="token number">12626</span>:error:0906D06C:PEM routines:PEM_read_bio:no start line:pem_lib.c:647:Expecting: TRUSTED CERTIFICATE View DER encoded Certificate
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div> <h3 id="查看-der-编码证书"><a href="#查看-der-编码证书" class="header-anchor">#</a> 查看 DER 编码证书</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>openssl x509 <span class="token parameter variable">-in</span> certificate.der <span class="token parameter variable">-inform</span> der <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果您收到以下错误，则表示您正在尝试使用用于 DER 编码证书的命令查看 PEM 编码证书。 使用上面“查看 PEM 编码证书”部分中的命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>unable to load certificate
+<span class="token number">13978</span>:error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag:tasn_dec.c:1306:
+<span class="token number">13978</span>:error:0D07803A:asn1 encoding routines:ASN1_ITEM_EX_D2I:nested asn1 error:tasn_dec.c:380:Type<span class="token operator">=</span>X509
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div> <h3 id="查看证书链中的所有证书"><a href="#查看证书链中的所有证书" class="header-anchor">#</a> 查看证书链中的所有证书</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># subject + issuer</span>
+openssl crl2pkcs7 <span class="token parameter variable">-nocrl</span> <span class="token parameter variable">-certfile</span> host.domain.tld-ca-chain.pem <span class="token operator">|</span> openssl pkcs7 <span class="token parameter variable">-print_certs</span> <span class="token parameter variable">-noout</span>
+<span class="token comment"># full public keys</span>
+openssl crl2pkcs7 <span class="token parameter variable">-nocrl</span> <span class="token parameter variable">-certfile</span> host.domain.tld-ca-chain.pem <span class="token operator">|</span> openssl pkcs7 <span class="token parameter variable">-print_certs</span> <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="转换"><a href="#转换" class="header-anchor">#</a> 转换</h2> <h3 id="转换示例"><a href="#转换示例" class="header-anchor">#</a> 转换示例</h3> <p>将 DER 文件 (.crt .cer .der) 转换为 PEM</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>openssl x509 <span class="token parameter variable">-inform</span> der <span class="token parameter variable">-in</span> certificate.cer <span class="token parameter variable">-out</span> certificate.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将 PEM 文件转换为 DER</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>openssl x509 <span class="token parameter variable">-outform</span> der <span class="token parameter variable">-in</span> certificate.pem <span class="token parameter variable">-out</span> certificate.der
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将包含私钥和证书的 PKCS#12 文件 (.pfx .p12) 转换为 PEM</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>openssl pkcs12 <span class="token parameter variable">-in</span> keyStore.pfx <span class="token parameter variable">-out</span> keyStore.pem <span class="token parameter variable">-nodes</span>
+<span class="token comment"># 您可以添加 -nocerts 以仅输出私钥或添加 -nokeys 以仅输出证书</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div> <p>将 PEM 证书文件和私钥转换为 PKCS#12 (.pfx .p12)</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>openssl pkcs12 <span class="token parameter variable">-export</span> <span class="token parameter variable">-out</span> certificate.pfx <span class="token parameter variable">-inkey</span> privateKey.key <span class="token parameter variable">-in</span> certificate.crt <span class="token parameter variable">-certfile</span> CACert.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将 PEM 转换为 CRT（.CRT 文件）</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>openssl x509 <span class="token parameter variable">-outform</span> der <span class="token parameter variable">-in</span> certificate.pem <span class="token parameter variable">-out</span> certificate.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h3 id="openssl-转换-pem"><a href="#openssl-转换-pem" class="header-anchor">#</a> OpenSSL 转换 PEM</h3> <p>将 PEM 转换为 DER</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-outform</span> der <span class="token parameter variable">-in</span> certificate.pem <span class="token parameter variable">-out</span> certificate.der
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将 PEM 转换为 P7B</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl crl2pkcs7 <span class="token parameter variable">-nocrl</span> <span class="token parameter variable">-certfile</span> certificate.cer <span class="token parameter variable">-out</span> certificate.p7b <span class="token parameter variable">-certfile</span> CACert.cer
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将 PEM 转换为 PFX</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkcs12 <span class="token parameter variable">-export</span> <span class="token parameter variable">-out</span> certificate.pfx <span class="token parameter variable">-inkey</span> privateKey.key <span class="token parameter variable">-in</span> certificate.crt <span class="token parameter variable">-certfile</span> CACert.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h3 id="openssl-转换-der"><a href="#openssl-转换-der" class="header-anchor">#</a> OpenSSL 转换 DER</h3> <p>将 DER 转换为 PEM</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-inform</span> der <span class="token parameter variable">-in</span> certificate.cer <span class="token parameter variable">-out</span> certificate.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h3 id="openssl-转换-pfx"><a href="#openssl-转换-pfx" class="header-anchor">#</a> OpenSSL 转换 PFX</h3> <p>将 PFX 转换为 PEM</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkcs12 <span class="token parameter variable">-in</span> certificate.pfx <span class="token parameter variable">-out</span> certificate.cer <span class="token parameter variable">-nodes</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h3 id="openssl-转换-p7b"><a href="#openssl-转换-p7b" class="header-anchor">#</a> OpenSSL 转换 P7B</h3> <p>将 P7B 转换为 PEM</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkcs7 <span class="token parameter variable">-print_certs</span> <span class="token parameter variable">-in</span> certificate.p7b <span class="token parameter variable">-out</span> certificate.cer
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将 P7B 转换成 PFX</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl pkcs7 <span class="token parameter variable">-print_certs</span> <span class="token parameter variable">-in</span> certificate.p7b <span class="token parameter variable">-out</span> certificate.cer
+$ openssl pkcs12 <span class="token parameter variable">-export</span> <span class="token parameter variable">-in</span> certificate.cer <span class="token parameter variable">-inkey</span> privateKey.key <span class="token parameter variable">-out</span> certificate.pfx <span class="token parameter variable">-certfile</span> CACert.cer
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div> <h3 id="通过-openssl-生成-rsa-密钥"><a href="#通过-openssl-生成-rsa-密钥" class="header-anchor">#</a> 通过 OpenSSL 生成 rsa 密钥</h3> <p>在命令行上使用 OpenSSL 您首先需要生成公钥和私钥。 您应该使用 <code>-passout</code> 参数对这个文件进行密码保护，这个参数可以采用许多不同的形式，因此请查阅 OpenSSL 文档</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl genrsa <span class="token parameter variable">-out</span> private.pem <span class="token number">4096</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这将创建一个名为 private.pem 的密钥文件，它使用 4096 位。 这个文件实际上有私钥和公钥，所以你应该从这个文件中提取公钥：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> private.pem <span class="token parameter variable">-out</span> public.pem <span class="token parameter variable">-outform</span> PEM <span class="token parameter variable">-pubout</span>
+<span class="token comment"># or</span>
+$ openssl rsa <span class="token parameter variable">-in</span> private.pem <span class="token parameter variable">-pubout</span> <span class="token operator">&gt;</span> public.pem
+<span class="token comment"># or</span>
+$ openssl rsa <span class="token parameter variable">-in</span> private.pem <span class="token parameter variable">-pubout</span> <span class="token parameter variable">-out</span> public.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div> <p>您现在将拥有仅包含您的公钥的 public.pem，您可以与第 3 方自由共享。 您可以通过使用您的公钥自己加密一些东西然后使用您的私钥解密来测试这一切，首先我们需要一些数据来加密：</p> <p>示例文件：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token builtin class-name">echo</span> <span class="token string">'too many secrets'</span> <span class="token operator">&gt;</span> file.txt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>您现在在 file.txt 中有一些数据，让我们使用 OpenSSL 和公钥对其进行加密：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsautl <span class="token parameter variable">-encrypt</span> <span class="token parameter variable">-inkey</span> public.pem <span class="token parameter variable">-pubin</span> <span class="token parameter variable">-in</span> file.txt <span class="token parameter variable">-out</span> file.ssl
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>这会创建一个 file.txt 的加密版本，称为 file.ssl，如果你看这个文件，它只是二进制垃圾，对任何人都没有什么用处。 现在您可以使用私钥对其进行解密：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsautl <span class="token parameter variable">-decrypt</span> <span class="token parameter variable">-inkey</span> private.pem <span class="token parameter variable">-in</span> file.ssl <span class="token parameter variable">-out</span> decrypted.txt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>您现在将在 decrypted.txt 中有一个未加密的文件：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">cat</span> decrypted.txt
+ <span class="token operator">|</span>output -<span class="token operator">&gt;</span> too many secrets
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="openssl-中的-rsa-工具选项"><a href="#openssl-中的-rsa-工具选项" class="header-anchor">#</a> OpenSSL 中的 RSA 工具选项</h3> <p>NAME</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ rsa - RSA key processing tool
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>SYNOPSIS 概要</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token punctuation">[</span>-help<span class="token punctuation">]</span> <span class="token punctuation">[</span>-inform PEM<span class="token operator">|</span>NET<span class="token operator">|</span>DER<span class="token punctuation">]</span> <span class="token punctuation">[</span>-outform PEM<span class="token operator">|</span>NET<span class="token operator">|</span>DER<span class="token punctuation">]</span> <span class="token punctuation">[</span>-in filename<span class="token punctuation">]</span> <span class="token punctuation">[</span>-passin arg<span class="token punctuation">]</span> <span class="token punctuation">[</span>-out filename<span class="token punctuation">]</span> <span class="token punctuation">[</span>-passout arg<span class="token punctuation">]</span> <span class="token punctuation">[</span>-aes128<span class="token punctuation">]</span> <span class="token punctuation">[</span>-aes192<span class="token punctuation">]</span> <span class="token punctuation">[</span>-aes256<span class="token punctuation">]</span> <span class="token punctuation">[</span>-camellia128<span class="token punctuation">]</span> <span class="token punctuation">[</span>-camellia192<span class="token punctuation">]</span> <span class="token punctuation">[</span>-camellia256<span class="token punctuation">]</span> <span class="token punctuation">[</span>-des<span class="token punctuation">]</span> <span class="token punctuation">[</span>-des3<span class="token punctuation">]</span> <span class="token punctuation">[</span>-idea<span class="token punctuation">]</span> <span class="token punctuation">[</span>-text<span class="token punctuation">]</span> <span class="token punctuation">[</span>-noout<span class="token punctuation">]</span> <span class="token punctuation">[</span>-modulus<span class="token punctuation">]</span> <span class="token punctuation">[</span>-check<span class="token punctuation">]</span> <span class="token punctuation">[</span>-pubin<span class="token punctuation">]</span> <span class="token punctuation">[</span>-pubout<span class="token punctuation">]</span> <span class="token punctuation">[</span>-RSAPublicKey_in<span class="token punctuation">]</span> <span class="token punctuation">[</span>-RSAPublicKey_out<span class="token punctuation">]</span> <span class="token punctuation">[</span>-engine id<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>DESCRIPTION 描述</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>rsa 命令处理 RSA 密钥。 它们可以在各种形式之间转换，并且可以打印出它们的组成部分。
+请注意，此命令使用传统的 SSLeay 兼容格式进行私钥加密：较新的应用程序
+应该使用 pkcs8 实用程序使用更安全的 PKCS<span class="token comment">#8 格式。</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>COMMAND OPTIONS 命令选项</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token parameter variable">-help</span>
+<span class="token comment">#&gt; 打印出使用信息。</span>
+
+<span class="token parameter variable">-inform</span> DER<span class="token operator">|</span>NET<span class="token operator">|</span>PEM
+<span class="token comment">#&gt; 这指定了输入格式。 DER 选项使用与 PKCS #1 RSAPrivateKey 或 SubjectPublicKeyInfo 格式兼容的 ASN1 DER 编码形式。 PEM 形式是默认格式：它由 DER 格式 base64 编码，并带有额外的页眉和页脚行。 输入 PKCS#8 格式的私钥也 接受。 NET 形式是一种在注释部分中描述的格式。</span>
+
+<span class="token parameter variable">-outform</span> DER<span class="token operator">|</span>NET<span class="token operator">|</span>PEM
+<span class="token comment">#&gt; 这指定了输出格式，选项与 -inform 选项具有相同的含义。</span>
+
+<span class="token parameter variable">-in</span> filename
+<span class="token comment">#&gt; 如果未指定此选项，这将指定要从中读取密钥的输入文件名或标准输入。 如果密钥被加密，将提示输入密码。</span>
+
+<span class="token parameter variable">-passin</span> arg
+<span class="token comment">#&gt; 输入文件密码源。有关 arg 格式的更多信息，请参阅 openssl 中的 PASS PHRASE ARGUMENTS 部分。</span>
+
+<span class="token parameter variable">-out</span> filename
+<span class="token comment">#&gt; 如果未指定此选项，这将指定要写入密钥的输出文件名或标准输出。如果设置了任何加密选项，则会提示输入密码。输出文件名不应与输入文件名相同。</span>
+
+<span class="token parameter variable">-passout</span> password
+<span class="token comment">#&gt; 输出文件密码源。有关 arg 格式的更多信息，请参阅 openssl 中的 PASS PHRASE ARGUMENTS 部分。</span>
+
+-aes128<span class="token operator">|</span>-aes192<span class="token operator">|</span>-aes256<span class="token operator">|</span>-camellia128<span class="token operator">|</span>-camellia192<span class="token operator">|</span>-camellia256<span class="token operator">|</span>-des<span class="token operator">|</span>-des3<span class="token operator">|</span>-idea
+<span class="token comment">#&gt; 这些选项在输出之前使用指定的密码加密私钥。提示输入密码。如果未指定这些选项，则密钥将以纯文本形式写入。这意味着使用 rsa 实用程序读取没有加密选项的加密密钥可用于从密钥中删除密码短语，或者通过设置可用于添加或更改密码短语的加密选项。这些选项只能用于 PEM 格式的输出文件。</span>
+
+<span class="token parameter variable">-text</span>
+<span class="token comment">#&gt; 除了编码版本之外，还以纯文本形式打印出各种公钥或私钥组件。</span>
+
+<span class="token parameter variable">-noout</span>
+<span class="token comment">#&gt; 此选项可防止输出密钥的编码版本。</span>
+
+<span class="token parameter variable">-modulus</span>
+<span class="token comment">#&gt; 此选项打印出密钥模数的值。</span>
+
+<span class="token parameter variable">-check</span>
+<span class="token comment">#&gt; 此选项检查 RSA 私钥的一致性。</span>
+
+<span class="token parameter variable">-pubin</span>
+<span class="token comment">#&gt; 默认情况下，从输入文件中读取私钥：使用此选项，改为读取公钥。</span>
+
+<span class="token parameter variable">-pubout</span>
+<span class="token comment">#&gt; 默认情况下输出私钥：使用此选项将输出公钥。 如果输入是公钥，则会自动设置此选项。</span>
+
+-RSAPublicKey_in, <span class="token parameter variable">-RSAPublicKey_out</span>
+<span class="token comment">#&gt; 类似于 -pubin 和 -pubout，除了使用 RSAPublicKey 格式。</span>
+
+<span class="token parameter variable">-engine</span> <span class="token function">id</span>
+<span class="token comment">#&gt; 指定引擎（通过其唯一 ID 字符串）将导致 rsa 尝试获取对指定引擎的功能引用，从而在需要时对其进行初始化。 然后引擎将被设置为所有可用算法的默认值。</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div> <h3 id="支持以下加密算法"><a href="#支持以下加密算法" class="header-anchor">#</a> 支持以下加密算法</h3> <ul><li><code>-aes128</code></li> <li><code>-aes192</code></li> <li><code>-aes256</code></li> <li><code>-des3</code></li> <li><code>-des</code></li></ul> <h3 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h3> <p>要删除 RSA 私钥上的密码短语：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> key.pem <span class="token parameter variable">-out</span> keyout.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>要使用三重 DES 加密私钥：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> key.pem <span class="token parameter variable">-des3</span> <span class="token parameter variable">-out</span> keyout.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>要将私钥从 PEM 格式转换为 DER 格式：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> key.pem <span class="token parameter variable">-outform</span> DER <span class="token parameter variable">-out</span> keyout.der
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>将私钥的组件打印到标准输出：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> key.pem <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>仅输出私钥的公共部分：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> key.pem <span class="token parameter variable">-pubout</span> <span class="token parameter variable">-out</span> pubkey.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>以 RSAPublicKey 格式输出私钥的公共部分：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl rsa <span class="token parameter variable">-in</span> key.pem <span class="token parameter variable">-RSAPublicKey_out</span> <span class="token parameter variable">-out</span> pubkey.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h2 id="格式"><a href="#格式" class="header-anchor">#</a> 格式</h2> <h3 id="rsa-公钥"><a href="#rsa-公钥" class="header-anchor">#</a> RSA 公钥</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>-----BEGIN RSA PUBLIC KEY-----
+-----END RSA PUBLIC KEY-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="加密的-pem-私钥"><a href="#加密的-pem-私钥" class="header-anchor">#</a> 加密的 PEM 私钥</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>-----BEGIN RSA PRIVATE KEY-----
+Proc-Type: <span class="token number">4</span>,ENCRYPTED
+-----END RSA PRIVATE KEY-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="识别为-pem-格式"><a href="#识别为-pem-格式" class="header-anchor">#</a> 识别为 PEM 格式</h3> <p>为了让 OpenSSL 将其识别为 PEM 格式，它必须使用 Base64 进行编码，并带有以下标头：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-----BEGIN CERTIFICATE-----
+and footer :
+-----END CERTIFICATE-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>此外，每行的长度不得超过 79 个字符。 否则你会收到错误：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>2675996:error:0906D064:PEM routines:PEM_read_bio:bad base64 decode:pem_lib.c:818:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>注意：PEM 标准 (RFC1421) 要求行长度为 64 个字符。 可以使用 UNIX 命令行实用程序转换存储为单行的 PEM 证书：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">fold</span> <span class="token parameter variable">-w</span> <span class="token number">64</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><hr> <ul><li>PKCS#1 RSAPublicKey (PEM header: BEGIN RSA PUBLIC KEY)</li> <li>PKCS#8 EncryptedPrivateKeyInfo (PEM header: BEGIN ENCRYPTED PRIVATE KEY)</li> <li>PKCS#8 PrivateKeyInfo (PEM header: BEGIN PRIVATE KEY)</li> <li>X.509 SubjectPublicKeyInfo (PEM header: BEGIN PUBLIC KEY)</li> <li>CSR PEM header : (PEM header:—-BEGIN NEW CERTIFICATE REQUEST—–)</li> <li>DSA PrivateKeyInfo (PEM header: (—–BEGIN DSA PRIVATE KEY—-)</li></ul> <h3 id="crl"><a href="#crl" class="header-anchor">#</a> CRL</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>-----BEGIN X509 CRL-----
+-----END X509 CRL-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="crt"><a href="#crt" class="header-anchor">#</a> CRT</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>-----BEGIN CERTIFICATE-----
+-----END CERTIFICATE-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="csr"><a href="#csr" class="header-anchor">#</a> CSR</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>-----BEGIN CERTIFICATE REQUEST-----
+-----END CERTIFICATE REQUEST-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="new-csr"><a href="#new-csr" class="header-anchor">#</a> NEW CSR</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>-----BEGIN NEW CERTIFICATE REQUEST-----
+-----END NEW CERTIFICATE REQUEST-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="pem"><a href="#pem" class="header-anchor">#</a> PEM</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>-----END RSA PRIVATE KEY-----
+-----BEGIN RSA PRIVATE KEY-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="pkcs7"><a href="#pkcs7" class="header-anchor">#</a> PKCS7</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>-----BEGIN PKCS7-----
+-----END PKCS7-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="私钥"><a href="#私钥" class="header-anchor">#</a> 私钥</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>-----BEGIN PRIVATE KEY-----
+-----END PRIVATE KEY-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="dsa密钥"><a href="#dsa密钥" class="header-anchor">#</a> DSA密钥</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>-----BEGIN DSA PRIVATE KEY-----
+-----END DSA PRIVATE KEY-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="椭圆曲线"><a href="#椭圆曲线" class="header-anchor">#</a> 椭圆曲线</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>-----BEGIN EC PRIVATE KEY-----
+-----BEGIN EC PRIVATE KEY-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="pgp-私钥"><a href="#pgp-私钥" class="header-anchor">#</a> PGP 私钥</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>-----BEGIN PGP PRIVATE KEY BLOCK-----
+-----END PGP PRIVATE KEY BLOCK-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="pgp-公钥"><a href="#pgp-公钥" class="header-anchor">#</a> PGP 公钥</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+-----END PGP PUBLIC KEY BLOCK-----
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="校验"><a href="#校验" class="header-anchor">#</a> 校验</h2> <h3 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h3> <p>在建立 SSL/TLS 连接之前，客户端需要确保收到的证书有效。为了做到这一点，客户端不仅要验证其公钥的真实性，还要验证与之相关的其他元数据（了解这一点对于了解典型数字证书的内容很重要）：</p> <ul><li><strong><code>签名验证</code></strong> 这确保了证书没有以任何方式被更改</li> <li><strong><code>证书尚未过期</code></strong> 当证书由 CA 颁发时，它会指定一个到期日期</li> <li><strong><code>证书主题与主机名匹配</code></strong> 证书是为特定服务器颁发的。因此，证书主题名称需要与客户端尝试连接的 URL 相匹配</li> <li><strong><code>它没有被撤销</code></strong> 有时证书可以在任何需要的情况下被其颁发者撤销（例如，关联的私钥已被公开，因此证书无效）</li> <li><strong><code>它由受信任的 CA 签名</code></strong> 为了证明证书的真实性，我们需要获取 CA 证书并验证其可信度。然而在 PKI 中有一个信任链的概念，因此 CA 证书可能是由另一个 CA 颁发的。因此我们需要获得另一个 CA 的证书并验证它。依此类推……因此，为了信任证书，我们需要一直导航到根 CA。最后，如果我们信任根 CA，可以肯定地说我们信任整个链</li></ul> <h3 id="验证信任链"><a href="#验证信任链" class="header-anchor">#</a> 验证信任链</h3> <p>a) 您的整个 CA 链在一个文件中，实际的网络服务器或客户端证书在另一个文件中</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl verify <span class="token parameter variable">-untrusted</span> ca-chain.pem 客户端证书.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>b) 单独文件中的根证书和中间证书以及另一个文件中的实际网络服务器或客户端证书</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl verify <span class="token parameter variable">-CAfile</span> root.pem <span class="token parameter variable">-untrusted</span> intermediate-chain.pem client-cert.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>如果您有多个中间 <code>CA</code>（例如 <code>root.pem -&gt; intermediate1.pem -&gt; intermediate2.pem -&gt; client-cert.pem</code>），将它们连接到一个文件中并通过：<code>-untrusted intermediate-chain.pem</code> 或执行它与 cat：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl verify <span class="token parameter variable">-CAfile</span> root.pem <span class="token parameter variable">-untrusted</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">cat</span> intermediate1.pem intermediate2.pem<span class="token punctuation">)</span> client-cert.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>实例</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl verify <span class="token parameter variable">-CAfile</span> letsencrypt-root-cert/isrgrootx1.pem.txt <span class="token parameter variable">-untrusted</span> letsencrypt-intermediate-cert/letsencryptauthorityx3.pem.txt /etc/letsencrypt/live/sitename.tld/cert.pem 
+/etc/letsencrypt/live/sitename.tld/cert.pem: OK
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div> <h3 id="截止日期"><a href="#截止日期" class="header-anchor">#</a> 截止日期</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl x509 <span class="token parameter variable">-enddate</span> <span class="token parameter variable">-noout</span> <span class="token parameter variable">-in</span> file.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="验证本地证书文件"><a href="#验证本地证书文件" class="header-anchor">#</a> 验证本地证书文件</h4> <p>这是我的 bash 命令行，用于按过期顺序列出多个证书，最近过期的证书最先过期。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token keyword">for</span> <span class="token for-or-select variable">pem</span> <span class="token keyword">in</span> /etc/ssl/certs/*.pem<span class="token punctuation">;</span> <span class="token keyword">do</span> 
+    <span class="token builtin class-name">printf</span> <span class="token string">'%s: %s\n'</span> <span class="token punctuation">\</span>
+      <span class="token string">&quot;$(date --date=&quot;<span class="token variable"><span class="token variable">$(</span>openssl x509 <span class="token parameter variable">-enddate</span> <span class="token parameter variable">-noout</span> <span class="token parameter variable">-in</span> <span class="token string">&quot;<span class="token variable">$pem</span>&quot;</span><span class="token operator">|</span><span class="token function">cut</span> <span class="token parameter variable">-d</span><span class="token operator">=</span> <span class="token parameter variable">-f</span> <span class="token number">2</span><span class="token variable">)</span></span>&quot;</span> --iso-8601<span class="token punctuation">)</span><span class="token string">&quot; \
+      &quot;</span><span class="token variable">$pem</span>&quot;
+<span class="token keyword">done</span> <span class="token operator">|</span> <span class="token function">sort</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div> <p>示例输出：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>2015-12-16: /etc/ssl/certs/Staat_der_Nederlanden_Root_CA.pem
+2016-03-22: /etc/ssl/certs/CA_Disig.pem
+2016-08-14: /etc/ssl/certs/EBG_Elektronik_Sertifika_Hizmet_S.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="验证远程服务器"><a href="#验证远程服务器" class="header-anchor">#</a> 验证远程服务器</h4> <p>这是一个 bash 函数，它会检查你所有的服务器，假设你正在使用 DNS 循环法。 请注意，这需要 GNU 日期并且不能在 Mac OS 上运行</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token keyword">function</span> <span class="token function-name function">check_certs</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token punctuation">]</span>
+  <span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">&quot;domain name missing&quot;</span>
+    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+  <span class="token keyword">fi</span>
+  <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$1</span>&quot;</span>
+  <span class="token builtin class-name">shift</span>
+
+  <span class="token assign-left variable">now_epoch</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span> <span class="token function">date</span> +%s <span class="token variable">)</span></span>
+
+  <span class="token function">dig</span> +noall +answer <span class="token variable">$name</span> <span class="token operator">|</span> <span class="token keyword">while</span> <span class="token builtin class-name">read</span> _ _ _ _ <span class="token function">ip</span><span class="token punctuation">;</span>
+  <span class="token keyword">do</span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">&quot;<span class="token variable">$ip</span>:&quot;</span>
+    <span class="token assign-left variable">expiry_date</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span> <span class="token builtin class-name">echo</span> <span class="token operator">|</span> openssl s_client <span class="token parameter variable">-showcerts</span> <span class="token parameter variable">-servername</span> $name <span class="token parameter variable">-connect</span> $ip:443 <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null <span class="token operator">|</span> openssl x509 <span class="token parameter variable">-inform</span> pem <span class="token parameter variable">-noout</span> <span class="token parameter variable">-enddate</span> <span class="token operator">|</span> <span class="token function">cut</span> <span class="token parameter variable">-d</span> <span class="token string">&quot;=&quot;</span> <span class="token parameter variable">-f</span> <span class="token number">2</span> <span class="token variable">)</span></span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">&quot; <span class="token variable">$expiry_date</span>&quot;</span><span class="token punctuation">;</span>
+    <span class="token assign-left variable">expiry_epoch</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span> <span class="token function">date</span> <span class="token parameter variable">-d</span> <span class="token string">&quot;<span class="token variable">$expiry_date</span>&quot;</span> +%s <span class="token variable">)</span></span>
+    <span class="token assign-left variable">expiry_days</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$((</span> <span class="token punctuation">(</span>$expiry_epoch <span class="token operator">-</span> $now_epoch<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">3600</span> <span class="token operator">*</span> <span class="token number">24</span><span class="token punctuation">)</span> <span class="token variable">))</span></span>&quot;</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">&quot;    <span class="token variable">$expiry_days</span> days&quot;</span>
+  <span class="token keyword">done</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div> <p>输出示例：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ check_certs stackoverflow.com
+<span class="token number">151.101</span>.1.69: Aug <span class="token number">14</span> <span class="token number">12</span>:00:00 <span class="token number">2019</span> GMT    <span class="token number">603</span> days
+<span class="token number">151.101</span>.65.69: Aug <span class="token number">14</span> <span class="token number">12</span>:00:00 <span class="token number">2019</span> GMT    <span class="token number">603</span> days
+<span class="token number">151.101</span>.129.69: Aug <span class="token number">14</span> <span class="token number">12</span>:00:00 <span class="token number">2019</span> GMT    <span class="token number">603</span> days
+<span class="token number">151.101</span>.193.69: Aug <span class="token number">14</span> <span class="token number">12</span>:00:00 <span class="token number">2019</span> GMT    <span class="token number">603</span> days
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="验证-curl"><a href="#验证-curl" class="header-anchor">#</a> 验证 curl</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--insecure</span> <span class="token parameter variable">-v</span> https://www.google.com <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'BEGIN { cert=0 } /^\* Server certificate:/ { cert=1 } /^\*/ { if (cert) print }'</span>
+
+* Server certificate:
+*  subject: <span class="token assign-left variable">C</span><span class="token operator">=</span>US<span class="token punctuation">;</span> <span class="token assign-left variable">ST</span><span class="token operator">=</span>California<span class="token punctuation">;</span> <span class="token assign-left variable">L</span><span class="token operator">=</span>Mountain View<span class="token punctuation">;</span> <span class="token assign-left variable">O</span><span class="token operator">=</span>Google LLC<span class="token punctuation">;</span> <span class="token assign-left variable">CN</span><span class="token operator">=</span>www.google.com
+*  start date: Mar  <span class="token number">1</span> 09:46:35 <span class="token number">2019</span> GMT
+*  expire date: May <span class="token number">24</span> 09:25:00 <span class="token number">2019</span> GMT
+*  issuer: <span class="token assign-left variable">C</span><span class="token operator">=</span>US<span class="token punctuation">;</span> <span class="token assign-left variable">O</span><span class="token operator">=</span>Google Trust Services<span class="token punctuation">;</span> <span class="token assign-left variable">CN</span><span class="token operator">=</span>Google Internet Authority G3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed <span class="token punctuation">(</span>HTTP/2 confirmed<span class="token punctuation">)</span>
+* Copying HTTP/2 data <span class="token keyword">in</span> stream buffer to connection buffer after upgrade: <span class="token assign-left variable">len</span><span class="token operator">=</span><span class="token number">0</span>
+* Using Stream ID: <span class="token number">1</span> <span class="token punctuation">(</span>easy handle 0x7ff5dc803600<span class="token punctuation">)</span>
+* Connection state changed <span class="token punctuation">(</span>MAX_CONCURRENT_STREAMS updated<span class="token punctuation">)</span><span class="token operator">!</span>
+* Connection <span class="token comment">#0 to host www.google.com left intact</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div> <p>您需要为 <a href="/web/command/curl.html">curl</a> 提供整个证书链，因为 <a href="/web/command/curl.html">curl</a> 不再附带任何 CA 证书。 由于 cacert 选项只能使用一个文件，因此您需要将完整的链信息连接到 1 个文件中。 从 <a href="https://curl.haxx.se/ca/cacert.pem" target="_blank" rel="noopener noreferrer">https://curl.haxx.se/ca/cacert.pem<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 获取根 CA 证书包。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">curl</span> <span class="token parameter variable">--cacert</span> certRepo <span class="token parameter variable">-u</span> user:passwd <span class="token parameter variable">-X</span> GET <span class="token parameter variable">-H</span> <span class="token string">'Content-Type: application/json'</span> <span class="token string">&quot;https//somesecureserver.com/rest/field&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h3 id="验证-openssl-s-client"><a href="#验证-openssl-s-client" class="header-anchor">#</a> 验证 openssl s_client</h3> <h4 id="使用-sni"><a href="#使用-sni" class="header-anchor">#</a> 使用 SNI</h4> <p>如果远程服务器使用 SNI（即在一个 IP 地址上共享多个 SSL 主机），您将需要发送正确的主机名以获得正确的证书（<code>-servername</code> 选项用于启用 SNI 支持）。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-showcerts</span> <span class="token parameter variable">-servername</span> www.example.com <span class="token parameter variable">-connect</span> www.example.com:443 <span class="token operator">&lt;</span>/dev/null
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h4 id="没有-sni"><a href="#没有-sni" class="header-anchor">#</a> 没有 SNI</h4> <p>如果远程服务器没有使用 SNI，那么你可以跳过 <code>-servername</code> 参数：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>openssl s_client <span class="token parameter variable">-showcerts</span> <span class="token parameter variable">-connect</span> www.example.com:443 <span class="token operator">&lt;</span>/dev/null
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>要查看站点证书的完整详细信息，您也可以使用以下命令链：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token builtin class-name">echo</span> <span class="token operator">|</span> <span class="token punctuation">\</span>
+    openssl s_client <span class="token parameter variable">-servername</span> www.example.com <span class="token parameter variable">-connect</span> www.example.com:443 <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null <span class="token operator">|</span> <span class="token punctuation">\</span>
+    openssl x509 <span class="token parameter variable">-text</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div> <p>对于带有 starttls 的 SMTP，请使用：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-connect</span> server:port <span class="token parameter variable">-starttls</span> smtp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <p>对于 Client Auth 保护的资源，请使用：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-connect</span> host:port <span class="token parameter variable">-key</span> our_private_key.pem <span class="token parameter variable">-showcerts</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-cert</span> our_server-signed_cert.pem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div> <p><code>-prexit</code> 也会返回数据：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ openssl s_client <span class="token parameter variable">-connect</span> host:port <span class="token parameter variable">-prexit</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div> <h3 id="使用私钥验证-tls-证书"><a href="#使用私钥验证-tls-证书" class="header-anchor">#</a> 使用私钥验证 TLS 证书</h3> <p>希望您永远不会遇到不知道用于生成 TLS 证书的私钥的情况，但如果您知道……这里是您可以检查的方法。</p> <p>注意：这比将证书上传到生产环境以检查它们更好😉</p> <p>假设我们已经生成了一个名为 example.com.key 的私钥和一个名为 example.com.crt 的证书，我们可以使用 openssl 检查 MD5 哈希值是否相同：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>$ openssl x509 <span class="token parameter variable">-noout</span> <span class="token parameter variable">-modulus</span> <span class="token parameter variable">-in</span> example.com.crt <span class="token operator">|</span> openssl md5
+$ openssl rsa <span class="token parameter variable">-noout</span> <span class="token parameter variable">-modulus</span> <span class="token parameter variable">-in</span> example.com.key <span class="token operator">|</span> openssl md5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>为了让事情变得更好，你可以写一个脚本：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token shebang important">#!/bin/bash</span>
+<span class="token assign-left variable">CERT_MD5</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>openssl x509 <span class="token parameter variable">-noout</span> <span class="token parameter variable">-modulus</span> <span class="token parameter variable">-in</span> example.com.crt <span class="token operator">|</span> openssl md5<span class="token variable">)</span></span>
+ <span class="token assign-left variable">KEY_MD5</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>openssl rsa  <span class="token parameter variable">-noout</span> <span class="token parameter variable">-modulus</span> <span class="token parameter variable">-in</span> example.com.key <span class="token operator">|</span> openssl md5<span class="token variable">)</span></span>
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$CERT_MD5</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;<span class="token variable">$KEY_MD5</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">&quot;Private key matches certificate&quot;</span>
+<span class="token keyword">else</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">&quot;Private key does not match certificate&quot;</span>
+<span class="token keyword">fi</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="java-key-store"><a href="#java-key-store" class="header-anchor">#</a> Java Key store</h2> <h3 id="java-密钥库"><a href="#java-密钥库" class="header-anchor">#</a> Java 密钥库</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ keytool <span class="token parameter variable">-importcert</span> <span class="token parameter variable">-file</span> certificate.cer <span class="token parameter variable">-keystore</span> keystore.jks <span class="token parameter variable">-alias</span> <span class="token string">&quot;Alias&quot;</span> 
+$ <span class="token punctuation">..</span><span class="token punctuation">\</span><span class="token punctuation">..</span><span class="token punctuation">\</span>bin<span class="token punctuation">\</span>keytool <span class="token parameter variable">-import</span> <span class="token parameter variable">-trustcacerts</span> <span class="token parameter variable">-keystore</span> cacerts <span class="token parameter variable">-storepass</span> changeit <span class="token parameter variable">-noprompt</span> <span class="token parameter variable">-alias</span> yourAliasName <span class="token parameter variable">-file</span> path<span class="token punctuation">\</span>to<span class="token punctuation">\</span>certificate.cer
+$ keytool <span class="token parameter variable">-import</span> <span class="token parameter variable">-alias</span> joe <span class="token parameter variable">-file</span> mycert.cer <span class="token parameter variable">-keystore</span> mycerts <span class="token parameter variable">-storepass</span> changeit
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="创建"><a href="#创建" class="header-anchor">#</a> 创建</h2> <h3 id="使用-certstrap-创建开发证书"><a href="#使用-certstrap-创建开发证书" class="header-anchor">#</a> 使用 <code>certstrap</code> 创建开发证书</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ brew <span class="token function">install</span> certstrap
+$ certstrap init --common-name <span class="token string">&quot;ExampleDevCA&quot;</span> <span class="token parameter variable">--expires</span> <span class="token string">&quot;10 years&quot;</span> <span class="token parameter variable">-o</span> <span class="token string">&quot;My Tech Inc.&quot;</span> <span class="token parameter variable">-c</span> <span class="token string">&quot;DE&quot;</span> <span class="token parameter variable">-l</span> <span class="token string">&quot;Muenchen&quot;</span> <span class="token parameter variable">--st</span> <span class="token string">&quot;Bayern&quot;</span> <span class="token parameter variable">--stdout</span>
+$ certstrap request-cert --common-name <span class="token string">&quot;example.localhost&quot;</span> <span class="token parameter variable">-o</span> <span class="token string">&quot;My Tech Inc.&quot;</span> <span class="token parameter variable">-c</span> <span class="token string">&quot;DE&quot;</span> <span class="token parameter variable">-l</span> <span class="token string">&quot;Muenchen&quot;</span> <span class="token parameter variable">--st</span> <span class="token string">&quot;Bayern&quot;</span> <span class="token parameter variable">--stdout</span> <span class="token parameter variable">--domain</span> <span class="token string">&quot;*.example.localhost&quot;</span>,<span class="token string">&quot;example.localhost&quot;</span>,<span class="token string">&quot;localhost&quot;</span>
+$ certstrap sign <span class="token string">&quot;example.localhost&quot;</span> <span class="token parameter variable">--CA</span> ExampleDevCA
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div> <h3 id="使用-mkcert-创建开发证书"><a href="#使用-mkcert-创建开发证书" class="header-anchor">#</a> 使用 <code>mkcert</code> 创建开发证书</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ brew <span class="token function">install</span> mkcert
+$ mkcert <span class="token string">&quot;*.example.localhost&quot;</span>
+
+<span class="token comment"># Clean up with:</span>
+$ <span class="token function">rm</span> <span class="token parameter variable">-vrf</span> <span class="token string">&quot;<span class="token environment constant">$HOME</span>/Library/Application Support/mkcert&quot;</span>  _wildcard.example*
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div> <h2 id="另见"><a href="#另见" class="header-anchor">#</a> 另见</h2> <ul><li><a href="https://www.openssl.org/" target="_blank" rel="noopener noreferrer">OpenSSL 官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(openssl.org)</em></li> <li><a href="https://cheatography.com/albertx/cheat-sheets/openssl/" target="_blank" rel="noopener noreferrer">OpenSSL Cheat Sheet<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(cheatography.com)</em></li> <li><a href="https://megamorf.gitlab.io/cheat-sheets/openssl/#convert" target="_blank" rel="noopener noreferrer">OpenSSL Cheat Sheet<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <em>(megamorf.gitlab.io)</em></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/13/2023, 5:25:30 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/web/assets/js/app.4914d2c8.js" defer></script><script src="/web/assets/js/2.f44a4f26.js" defer></script><script src="/web/assets/js/34.bbba3f86.js" defer></script>
+  </body>
+</html>
